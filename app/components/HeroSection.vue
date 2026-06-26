@@ -72,7 +72,7 @@
             <div class="relative w-48 h-48 rounded-full p-1 bg-bg-card border border-bg-border overflow-hidden">
               <!-- Avatar Image -->
               <img
-                 :src="useAsset('avatar.jpg')"
+                 :src="useAsset('media/avatar.JPG')"
 
                 alt="Anas AL-MAQTARI"
                 class="w-full h-full object-cover rounded-full transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-2"
