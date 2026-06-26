@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     output: {
       publicDir: './docs'
     }
-  },
+  }, 
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
