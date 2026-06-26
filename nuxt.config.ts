@@ -42,10 +42,11 @@ nitro: {
   },
 
   app: {
+            baseURL: '/me/', 
+    buildAssetsDir: 'assets',
     head: {
       title: 'Anas AL-MAQTARI — Flutter Developer',
-          baseURL: '/portfolio/', 
-    buildAssetsDir: 'assets',
+  
       meta: [
         { name: 'description', content: 'Flutter Developer specializing in AI-powered mobile apps, IoT systems, and clean architecture. Based in Kocaeli, Türkiye.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
