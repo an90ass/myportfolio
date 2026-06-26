@@ -362,7 +362,6 @@ const projects = computed(() => [
     github: null,
     live: null,
     images: [
-      useAsset('projects/KurtarSaha/Screenshot_1779105687.png'),
       useAsset('projects/KurtarSaha/Screenshot_1779105689.png'),
       useAsset('projects/KurtarSaha/Screenshot_1782488288.png'),
       useAsset('projects/KurtarSaha/Screenshot_1782488294.png'),
