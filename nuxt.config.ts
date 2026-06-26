@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
   app: {
-    baseURL: '/mymyportfolio/',
+    baseURL: '/myportfolio/',
     buildAssetsDir: 'assets',
     head: {
       title: 'Anas AL-MAQTARI — Flutter Developer',
