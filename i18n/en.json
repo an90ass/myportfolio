@@ -115,7 +115,11 @@
     "p7": { "title": "LenDeX — Smart Lending UI", "description": "A high-fidelity Flutter UI kit for personal budgeting and micro-lending app designs. Featuring pixel-perfect layouts, responsive dashboard components, interactive charts, and smooth animation transitions.", "category": "Flutter • UI/UX" },
     "p8": { "title": "AI Financial — Visually Impaired (Thesis)", "description": "Undergraduate graduation thesis awarded with Honours. A YOLOv5-powered mobile app providing real-time money recognition and full financial management for visually impaired users, backed by Firebase and intelligent accessibility design.", "category": "Flutter • AI • Accessibility" },
     "p9": { "title": "NetGuard — LAN Security Analyzer", "description": "A Flutter app for non-intrusive LAN network analysis and connected device discovery. Uses an Evidence Scoring engine that combines open ports, response time, and MAC address data to classify devices by risk level. Built with Clean Architecture, MVVM (Provider), and Dart Isolates for parallel scanning without blocking the UI.", "category": "Flutter • Security • Networking" }
-  },
+, "syncledger": {
+  "title": "SyncLedger",
+  "category": "Mobile App",
+  "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
+} },
   "services": {
     "sectionLabel": "services",
     "title": "What I Do",
@@ -172,10 +176,6 @@
     "quickLinks": "Quick Links",
     "builtWith": "Built With",
     "copyright": "Crafted with"
-  },
-  "syncledger": {
-  "title": "SyncLedger",
-  "category": "Mobile App",
-  "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
-}
+  }
+  
 }

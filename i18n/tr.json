@@ -115,7 +115,11 @@
     "p7": { "title": "LenDeX — Akıllı Finans UI Tasarımı", "description": "Kişisel bütçeleme ve mikro kredi uygulamaları için yüksek kalitede Flutter kullanıcı arayüzü tasarımı. Piksel hassasiyetinde düzenler, duyarlı kontrol paneli bileşenleri, etkileşimli grafikler ve pürüzsüz animasyon geçişleri içerir.", "category": "Flutter • UI/UX" },
     "p8": { "title": "Yapay Zeka Finansal — Görme Engelliler (Tez)", "description": "Lisans mezuniyet tezi Onur Derecesi ile ödüllendirildi. Görme engelli kullanıcılar için gerçek zamanlı para tanıma ve tam finansal yönetim sağlayan, Firebase ve akıllı erişilebilirlik tasarımı ile desteklenen YOLOv5 tabanlı bir mobil uygulama.", "category": "Flutter • Yapay Zeka • Erişilebilirlik" },
     "p9": { "title": "NetGuard — LAN Ağ Güvenlik Analizörü", "description": "Yerel ağlarda (LAN) cihaz keşfi ve güvenlik analizi için Flutter uygulaması. Açık portlar, yanıt süresi ve MAC adresi verilerini birleştiren Evidence Scoring motoru ile cihazları risk seviyesine göre sınıflandırır. Clean Architecture, MVVM (Provider) ve paralel tarama için Dart Isolates kullanılarak geliştirildi.", "category": "Flutter • Güvenlik • Ağ" }
-  },
+ , "syncledger": {
+  "title": "SyncLedger",
+  "category": "Mobil Uygulama",
+  "description": "Küçük işletmelerin fatura, ürün ve mağaza ayarlarını yönetmesi ve Bluetooth termal yazıcıyla baskı alması için Flutter uygulaması."
+}},
   "services": {
     "sectionLabel": "hizmetler",
     "title": "Neler Yapıyorum",
@@ -172,10 +176,5 @@
     "quickLinks": "Hızlı Bağlantılar",
     "builtWith": "İle İnşa Edildi",
     "copyright": "Tasarım ve geliştirme"
-  },
-  "syncledger": {
-  "title": "SyncLedger",
-  "category": "Mobil Uygulama",
-  "description": "Küçük işletmelerin fatura, ürün ve mağaza ayarlarını yönetmesi ve Bluetooth termal yazıcıyla baskı alması için Flutter uygulaması."
-}
+  }
 }
