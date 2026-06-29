@@ -119,6 +119,10 @@
   "title": "SyncLedger",
   "category": "Mobile App",
   "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
+},"pharma": {
+  "title": "Pharma",
+  "description": "A full-featured pharmacy management system covering inventory, purchase orders, POS, batch tracking, invoicing, and analytics reports.",
+  "category": "Mobile App"
 } },
   "services": {
     "sectionLabel": "services",

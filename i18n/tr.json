@@ -119,6 +119,10 @@
   "title": "SyncLedger",
   "category": "Mobil Uygulama",
   "description": "Küçük işletmelerin fatura, ürün ve mağaza ayarlarını yönetmesi ve Bluetooth termal yazıcıyla baskı alması için Flutter uygulaması."
+},"pharma": {
+  "title": "Pharma",
+  "description": "Envanter yönetimi, satın alma siparişleri, POS, parti takibi, faturalama ve analitik raporları kapsayan eksiksiz bir eczane yönetim sistemi.",
+  "category": "Mobil Uygulama"
 }},
   "services": {
     "sectionLabel": "hizmetler",
