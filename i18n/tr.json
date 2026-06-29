@@ -121,7 +121,7 @@
   "description": "Küçük işletmelerin fatura, ürün ve mağaza ayarlarını yönetmesi ve Bluetooth termal yazıcıyla baskı alması için Flutter uygulaması."
 },"pharma": {
   "title": "Pharma",
-  "description": "Envanter yönetimi, satın alma siparişleri, POS, parti takibi, faturalama ve analitik raporları kapsayan eksiksiz bir eczane yönetim sistemi.",
+  "description": "Flutter ve Firebase ile geliştirilmiş kapsamlı bir eczane yönetim sistemi. Rol tabanlı kimlik doğrulama (Admin/Yönetici/Kasiyer), gerçek zamanlı KPI dashboard, barkod ve sesli arama ile ilaç yönetimi, FIFO toplu envanter takibi, satın alma siparişleri, sepet/vergi/indirim destekli POS, PDF fatura oluşturma, grafikli günlük/haftalık/aylık kâr raporları, müşteri ve tedarikçi yönetimi, son kullanma tarihi ve düşük stok bildirimleri, Excel/PDF dışa aktarma, yapay zeka ilaç önerileri, karanlık mod, çok mağaza desteği ve Firebase yedekleme içermektedir.",
   "category": "Mobil Uygulama"
 }},
   "services": {

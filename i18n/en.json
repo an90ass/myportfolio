@@ -121,9 +121,9 @@
   "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
 },"pharma": {
   "title": "Pharma",
-  "description": "A full-featured pharmacy management system covering inventory, purchase orders, POS, batch tracking, invoicing, and analytics reports.",
+  "description": "A full-featured pharmacy management system built with Flutter and Firebase. Features role-based authentication (Admin/Manager/Cashier), real-time dashboard KPIs, medicine CRUD with barcode & voice search, batch/FIFO inventory tracking, purchase orders, POS with cart/tax/discount, PDF invoice generation, daily/weekly/monthly profit reports with charts, customer & supplier management, push notifications for expiry and low stock, Excel/PDF export, AI medicine recommendations, dark mode, multi-store support, and Firebase backup & restore.",
   "category": "Mobile App"
-} },
+}},
   "services": {
     "sectionLabel": "services",
     "title": "What I Do",
