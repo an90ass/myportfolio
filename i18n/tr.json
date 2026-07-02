@@ -60,8 +60,8 @@
     "factCompanies": "Şirket",
     "factTechs": "Teknoloji",
     "job1": {
-      "role": "Flutter Geliştirici",
-      "company": "TÜBİTAK 1001 Projesi – KURTAR Platformu",
+      "role": "Mobil Uygulama Geliştiricisi",
+      "company": "TÜBİTAK 1001 Projesi – Yarı zamanlı / Uzaktan araştırma rolü, aşağıdaki endüstri rolleriyle birlikte",
       "period": "Mart 2025 — Günümüz",
       "location": "Türkiye",
       "r1": "Clean Architecture ve Provider ile çapraz platform Flutter uygulamasını tasarladı",
@@ -99,7 +99,17 @@
       "school": "Yapay Zeka ve Teknoloji Akademisi",
       "period": "2024 — 2025",
       "note": "1 yıllık burs — Makine öğrenimi, bilgisayarla görü ve yapay zeka destekli mobil geliştirme."
-    }
+    },
+     "job3": {
+    "role": "Yazılım Mühendisi",
+    "company": "Malahi",
+    "period": "Eki 2025 – Haz 2026",
+    "location": "Riyad, Suudi Arabistan — Uzaktan",
+    "r1": "150'den fazla akıllı satış makinesi için uçtan uca bir ekosistem geliştirmek üzere mühendislik ekibiyle çalıştım; saha operasyonları için Kotlin tabanlı mobil arayüzler geliştirdim ve bunları gerçek zamanlı telemetri için .NET/SignalR arka ucuyla entegre ettim.",
+    "r2": "BLE ve NFC protokollerini kullanan güvenli, düşük gecikmeli \"Yakındaki\" ödeme ağ geçitlerinin geliştirilmesine katkıda bulundum; işlem bütünlüğü için uçtan uca şifreleme (E2EE) ve PCI uyumlu güvenlik sağlanmasına yardımcı oldum.",
+    "r3": "Büyük ölçekli harita görselleştirmesi için saniyede yüzlerce konum güncellemesini işleyen veri alım hatlarını optimize ederek, gerçek zamanlı coğrafi takip özelliğine sahip yüksek eşzamanlılıklı bir kontrol paneli geliştirdim.",
+    "r4": "Dinamik bir ödül sistemi, envanter analitiği ve otomatik bakım uyarılarını içeren otomatik filo yönetim paketi uyguladım; bu sayede kesinti süresi ve operasyonel yük önemli ölçüde azaldı."
+  }
   },
   "projects": {
     "sectionLabel": "projeler",
@@ -123,7 +133,36 @@
   "title": "Pharma",
   "description": "Flutter ve Firebase ile geliştirilmiş kapsamlı bir eczane yönetim sistemi. Rol tabanlı kimlik doğrulama (Admin/Yönetici/Kasiyer), gerçek zamanlı KPI dashboard, barkod ve sesli arama ile ilaç yönetimi, FIFO toplu envanter takibi, satın alma siparişleri, sepet/vergi/indirim destekli POS, PDF fatura oluşturma, grafikli günlük/haftalık/aylık kâr raporları, müşteri ve tedarikçi yönetimi, son kullanma tarihi ve düşük stok bildirimleri, Excel/PDF dışa aktarma, yapay zeka ilaç önerileri, karanlık mod, çok mağaza desteği ve Firebase yedekleme içermektedir.",
   "category": "Mobil Uygulama"
-}},
+},
+
+  "webSectionLabel": "web",
+  "webTitle": "Web Panelleri ve Yönetim Platformları",
+  "web1": {
+    "title": "Kurtar Komuta Paneli",
+    "category": "Komuta Merkezi",
+    "description": "KURTAR mobil uygulaması için canlı komuta merkezi, rol bazlı erişim ile: gerçek zamanlı deprem/olay haritalama, kurtarma ekipleri için en kısa güvenli rota yönlendirmesi, saha müdahale ekibi takibi ve kaynak, olay ile uyarı yönetimi."
+  },
+  "web2": {
+    "title": "DigiVis Kurumsal Paneli",
+    "category": "Yönetim Paneli",
+    "description": "Her ortak şirkete kendi kapsamına özel, rol bazlı erişim sağlayan çok kiracılı yönetim paneli; kullanıcı yönetimi ve KYC sürecinin takibi — talep durumu, onay geçmişi ve uyumluluk için denetim kayıtları."
+  },
+  "web3": {
+    "title": "Malahi Otomat Filo Paneli",
+    "category": "Filo İzleme",
+    "description": "150'den fazla otomat üzerinde rol bazlı filo izleme: gerçek zamanlı cihaz/ödeme telemetrisi, otomatik düşük stok ve bakım uyarıları, makine bazında satış ve envanter analitiği."
+  },
+  "web4": {
+    "title": "TurVia Partner Paneli",
+    "category": "Operatör Konsolu",
+    "description": "TurVia tur yönetim sistemi için rol bazlı, operatöre yönelik web konsolu: rezervasyon ve tur programı yönetimi, uygulama içi ödeme mutabakatı ve gerçek zamanlı operasyonel iş akışı takibi."
+  },
+  "web5": {
+    "title": "Fatura Yönetimi Uygulaması",
+    "category": "Faturalandırma Platformu",
+    "description": "Müşteri hesaplarını yönetmek, bekleyen bakiyeleri takip etmek ve fatura oluşturmak için borç tahsilat ve faturalandırma platformu."
+  }
+},
   "services": {
     "sectionLabel": "hizmetler",
     "title": "Neler Yapıyorum",

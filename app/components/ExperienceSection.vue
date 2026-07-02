@@ -16,7 +16,7 @@
         <div class="space-y-6">
           <div
             v-for="(job, i) in experience"
-            :key="job.company"
+            :key="job.company + job.period"
             v-motion
             :initial="{ opacity: 0, x: -20 }"
             :visible="{ opacity: 1, x: 0, transition: { duration: 400, delay: i * 100 } }"
@@ -91,6 +91,19 @@ const { t } = useI18n()
 
 const experience = computed(() => [
   {
+    role: t('experience.job3.role'),
+    company: t('experience.job3.company'),
+    period: t('experience.job3.period'),
+    location: t('experience.job3.location'),
+    responsibilities: [
+      t('experience.job3.r1'),
+      t('experience.job3.r2'),
+      t('experience.job3.r3'),
+      t('experience.job3.r4'),
+    ],
+    techs: ['Kotlin', '.NET', 'SignalR', 'BLE', 'NFC', 'E2EE', 'Real-time Dashboards'],
+  },
+  {
     role: t('experience.job1.role'),
     company: t('experience.job1.company'),
     period: t('experience.job1.period'),
@@ -145,8 +158,7 @@ const education = computed(() => [
 const facts = computed(() => [
   { value: '2+',  label: t('experience.factYears') },
   { value: '10+', label: t('experience.factProjects') },
-  { value: '2',   label: t('experience.factCompanies') },
+  { value: '3',   label: t('experience.factCompanies') },
   { value: '30+', label: t('experience.factTechs') },
 ])
 </script>
-
