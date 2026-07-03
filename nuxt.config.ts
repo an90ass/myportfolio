@@ -1,6 +1,3 @@
-import en from './i18n/en.json'
-import ar from './i18n/ar.json'
-import tr from './i18n/tr.json'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
@@ -21,7 +18,12 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     strategy: 'no_prefix',
     detectBrowserLanguage: false,
-    locales: ['en', 'ar', 'tr'],
+    lazy: false,
+    locales: [
+      { code: 'en', language: 'en-US' },
+      { code: 'ar', language: 'ar-YE', dir: 'rtl' },
+      { code: 'tr', language: 'tr-TR' },
+    ],
     bundle: {
       fullInstall: true,
     },
@@ -36,9 +38,9 @@ export default defineNuxtConfig({
     baseURL: '/myportfolio/',
     buildAssetsDir: 'assets',
     head: {
-      title: 'Anas AL-MAQTARI — Flutter Developer',
+      title: 'Anas AL-MAQTARI — Software Engineer',
       meta: [
-        { name: 'description', content: 'Flutter Developer specializing in AI-powered mobile apps, IoT systems, and clean architecture. Based in Kocaeli, Türkiye.' },
+        { name: 'description', content: 'Software Engineer specializing in mobile, backend & web — Flutter, Python, .NET, Angular, Vue.js. Based in Kocaeli, Türkiye.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#0a0f1a' },
       ],

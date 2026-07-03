@@ -5,9 +5,10 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 space-y-6">
       <HeroSection />
       <AboutSection />
+          <TechStack />
       <ServicesSection />
       <ProjectGrid />
-      <TechStack />
+  
       <ExperienceSection />
       <ContactSection />
     </div>

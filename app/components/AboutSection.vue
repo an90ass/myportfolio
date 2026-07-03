@@ -64,31 +64,40 @@ import { computed } from 'vue'
 
 const { t, tm, rt } = useI18n()
 
-// Keep highlights in description
 const p1Formatted = computed(() => {
   const text = t('about.p1')
   return text
     .replace('2+ years', '<strong class="text-text-primary">2+ years</strong>')
     .replace('سنتين', '<strong class="text-text-primary">سنتين</strong>')
-    .replace('2+ yıl', '<strong class="text-text-primary">2+ yıl</strong>')
+    .replace('2+ yıllık', '<strong class="text-text-primary">2+ yıllık</strong>')
+    .replace('mobile (Flutter)', '<strong class="text-text-primary">mobile (Flutter)</strong>')
+    .replace('موبايل (Flutter)', '<strong class="text-text-primary">موبايل (Flutter)</strong>')
+    .replace('mobil (Flutter)', '<strong class="text-text-primary">mobil (Flutter)</strong>')
+    .replace('backend (Python, .NET)', '<strong class="text-text-primary">backend (Python, .NET)</strong>')
+    .replace('الخلفية (Python, .NET)', '<strong class="text-text-primary">الخلفية (Python, .NET)</strong>')
+    .replace('arka uç (Python, .NET)', '<strong class="text-text-primary">arka uç (Python, .NET)</strong>')
 })
 
 const p2Formatted = computed(() => {
   const text = t('about.p2')
   return text
-    .replace('Clean Architecture', '<strong class="text-text-primary">Clean Architecture</strong>')
-    .replace('Python', '<strong class="text-text-primary">Python</strong>')
-    .replace('robust, maintainable', '<strong class="text-text-primary">robust, maintainable</strong>')
-    .replace('متينة وسهلة الصيانة', '<strong class="text-text-primary">متينة وسهلة الصيانة</strong>')
-    .replace('güçlü ve sürdürülebilir', '<strong class="text-text-primary">güçlü ve sürdürülebilir</strong>')
+    .replace('architecting scalable systems', '<strong class="text-text-primary">architecting scalable systems</strong>')
+    .replace('هندسة الأنظمة القابلة للتوسع', '<strong class="text-text-primary">هندسة الأنظمة القابلة للتوسع</strong>')
+    .replace('Ölçeklenebilir sistemler', '<strong class="text-text-primary">Ölçeklenebilir sistemler</strong>')
+    .replace('end-to-end solutions', '<strong class="text-text-primary">end-to-end solutions</strong>')
+    .replace('الحلول المتكاملة', '<strong class="text-text-primary">الحلول المتكاملة</strong>')
+    .replace('uçtan uca çözümler', '<strong class="text-text-primary">uçtan uca çözümler</strong>')
 })
 
 const p3Formatted = computed(() => {
   const text = t('about.p3')
   return text
-    .replace('high-quality mobile solutions', '<strong class="text-text-primary">high-quality mobile solutions</strong>')
-    .replace('عالية الجودة', '<strong class="text-text-primary">عالية الجودة</strong>')
-    .replace('yüksek kaliteli mobil çözümler', '<strong class="text-text-primary">yüksek kaliteli mobil çözümler</strong>')
+    .replace('M.Sc. in Software Engineering', '<strong class="text-text-primary">M.Sc. in Software Engineering</strong>')
+    .replace('الماجستير (M.Sc.) في هندسة البرمجيات', '<strong class="text-text-primary">الماجستير (M.Sc.) في هندسة البرمجيات</strong>')
+    .replace('Yazılım Mühendisliği alanında yüksek lisans (M.Sc.)', '<strong class="text-text-primary">Yazılım Mühendisliği alanında yüksek lisans (M.Sc.)</strong>')
+    .replace('advanced architectural research', '<strong class="text-text-primary">advanced architectural research</strong>')
+    .replace('الأبحاث المعمارية المتقدمة', '<strong class="text-text-primary">الأبحاث المعمارية المتقدمة</strong>')
+    .replace('gelişmiş mimari araştırmalardan', '<strong class="text-text-primary">gelişmiş mimari araştırmalardan</strong>')
 })
 
 const traits = computed(() => {

@@ -65,7 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import { Smartphone, Server, Database, Cloud, Cpu } from 'lucide-vue-next'
+import { Smartphone, Server, Database, Globe } from 'lucide-vue-next'
 import { computed } from 'vue'
 
 const { t } = useI18n()
@@ -77,49 +77,49 @@ const row1 = [
   { name: 'FastAPI',      emoji: '⚡' },
   { name: 'Flask',        emoji: '🌶️' },
   { name: 'Django',       emoji: '🎸' },
+  { name: 'TypeScript',   emoji: '🔷' },
+  { name: 'Angular',      emoji: '🔴' },
+  { name: 'Vue.js',       emoji: '💚' },
+  { name: 'Nuxt.js',      emoji: '🟢' },
+  { name: '.NET / C#',    emoji: '💜' },
   { name: 'Firebase',     emoji: '🔥' },
-  { name: 'PostgreSQL',   emoji: '🐘' },
-  { name: 'SQLite',       emoji: '💾' },
-  { name: 'Google Maps',  emoji: '🗺️' },
-  { name: 'BLoC',         emoji: '🧩' },
-  { name: 'Provider',     emoji: '📦' },
 ]
 
 const row2 = [
-  { name: 'YOLOv5',        emoji: '👁️' },
-  { name: 'TensorFlow',    emoji: '🤖' },
-  { name: 'OpenCV',        emoji: '📸' },
-  { name: 'FCM',           emoji: '🔔' },
-  { name: 'Hive',          emoji: '🍯' },
-  { name: 'Dio',           emoji: '🌐' },
-  { name: 'Git',           emoji: '🔀' },
-  { name: 'Docker',        emoji: '🐳' },
+  { name: 'PostgreSQL',    emoji: '🐘' },
+  { name: 'MS SQL Server', emoji: '🗄️' },
   { name: 'MySQL',         emoji: '🛢️' },
-  { name: 'NFC',           emoji: '📡' },
+  { name: 'SQLite',        emoji: '💾' },
+  { name: 'BLoC',          emoji: '🧩' },
   { name: 'Riverpod',      emoji: '💧' },
-  { name: 'Stripe',        emoji: '💳' },
+  { name: 'BLE & NFC',     emoji: '📡' },
+  { name: 'WebSocket',     emoji: '🔁' },
+  { name: 'GCP',           emoji: '☁️' },
+  { name: 'Nginx',         emoji: '🌐' },
+  { name: 'Git',           emoji: '🔀' },
+  { name: 'Postman',       emoji: '🚀' },
 ]
 
 const categories = computed(() => [
   {
     label: t('tech.mobile'),
     icon: Smartphone,
-    techs: ['Flutter', 'Dart', 'BLoC', 'Provider', 'Riverpod', 'Hive', 'Dio', 'FCM', 'NFC'],
+    techs: ['Flutter', 'Dart', 'BLoC', 'Cubit', 'Provider', 'Riverpod', 'BLE & NFC', 'SDK Dev'],
   },
   {
-    label: t('tech.ai_iot'),
-    icon: Cpu,
-    techs: ['YOLOv5', 'TensorFlow', 'OpenCV', 'Python', 'IoT Sensors', 'GPS', 'Bluetooth'],
+    label: t('tech.web'),
+    icon: Globe,
+    techs: ['TypeScript', 'JavaScript', 'Angular', 'Vue.js', 'Nuxt.js', 'HTML5', 'CSS3'],
   },
   {
     label: t('tech.backend'),
     icon: Server,
-    techs: ['FastAPI', 'Flask', 'Django', 'REST API', 'Firebase', 'JWT', 'Redis'],
+    techs: ['FastAPI', 'Django', 'Flask', '.NET / C#', 'REST API', 'WebSocket', 'OAuth / JWT'],
   },
   {
     label: t('tech.database'),
     icon: Database,
-    techs: ['PostgreSQL', 'MySQL', 'SQLite', 'Firebase', 'Docker', 'Git', 'Google Maps API'],
+    techs: ['PostgreSQL', 'MS SQL Server', 'MySQL', 'SQLite', 'Firebase', 'GCP', 'Railway', 'Nginx'],
   },
 ])
 </script>

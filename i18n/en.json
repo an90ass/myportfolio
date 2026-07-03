@@ -11,8 +11,8 @@
   "hero": {
     "available": "Available for work",
     "greeting": "Hello, I'm",
-    "role": "Flutter Developer",
-    "description": "Dedicated Flutter Developer with 2+ years of experience building scalable, high-performance mobile applications. Focused on Clean Architecture, solid application logic, and delivering real value through quality mobile solutions.",
+    "role": "Software Engineer",
+    "description": "Full-stack Software Engineer (2+ years) dedicated to architecting high-performance mobile and web systems, clean architecture, and real-time telemetry. ",
     "getInTouch": "Get in touch",
     "viewProjects": "Projects",
     "downloadCV": "Download CV",
@@ -21,7 +21,7 @@
     "statusLabel": "Status",
     "status": "Open to work",
     "specialtyLabel": "Specialty",
-    "specialty": "Flutter & AI & IoT",
+    "specialty": "Mobile · Backend · Web",
     "remoteLabel": "Work Mode",
     "remote": "Remote / On-site",
     "experienceLabel": "Experience",
@@ -32,9 +32,9 @@
   "about": {
     "sectionLabel": "about_me",
     "title": "About Me",
-    "p1": "Dedicated Flutter Developer with 2+ years of experience in building scalable, high-performance mobile applications.",
-    "p2": "Backed by a strong foundation in Python for backend development, I specialize in implementing Clean Architecture principles to create robust, maintainable systems. I am proficient in designing fluid, user-centric interfaces and developing solid application logic.",
-    "p3": "My focus is on delivering high-quality mobile solutions that meet user needs, generate real value, and drive tangible impact.",
+    "p1": "Software Engineer with 2+ years of experience in building and shipping production-grade mobile (Flutter) and backend (Python, .NET) applications.",
+    "p2": "Passionate about architecting scalable systems and end-to-end solutions.",
+    "p3": "Currently pursuing an M.Sc. in Software Engineering, where I leverage advanced architectural research and software methodologies to deliver high-performance, robust industrial applications.",
     "summaryTitle": "Summary",
     "interestsTitle": "Interests",
     "experienceLabel": "Experience",
@@ -47,8 +47,8 @@
     "statusValue": "Available",
     "remoteLabel": "Work Mode",
     "remoteValue": "✓ Remote & On-site",
-    "traits": ["Clean Architecture", "AI Integration", "IoT Systems", "Cross-Platform", "Fast Delivery", "Problem Solving"],
-    "interests": ["Flutter", "AI/ML", "IoT", "Mobile Apps", "Backend APIs", "Open Source"]
+    "traits": ["Clean Architecture", "Full-Stack", "Real-Time Systems", "IoT & BLE/NFC", "API Design", "SOLID Principles"],
+    "interests": ["Flutter", "Python/FastAPI", ".NET/C#", "Vue.js", "Angular", "PostgreSQL", "GCP", "Open Source"]
   },
   "experience": {
     "sectionLabel": "experience",
@@ -124,74 +124,73 @@
     "p6": { "title": "Vakit — Smart Prayer Times App", "description": "A multilingual Islamic prayer times app with GPS-based & manual city selection, 3 saved cities, timely local notifications, customizable reminders, and RTL-aware UI available in Turkish, English, and Arabic.", "category": "Flutter • Islamic" },
     "p7": { "title": "LenDeX — Smart Lending UI", "description": "A high-fidelity Flutter UI kit for personal budgeting and micro-lending app designs. Featuring pixel-perfect layouts, responsive dashboard components, interactive charts, and smooth animation transitions.", "category": "Flutter • UI/UX" },
     "p8": { "title": "AI Financial — Visually Impaired (Thesis)", "description": "Undergraduate graduation thesis awarded with Honours. A YOLOv5-powered mobile app providing real-time money recognition and full financial management for visually impaired users, backed by Firebase and intelligent accessibility design.", "category": "Flutter • AI • Accessibility" },
-    "p9": { "title": "NetGuard — LAN Security Analyzer", "description": "A Flutter app for non-intrusive LAN network analysis and connected device discovery. Uses an Evidence Scoring engine that combines open ports, response time, and MAC address data to classify devices by risk level. Built with Clean Architecture, MVVM (Provider), and Dart Isolates for parallel scanning without blocking the UI.", "category": "Flutter • Security • Networking" }
-, "syncledger": {
-  "title": "SyncLedger",
-  "category": "Mobile App",
-  "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
-},"pharma": {
-  "title": "Pharma",
-  "description": "A full-featured pharmacy management system built with Flutter and Firebase. Features role-based authentication (Admin/Manager/Cashier), real-time dashboard KPIs, medicine CRUD with barcode & voice search, batch/FIFO inventory tracking, purchase orders, POS with cart/tax/discount, PDF invoice generation, daily/weekly/monthly profit reports with charts, customer & supplier management, push notifications for expiry and low stock, Excel/PDF export, AI medicine recommendations, dark mode, multi-store support, and Firebase backup & restore.",
-  "category": "Mobile App"
-},
-
-
-  "webSectionLabel": "web",
-  "webTitle": "Web Dashboards & Admin Platforms",
-  "web1": {
-    "title": "Kurtar Command Dashboard",
-    "category": "Command Center",
-    "description": "Live command center for the KURTAR mobile app with role-based access: real-time earthquake/incident mapping, shortest-safe-path routing for rescue teams, field-responder tracking, and resource, incident, and alert management."
+    "p9": { "title": "NetGuard — LAN Security Analyzer", "description": "A Flutter app for non-intrusive LAN network analysis and connected device discovery. Uses an Evidence Scoring engine that combines open ports, response time, and MAC address data to classify devices by risk level. Built with Clean Architecture, MVVM (Provider), and Dart Isolates for parallel scanning without blocking the UI.", "category": "Flutter • Security • Networking" },
+    "syncledger": {
+      "title": "SyncLedger",
+      "category": "Mobile App",
+      "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
+    },
+    "pharma": {
+      "title": "Pharma",
+      "description": "A full-featured pharmacy management system built with Flutter and Firebase. Features role-based authentication (Admin/Manager/Cashier), real-time dashboard KPIs, medicine CRUD with barcode & voice search, batch/FIFO inventory tracking, purchase orders, POS with cart/tax/discount, PDF invoice generation, daily/weekly/monthly profit reports with charts, customer & supplier management, push notifications for expiry and low stock, Excel/PDF export, AI medicine recommendations, dark mode, multi-store support, and Firebase backup & restore.",
+      "category": "Mobile App"
+    },
+    "webSectionLabel": "web",
+    "webTitle": "Web Dashboards & Admin Platforms",
+    "web1": {
+      "title": "Kurtar Command Dashboard",
+      "category": "Command Center",
+      "description": "Live command center for the KURTAR mobile app with role-based access: real-time earthquake/incident mapping, shortest-safe-path routing for rescue teams, field-responder tracking, and resource, incident, and alert management."
+    },
+    "web2": {
+      "title": "DigiVis Enterprise Dashboard",
+      "category": "Admin Panel",
+      "description": "Multi-tenant admin panel giving each partner company its own scoped, role-based access to manage users and track its KYC pipeline — request status, approval history, and audit logs for compliance."
+    },
+    "web3": {
+      "title": "Malahi Vending Machine Fleet Dashboard",
+      "category": "Fleet Monitoring",
+      "description": "Role-based fleet monitoring across 150+ vending machines: real-time machine/payment telemetry, automated low-stock and maintenance alerts, and per-machine sales/inventory analytics."
+    },
+    "web4": {
+      "title": "TurVia Partner Dashboard",
+      "category": "Operator Console",
+      "description": "Role-based, operator-facing web console for the TurVia tour management system: booking and itinerary management, in-app payment reconciliation, and real-time operational workflow tracking."
+    },
+    "web5": {
+      "title": "Invoice Management App",
+      "category": "Invoicing Platform",
+      "description": "Debt collection and invoicing platform for managing customer accounts, tracking outstanding balances, and generating invoices."
+    }
   },
-  "web2": {
-    "title": "DigiVis Enterprise Dashboard",
-    "category": "Admin Panel",
-    "description": "Multi-tenant admin panel giving each partner company its own scoped, role-based access to manage users and track its KYC pipeline — request status, approval history, and audit logs for compliance."
-  },
-  "web3": {
-    "title": "Malahi Vending Machine Fleet Dashboard",
-    "category": "Fleet Monitoring",
-    "description": "Role-based fleet monitoring across 150+ vending machines: real-time machine/payment telemetry, automated low-stock and maintenance alerts, and per-machine sales/inventory analytics."
-  },
-  "web4": {
-    "title": "TurVia Partner Dashboard",
-    "category": "Operator Console",
-    "description": "Role-based, operator-facing web console for the TurVia tour management system: booking and itinerary management, in-app payment reconciliation, and real-time operational workflow tracking."
-  },
-  "web5": {
-    "title": "Invoice Management App",
-    "category": "Invoicing Platform",
-    "description": "Debt collection and invoicing platform for managing customer accounts, tracking outstanding balances, and generating invoices."
-  }
-},
   "services": {
     "sectionLabel": "services",
     "title": "What I Do",
-    "subtitle": "Freelance, remote & on-site — end-to-end solutions",
+    "subtitle": "Freelance, remote & on-site — end-to-end engineering",
     "s1": {
-      "title": "Flutter Mobile Development",
-      "description": "Advanced cross-platform iOS & Android apps with Flutter. Clean Architecture, real-time data, beautiful UIs.",
-      "i1": "Flutter / Dart — Clean Architecture", "i2": "BLoC & Provider state management", "i3": "Google Maps, GPS & IoT sensors", "i4": "FCM push notifications & deep links", "i5": "Offline-first with Hive / SQLite", "i6": "Multi-language (EN/TR/AR) + RTL support"
+      "title": "Mobile Development",
+      "description": "Production-grade iOS & Android apps with Flutter — Clean Architecture, real-time data pipelines, BLE/NFC hardware integration, and SDK development.",
+      "i1": "Flutter — BLoC, Cubit, Provider, Riverpod", "i2": "Clean Architecture & SDK Development", "i3": "Device sensors: GPS, Accelerometer, Gyroscope", "i4": "BLE & NFC hardware integration", "i5": "E2EE, RBAC & App Store publishing", "i6": "Multi-language (EN/TR/AR) + RTL support"
     },
     "s2": {
-      "title": "AI & IoT Integration",
-      "description": "Intelligent mobile systems powered by machine learning and IoT device integration for real-world impact.",
-      "i1": "YOLOv5 & TensorFlow object detection", "i2": "Computer vision & face recognition", "i3": "NFC / MRZ document scanning", "i4": "Sensor integration (accelerometer, gyroscope)", "i5": "Background services & BLE communication", "i6": "Real-time data processing & export (CSV/Excel)"
+      "title": "Backend & API Engineering",
+      "description": "Scalable REST & WebSocket backends with Python and .NET — real-time streaming, OAuth security, and cloud deployments.",
+      "i1": "Python: FastAPI, Django, Flask", "i2": ".NET Framework (C#) & RESTful API Design", "i3": "WebSocket & Real-Time Data Streaming", "i4": "OAuth / Token-Based Authentication", "i5": "PostgreSQL, MS SQL Server, MySQL, Firebase", "i6": "GCP, Railway, Render, Nginx & Ngrok"
     },
     "s3": {
-      "title": "Backend API Development",
-      "description": "Scalable, high-performance backend APIs and databases that power mobile and web applications.",
-      "i1": "FastAPI / Flask / Django REST APIs", "i2": "PostgreSQL, MySQL & SQLite", "i3": "Firebase Auth & Firestore", "i4": "Redis caching & performance tuning", "i5": "JWT authentication & role-based access", "i6": "Docker containerization & deployment"
+      "title": "Web & Frontend Development",
+      "description": "Responsive admin dashboards and frontend platforms with Angular, Vue.js/Nuxt.js, and modern TypeScript.",
+      "i1": "TypeScript & JavaScript (Angular, Vue.js)", "i2": "Nuxt.js — SSR & SSG web apps", "i3": "Responsive Admin Dashboards", "i4": "HTML5, CSS3 & UI/UX best practices", "i5": "Real-time dashboards with WebSocket", "i6": "Git, GitHub, GitLab, Postman & Figma"
     }
   },
   "tech": {
     "sectionLabel": "tech_stack",
     "title": "Technologies & Tools",
-    "subtitle": "What I work with every day",
+    "subtitle": "Full-stack engineering across mobile, backend & web",
     "mobile": "Mobile",
-    "ai_iot": "AI & IoT",
-    "backend": "Backend",
-    "database": "Database & DevOps"
+    "web": "Web & Frontend",
+    "backend": "Backend & API",
+    "database": "Database & Cloud"
   },
   "contact": {
     "sectionLabel": "contact",
@@ -216,10 +215,9 @@
     "error": "Something went wrong. Please try emailing me directly."
   },
   "footer": {
-    "brand": "Flutter Developer specializing in AI-powered mobile apps & IoT systems. Available for freelance, remote, and on-site work.",
+    "brand": "Software Engineer specializing in mobile, backend & web — Flutter, Python, .NET, Angular, Vue.js. Available for freelance, remote, and on-site work.",
     "quickLinks": "Quick Links",
     "builtWith": "Built With",
     "copyright": "Crafted with"
   }
-  
 }

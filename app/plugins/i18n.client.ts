@@ -1,12 +1,5 @@
-import en from '../../i18n/en.json'
-import ar from '../../i18n/ar.json'
-import tr from '../../i18n/tr.json'
-
-export default defineNuxtPlugin((nuxtApp) => {
-  const i18n = nuxtApp.$i18n as any
-  if (i18n?.setLocaleMessage) {
-    i18n.setLocaleMessage('en', en)
-    i18n.setLocaleMessage('ar', ar)
-    i18n.setLocaleMessage('tr', tr)
-  }
+// Messages are now embedded directly in nuxt.config.ts locale definitions
+// to ensure SSR renders translations on first load without hydration flash.
+export default defineNuxtPlugin(() => {
+  // no-op: kept for file structure, messages loaded via nuxt.config locales
 })

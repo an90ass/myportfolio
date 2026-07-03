@@ -11,8 +11,8 @@
   "hero": {
     "available": "Çalışmak için müsaitim",
     "greeting": "Merhaba, ben",
-    "role": "Flutter Geliştirici",
-    "description": "2+ yıllık deneyimiyle ölçeklenebilir, yüksek performanslı mobil uygulamalar geliştiren Flutter Geliştirici. Clean Architecture ve sağlam uygulama mimarisine odaklanarak gerçek değer yaratan çözümler üretiyor.",
+    "role": "Yazılım Mühendisi",
+    "description": "Yüksek performanslı mobil ve web sistemleri, temiz mimari ve gerçek zamanlı veri akışı tasarlamaya odaklanmış (2+ yıl) Yazılım Mühendisi. ",
     "getInTouch": "İletişime geç",
     "viewProjects": "Projeler",
     "downloadCV": "CV İndir",
@@ -21,7 +21,7 @@
     "statusLabel": "Durum",
     "status": "Çalışmaya hazır",
     "specialtyLabel": "Uzmanlık",
-    "specialty": "Flutter & AI & IoT",
+    "specialty": "Mobil · Backend · Web",
     "remoteLabel": "Çalışma Şekli",
     "remote": "Uzaktan / Yerinde",
     "experienceLabel": "Deneyim",
@@ -32,9 +32,9 @@
   "about": {
     "sectionLabel": "hakkimda",
     "title": "Hakkımda",
-    "p1": "2+ yıllık deneyimiyle ölçeklenebilir, yüksek performanslı mobil uygulamalar geliştiren Flutter Geliştirici.",
-    "p2": "Python ile güçlü bir backend temeline sahip olarak, Clean Architecture ilkelerini uygulayarak sürdürülebilir ve bakımı kolay sistemler inşa ediyorum. Akıcı, kullanıcı odaklı arayüzler tasarlamak ve sağlam uygulama mimarileri geliştirmek konusunda uzmanlığım bulunmaktadır.",
-    "p3": "Hedefim; kullanıcı ihtiyaçlarını karşılayan, somut değer yaratan ve ölçülebilir etki oluşturan yüksek kaliteli mobil çözümler sunmaktır.",
+    "p1": "Üretim kalitesinde mobil (Flutter) ve arka uç (Python, .NET) uygulamaları geliştirme ve sunma konusunda 2+ yıllık deneyime sahip Yazılım Mühendisi.",
+    "p2": "Ölçeklenebilir sistemler ve uçtan uca çözümler tasarlama konusunda tutkulu.",
+    "p3": "Şu anda Yazılım Mühendisliği alanında yüksek lisans (M.Sc.) eğitimime devam etmekteyim; burada yüksek performanslı, dayanıklı endüstriyel uygulamalar sunmak için gelişmiş mimari araştırmalardan ve yazılım metodolojilerinden yararlanıyorum.",
     "summaryTitle": "Özet",
     "interestsTitle": "İlgi Alanları",
     "experienceLabel": "Deneyim",
@@ -47,8 +47,8 @@
     "statusValue": "Müsait",
     "remoteLabel": "Çalışma Şekli",
     "remoteValue": "✓ Uzaktan & Yerinde",
-    "traits": ["Clean Architecture", "AI Entegrasyonu", "IoT Sistemleri", "Cross-Platform", "Hızlı Teslimat", "Problem Çözme"],
-    "interests": ["Flutter", "AI/ML", "IoT", "Mobil Uygulama", "Backend API", "Açık Kaynak"]
+    "traits": ["Clean Architecture", "Full-Stack", "Gerçek Zamanlı Sistemler", "IoT & BLE/NFC", "API Tasarımı", "SOLID Prensipleri"],
+    "interests": ["Flutter", "Python/FastAPI", ".NET/C#", "Vue.js", "Angular", "PostgreSQL", "GCP", "Açık Kaynak"]
   },
   "experience": {
     "sectionLabel": "deneyim",
@@ -166,31 +166,31 @@
   "services": {
     "sectionLabel": "hizmetler",
     "title": "Neler Yapıyorum",
-    "subtitle": "Serbest, uzaktan ve yerinde — uçtan uca çözümler",
+    "subtitle": "Serbest, uzaktan ve yerinde — uçtan uca mühendislik",
     "s1": {
-      "title": "Flutter Mobil Geliştirme",
-      "description": "Flutter ile gelişmiş çapraz platform iOS ve Android uygulamaları. Temiz Mimari, gerçek zamanlı veri, harika kullanıcı arayüzleri.",
-      "i1": "Flutter / Dart — Clean Architecture", "i2": "BLoC & Provider ile state management", "i3": "Google Maps, GPS & IoT sensörleri", "i4": "FCM push bildirimleri & deep link", "i5": "Hive / SQLite ile offline-first yapı", "i6": "Çok dilli destek (EN/TR/AR) + RTL"
+      "title": "Mobil Uygulama Geliştirme",
+      "description": "Flutter ile üretim kalitesinde iOS & Android uygulamaları — Clean Architecture, gerçek zamanlı veri hatları, BLE/NFC donanım entegrasyonu ve SDK geliştirme.",
+      "i1": "Flutter — BLoC, Cubit, Provider, Riverpod", "i2": "Clean Architecture & SDK Geliştirme", "i3": "Cihaz sensörleri: GPS, İvmeölçer, Jiroskop", "i4": "BLE & NFC donanım entegrasyonu", "i5": "E2EE, RBAC & Uygulama mağazası yayını", "i6": "Çok dilli destek (EN/TR/AR) + RTL"
     },
     "s2": {
-      "title": "Yapay Zeka ve IoT Entegrasyonu",
-      "description": "Gerçek dünyada etki yaratmak için makine öğrenimi ve IoT cihaz entegrasyonu ile desteklenen akıllı mobil sistemler.",
-      "i1": "YOLOv5 & TensorFlow ile nesne tespiti", "i2": "Bilgisayarlı görü & yüz tanıma", "i3": "NFC / MRZ belge tarama", "i4": "Sensör entegrasyonu (ivmeölçer, jiroskop)", "i5": "Arka plan servisleri & BLE iletişimi", "i6": "Gerçek zamanlı veri işleme & CSV/Excel dışa aktarımı"
+      "title": "Backend & API Mühendisliği",
+      "description": "Python ve .NET ile ölçeklenebilir REST & WebSocket arka uçları — gerçek zamanlı akış, OAuth güvenliği ve bulut dağıtımı.",
+      "i1": "Python: FastAPI, Django, Flask", "i2": ".NET Framework (C#) & RESTful API Tasarımı", "i3": "WebSocket & Gerçek Zamanlı Veri Akışı", "i4": "OAuth / Token Tabanlı Kimlik Doğrulama", "i5": "PostgreSQL, MS SQL Server, MySQL, Firebase", "i6": "GCP, Railway, Render, Nginx & Ngrok"
     },
     "s3": {
-      "title": "Arka Uç API Geliştirme",
-      "description": "Mobil ve web uygulamalarına güç veren ölçeklenebilir, yüksek performanslı arka uç API'leri ve veritabanları.",
-      "i1": "FastAPI / Flask / Django REST API", "i2": "PostgreSQL, MySQL & SQLite", "i3": "Firebase Auth & Firestore", "i4": "Redis önbellekleme & performans optimizasyonu", "i5": "JWT kimlik doğrulama & rol tabanlı erişim", "i6": "Docker & deployment"
+      "title": "Web & Frontend Geliştirme",
+      "description": "Angular, Vue.js/Nuxt.js ve modern TypeScript ile duyarlı yönetim panelleri ve frontend platformları.",
+      "i1": "TypeScript & JavaScript (Angular, Vue.js)", "i2": "Nuxt.js — SSR & SSG web uygulamaları", "i3": "Duyarlı Yönetim Panelleri", "i4": "HTML5, CSS3 & UI/UX en iyi uygulamaları", "i5": "WebSocket ile gerçek zamanlı paneller", "i6": "Git, GitHub, GitLab, Postman & Figma"
     }
   },
   "tech": {
     "sectionLabel": "yetenekler",
     "title": "Teknolojiler ve Araçlar",
-    "subtitle": "Her gün çalıştığım araçlar",
+    "subtitle": "Mobil, backend & web genelinde tam yığın mühendislik",
     "mobile": "Mobil",
-    "ai_iot": "AI & IoT",
-    "backend": "Backend",
-    "database": "Veritabanı & DevOps"
+    "web": "Web & Frontend",
+    "backend": "Backend & API",
+    "database": "Veritabanı & Bulut"
   },
   "contact": {
     "sectionLabel": "iletisim",
@@ -215,7 +215,7 @@
     "error": "Bir şeyler yanlış gitti. Lütfen doğrudan e-posta göndermeyi deneyin."
   },
   "footer": {
-    "brand": "Yapay zeka destekli mobil uygulamalar ve IoT sistemleri alanında uzmanlaşmış Flutter Geliştirici. Serbest, uzaktan ve yerinde çalışmaya açık.",
+    "brand": "Mobil, backend & web alanında uzmanlaşmış Yazılım Mühendisi — Flutter, Python, .NET, Angular, Vue.js. Serbest, uzaktan ve yerinde çalışmaya açık.",
     "quickLinks": "Hızlı Bağlantılar",
     "builtWith": "İle İnşa Edildi",
     "copyright": "Tasarım ve geliştirme"
