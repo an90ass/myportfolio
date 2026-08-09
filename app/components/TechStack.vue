@@ -65,24 +65,24 @@
 </template>
 
 <script setup lang="ts">
-import { Smartphone, Server, Database, Globe } from 'lucide-vue-next'
+import { Smartphone, Server, Database, Cloud, Globe, Cpu, Shield, Wrench } from 'lucide-vue-next'
 import { computed } from 'vue'
 
 const { t } = useI18n()
 
 const row1 = [
   { name: 'Flutter',      emoji: '🐦' },
-  { name: 'Dart',         emoji: '🎯' },
   { name: 'Python',       emoji: '🐍' },
   { name: 'FastAPI',      emoji: '⚡' },
   { name: 'Flask',        emoji: '🌶️' },
   { name: 'Django',       emoji: '🎸' },
-  { name: 'TypeScript',   emoji: '🔷' },
-  { name: 'Angular',      emoji: '🔴' },
-  { name: 'Vue.js',       emoji: '💚' },
-  { name: 'Nuxt.js',      emoji: '🟢' },
-  { name: '.NET / C#',    emoji: '💜' },
-  { name: 'Firebase',     emoji: '🔥' },
+  { name: '.NET 8',       emoji: '💜' },
+  { name: 'C#',           emoji: '🎯' },
+  { name: 'SignalR',      emoji: '🔁' },
+  { name: 'RabbitMQ',     emoji: '🐇' },
+  { name: 'JavaScript',   emoji: '🟨' },
+  { name: 'HTML5',        emoji: '🌐' },
+  { name: 'CSS3',         emoji: '🎨' },
 ]
 
 const row2 = [
@@ -90,36 +90,56 @@ const row2 = [
   { name: 'MS SQL Server', emoji: '🗄️' },
   { name: 'MySQL',         emoji: '🛢️' },
   { name: 'SQLite',        emoji: '💾' },
-  { name: 'BLoC',          emoji: '🧩' },
-  { name: 'Riverpod',      emoji: '💧' },
-  { name: 'BLE & NFC',     emoji: '📡' },
-  { name: 'WebSocket',     emoji: '🔁' },
+  { name: 'Firestore',     emoji: '🔥' },
+  { name: 'Redis',         emoji: '🔴' },
   { name: 'GCP',           emoji: '☁️' },
-  { name: 'Nginx',         emoji: '🌐' },
+  { name: 'Firebase',      emoji: '🔥' },
+  { name: 'Docker',        emoji: '🐳' },
   { name: 'Git',           emoji: '🔀' },
   { name: 'Postman',       emoji: '🚀' },
+  { name: 'Figma',         emoji: '🎨' },
 ]
 
 const categories = computed(() => [
   {
     label: t('tech.mobile'),
     icon: Smartphone,
-    techs: ['Flutter', 'Dart', 'BLoC', 'Cubit', 'Provider', 'Riverpod', 'BLE & NFC', 'SDK Dev'],
-  },
-  {
-    label: t('tech.web'),
-    icon: Globe,
-    techs: ['TypeScript', 'JavaScript', 'Angular', 'Vue.js', 'Nuxt.js', 'HTML5', 'CSS3'],
+    techs: ['Flutter', 'BLoC', 'Cubit', 'Provider', 'Riverpod', 'Clean Architecture', 'SDK Development'],
   },
   {
     label: t('tech.backend'),
     icon: Server,
-    techs: ['FastAPI', 'Django', 'Flask', '.NET / C#', 'REST API', 'WebSocket', 'OAuth / JWT'],
+    techs: ['Python (FastAPI, Django, Flask)', '.NET 8 (C#, ASP.NET Core)', 'EF Core', 'LINQ', 'CQRS', 'SignalR', 'RabbitMQ', 'RESTful API', 'WebSocket', 'JWT/OAuth 2.0'],
+  },
+  {
+    label: t('tech.web'),
+    icon: Globe,
+    techs: ['JavaScript', 'HTML5', 'CSS3', 'Responsive Admin Dashboards'],
   },
   {
     label: t('tech.database'),
     icon: Database,
-    techs: ['PostgreSQL', 'MS SQL Server', 'MySQL', 'SQLite', 'Firebase', 'GCP', 'Railway', 'Nginx'],
+    techs: ['PostgreSQL', 'MS SQL Server', 'MySQL', 'SQLite', 'Firestore', 'Redis'],
+  },
+  {
+    label: t('tech.cloud'),
+    icon: Cloud,
+    techs: ['Firebase (Auth, Functions)', 'Google Cloud Platform', 'Railway', 'Render', 'Nginx', 'Ngrok'],
+  },
+  {
+    label: t('tech.architecture'),
+    icon: Cpu,
+    techs: ['Clean Architecture', 'MVC', 'MVVM', 'SOLID Principles', 'SDLC', 'Data Structures & Algorithms'],
+  },
+  {
+    label: t('tech.security'),
+    icon: Shield,
+    techs: ['Device Sensors', 'BLE & NFC Integration', 'E2EE', 'PCI-Aligned Payment Security', 'RBAC', 'App Security Best Practices'],
+  },
+  {
+    label: t('tech.tools'),
+    icon: Wrench,
+    techs: ['Docker', 'Git/GitHub/GitLab', 'Trello', 'Postman', 'Figma', 'Canva', 'Play Store & App Store Publishing'],
   },
 ])
 </script>

@@ -19,11 +19,15 @@
 
           <h1 class="text-4xl lg:text-5xl font-bold leading-tight text-text-primary mt-2 mb-4">
             {{ $t('hero.greeting') }}<br />
-            <span class="gradient-text">Anas AL-MAQTARI</span>
+            <span class="gradient-text">ANAS ESKANDER</span>
           </h1>
 
           <p class="text-text-secondary leading-relaxed mb-6 max-w-lg">
-            {{ $t('hero.description') }}
+            {{ parsedDescription.text }}
+            <span v-if="parsedDescription.hashtag" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-accent-blue/10 text-accent-blue border border-accent-blue/20 shadow-sm ml-1 hover:bg-accent-blue/20 hover:border-accent-blue/30 transition-all duration-300 animate-pulse-slow">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-blue animate-ping" />
+              #{{ parsedDescription.hashtag }}
+            </span>
           </p>
 
           <div class="flex flex-wrap gap-3">
@@ -41,7 +45,7 @@
               <Folder :size="15" />
               {{ $t('hero.viewProjects') }}
             </a>
-            <a href="/Anas_AL-MAQTARI_CV.pdf" download="Anas_AL-MAQTARI_CV.pdf"
+            <a href="/Anas_Eskander_CV.pdf" download="Anas_Eskander_CV.pdf"
                class="flex items-center gap-2 px-5 py-2.5 bg-accent-green/10 text-accent-green font-medium
                       rounded-lg hover:bg-accent-green/20 transition-all duration-200 text-sm border border-accent-green/30"
             >
@@ -74,7 +78,7 @@
               <img
                  :src="useAsset('media/avatar.JPG')"
 
-                alt="Anas AL-MAQTARI"
+                alt="ANAS ESKANDER"
                 class="w-full h-full object-cover rounded-full transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-2"
               />
             </div>
@@ -132,6 +136,18 @@ import { Mail, Folder, MapPin, Code2, Briefcase, Globe, Download } from 'lucide-
 import { computed } from 'vue'
 
 const { t } = useI18n()
+
+const parsedDescription = computed(() => {
+  const desc = t('hero.description')
+  const match = desc.match(/#(\w+)/)
+  if (match) {
+    return {
+      text: desc.replace(match[0], '').trim(),
+      hashtag: match[1]
+    }
+  }
+  return { text: desc, hashtag: '' }
+})
 
 const quickInfo = computed(() => [
   { icon: MapPin,    label: t('hero.locationLabel'),   value: t('hero.location') },

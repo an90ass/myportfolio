@@ -37,7 +37,7 @@
       <!-- Bottom bar -->
       <div class="pt-6 border-t border-bg-border flex flex-col sm:flex-row items-center justify-between gap-3">
         <p class="text-xs text-text-muted">
-          © {{ new Date().getFullYear() }} Anas AL-MAQTARI — {{ $t('footer.copyright') }}
+          © {{ new Date().getFullYear() }} Anas Eskander — {{ $t('footer.copyright') }}
           <span class="text-red-400">♥</span>
         </p>
         <div class="flex items-center gap-4">

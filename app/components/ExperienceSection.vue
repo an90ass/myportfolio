@@ -100,8 +100,9 @@ const experience = computed(() => [
       t('experience.job3.r2'),
       t('experience.job3.r3'),
       t('experience.job3.r4'),
+      t('experience.job3.r5'),
     ],
-    techs: ['Kotlin', '.NET', 'SignalR', 'BLE', 'NFC', 'E2EE', 'Real-time Dashboards'],
+    techs: ['FastAPI', 'Python', 'Redis', 'PostgreSQL', 'Flutter', 'JWT'],
   },
   {
     role: t('experience.job1.role'),

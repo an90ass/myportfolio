@@ -38,9 +38,9 @@ export default defineNuxtConfig({
     baseURL: '/myportfolio/',
     buildAssetsDir: 'assets',
     head: {
-      title: 'Anas AL-MAQTARI — Software Engineer',
+      title: 'Anas Eskander — Software Engineer',
       meta: [
-        { name: 'description', content: 'Software Engineer specializing in mobile, backend & web — Flutter, Python, .NET, Angular, Vue.js. Based in Kocaeli, Türkiye.' },
+        { name: 'description', content: 'Software Engineer specializing in mobile & backend development — Flutter, Python, .NET, Databases, Cloud & DevOps.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#0a0f1a' },
       ],

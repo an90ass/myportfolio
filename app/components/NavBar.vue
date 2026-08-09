@@ -74,7 +74,7 @@
         </button>
 
         <!-- Download CV -->
-        <a href="/Anas_AL-MAQTARI_CV.pdf" download="Anas_AL-MAQTARI_CV.pdf"
+        <a href="/Anas_Eskander_CV.pdf" download="Anas_Eskander_CV.pdf"
            class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-green/10 border border-accent-green/30
                   text-accent-green text-sm font-medium hover:bg-accent-green/20 transition-all duration-200">
           <Download :size="14" />
