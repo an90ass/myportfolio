@@ -119,8 +119,8 @@ const summary = computed(() => [
 ])
 
 const socials = [
-  { href: 'https://github.com/an90ass/',                  icon: Github,   label: 'GitHub' },
-  { href: 'https://www.linkedin.com/in/anas-a-12815124b/', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://github.com/an90ass/',                                               icon: Github,   label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/anas-al-maqtari-12815124b/?locale=en', icon: Linkedin, label: 'LinkedIn' },
 ]
 </script>
 

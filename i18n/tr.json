@@ -62,7 +62,7 @@
     "job1": {
       "role": "Mobil Uygulama Geliştiricisi",
       "company": "TÜBİTAK 1001 Projesi – Yarı zamanlı / Uzaktan araştırma rolü, aşağıdaki endüstri rolleriyle birlikte",
-      "period": "Mart 2025 — Günümüz",
+      "period": "Mart 2025 – Temmuz 2026",
       "location": "Türkiye",
       "r1": "Clean Architecture ve Provider ile çapraz platform Flutter uygulamasını tasarladı",
       "r2": "Yapay zeka/ML modellerini ve IoT sensörlerini (GPS, ivmeölçer, jiroskop, Bluetooth) entegre etti",
@@ -74,7 +74,7 @@
     "job2": {
       "role": "Yazılım Mühendisi Stajyeri",
       "company": "Visight Technology",
-      "period": "Ocak 2025 — Ekim 2025",
+      "period": "Ocak 2025 – Ekim 2025",
       "location": "Kocaeli, Türkiye",
       "r1": "Flutter ve FastAPI kullanarak biyometrik kimlik doğrulama sistemleri geliştirdi",
       "r2": "Güvenli belge okuma için NFC ve MRZ taramayı entegre etti",
@@ -85,31 +85,32 @@
     "edu1": {
       "degree": "Yazılım Mühendisliği Yüksek Lisansı",
       "school": "Kocaeli Üniversitesi",
-      "period": "2025 — Günümüz",
+      "period": "Eylül 2025 – Ocak 2027 | GNO: 3.95/4.00",
       "note": "Araştırma alanı: Akıllı mobil sistemler için IoT ile yapay zeka entegrasyonu"
     },
     "edu2": {
       "degree": "Bilgisayar Mühendisliği Lisansı",
       "school": "Bartın Üniversitesi",
-      "period": "2021 — 2025",
+      "period": "Ekim 2021 – Haziran 2025 | GNO: 3.42/4.00",
       "note": "Onur Derecesiyle Mezun Oldu — GNO 3.42/4.00. Tez: Görme engelliler için yapay zeka destekli finansal sistem."
     },
     "edu3": {
       "degree": "Yapay Zeka Uygulamaları Geliştirme Programı",
       "school": "Yapay Zeka ve Teknoloji Akademisi",
-      "period": "2024 — 2025",
+      "period": "Kasım 2024 – Eylül 2025 | Uzaktan",
       "note": "1 yıllık burs — Makine öğrenimi, bilgisayarla görü ve yapay zeka destekli mobil geliştirme."
     },
-     "job3": {
-    "role": "Yazılım Mühendisi",
-    "company": "Malahi",
-    "period": "Eki 2025 – Haz 2026",
-    "location": "Riyad, Suudi Arabistan — Uzaktan",
-    "r1": "150'den fazla akıllı satış makinesi için uçtan uca bir ekosistem geliştirmek üzere mühendislik ekibiyle çalıştım; saha operasyonları için Kotlin tabanlı mobil arayüzler geliştirdim ve bunları gerçek zamanlı telemetri için .NET/SignalR arka ucuyla entegre ettim.",
-    "r2": "BLE ve NFC protokollerini kullanan güvenli, düşük gecikmeli \"Yakındaki\" ödeme ağ geçitlerinin geliştirilmesine katkıda bulundum; işlem bütünlüğü için uçtan uca şifreleme (E2EE) ve PCI uyumlu güvenlik sağlanmasına yardımcı oldum.",
-    "r3": "Büyük ölçekli harita görselleştirmesi için saniyede yüzlerce konum güncellemesini işleyen veri alım hatlarını optimize ederek, gerçek zamanlı coğrafi takip özelliğine sahip yüksek eşzamanlılıklı bir kontrol paneli geliştirdim.",
-    "r4": "Dinamik bir ödül sistemi, envanter analitiği ve otomatik bakım uyarılarını içeren otomatik filo yönetim paketi uyguladım; bu sayede kesinti süresi ve operasyonel yük önemli ölçüde azaldı."
-  }
+    "job3": {
+      "role": "Genç Yazılım Mühendisi",
+      "company": "Visight Technology",
+      "period": "Ekim 2025 – Temmuz 2026",
+      "location": "Kocaeli, Türkiye",
+      "r1": "FastAPI kullanarak arka uç servislerini geliştirdi ve iyileştirdi, çok kiracılı kurumsal platformu ve yönetim panelini destekledi.",
+      "r2": "Arka uç sorgu optimizasyonu, sunucu tarafı sayfalama, veritabanı indeksleme ve Redis önbellekleme ile DigiVis panel performansını yükleme süresini 5 saniyeden 1 saniyenin altına düşürerek iyileştirdi.",
+      "r3": "Veritabanı kilitleme ve sorgu performansı sorunlarını çözerek sistem güvenilirliğini ve ölçeklenebilirliğini artırdı.",
+      "r4": "Arka uç uç noktalarında hız sınırlaması ve Flutter uygulamasında debouncing uygulayarak API güvenilirliğini güçlendirdi.",
+      "r5": "Arka uç ve uygulama arasında sessiz JWT belirteç yenilemesi uygulayarak kimlik doğrulama güvenilirliğini artırdı."
+    }
   },
   "projects": {
     "sectionLabel": "projeler",

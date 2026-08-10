@@ -154,8 +154,8 @@ const contactItems = computed(() => [
 ])
 
 const socials = [
-  { icon: Github,   href: 'https://github.com/an90ass/',                   label: 'GitHub' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/anas-a-12815124b/', label: 'LinkedIn' },
+  { icon: Github,   href: 'https://github.com/an90ass/',                                label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/anas-al-maqtari-12815124b/?locale=en', label: 'LinkedIn' },
 ]
 
 async function sendMessage() {

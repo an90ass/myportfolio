@@ -47,8 +47,24 @@
     "statusValue": "Open to Relocation",
     "remoteLabel": "Work Mode",
     "remoteValue": "✓ Remote & Relocation",
-    "traits": ["Clean Architecture", "Full-Stack", "Real-Time Systems", "IoT & BLE/NFC", "API Design", "SOLID Principles"],
-    "interests": ["Flutter", "Python/FastAPI", ".NET/C#", "Vue.js", "Angular", "PostgreSQL", "GCP", "Open Source"]
+    "traits": [
+      "Clean Architecture",
+      "Full-Stack",
+      "Real-Time Systems",
+      "IoT & BLE/NFC",
+      "API Design",
+      "SOLID Principles"
+    ],
+    "interests": [
+      "Flutter",
+      "Python/FastAPI",
+      ".NET/C#",
+      "Vue.js",
+      "Angular",
+      "PostgreSQL",
+      "GCP",
+      "Open Source"
+    ]
   },
   "experience": {
     "sectionLabel": "experience",
@@ -64,19 +80,18 @@
       "company": "TÜBİTAK 1001 Project",
       "period": "Mar 2025 – Jul 2026",
       "location": "Ankara, Türkiye",
-      "r1": "Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multi-threaded processing of live IoT data streams over WebSocket.",
+      "r1": "Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multithreaded processing of live IoT data streams over WebSocket.",
       "r2": "Engineered resilient background services that kept the app stable and synchronized under sustained heavy workloads.",
-      "r3": "Designed an offline-first communication layer: BLE-based peer-to-peer group chat with E2EE, plus a localization/orientation module using Bluetooth RSSI and magnetometer data.",
-      "r4": "Coordinated between the AI research team and backend engineers to keep technical integration on schedule.",
-      "r5": "Multi-language localization (EN/TR/AR) with RTL-aware layouts",
-      "r6": "CSV/Excel data export for sensor-based analytics"
+      "r3": "Designed an offline-first communication layer: BLE-based peer-to-peer group chat with E2EE and known-contact group management, plus a localization/orientation module using Bluetooth RSSI and magnetometer data.",
+      "r4": "Co-trained lightweight deep learning models with a fellow researcher, and independently converted and integrated them via TensorFlow Lite into the mobile app.",
+      "r5": "Coordinated between the AI research team and backend engineers to keep technical integration on schedule."
     },
     "job2": {
       "role": "Software Engineer Intern",
       "company": "Visight Technology",
       "period": "Jan 2025 – Oct 2025",
       "location": "Kocaeli, Türkiye",
-      "r1": "Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID reading and computer vision-based identity verification.",
+      "r1": "Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID reading and a ResNet-backbone face-recognition model for computer-vision-based identity verification.",
       "r2": "Developed FastAPI backend services for biometric data processing, identity verification, and real-time validation.",
       "r3": "Contributed to the development of a multi-tenant administration dashboard for centralized system management, including user, operation, and system log monitoring.",
       "r4": "Integrated mobile, backend, and computer-vision components to support secure and reliable identity verification workflows."
@@ -102,7 +117,7 @@
       "degree": "B.Sc. in Computer Engineering",
       "school": "Bartın University",
       "period": "Oct 2021 – Jun 2025 | GPA: 3.42/4.00",
-      "note": "Thesis: AI-Powered Mobile App for the Visually Impaired"
+      "note": "Thesis: AI-Powered Mobile App for the Visually Impaired (Awarded with Honours)"
     },
     "edu3": {
       "degree": "AI Application Development Program (1-Year Scholarship)",
@@ -116,15 +131,51 @@
     "title": "Featured Projects",
     "viewAll": "View all on GitHub",
     "clickExpand": "Click to expand",
-    "p1": { "title": "TurVia — Smart Tourism & Navigation", "description": "A comprehensive tourism app featuring smart routing, real-time recommendations, personalized trip planning, and a tour management system with secure in-app payments (iyzico/Stripe) and real-time operational workflows.", "category": "Flutter • Tourism" },
-    "p2": { "title": "KURTAR — IoT & AI Disaster Platform", "description": "A disaster response mobile app providing real-time decision support via IoT, mobile sensors, and AI. Features BLE-based E2EE group chat, GPS/magnetometer localization, background services, and multi-threaded data processing.", "category": "Flutter • AI • IoT" },
-    "p3": { "title": "Kurtar Saha — Field Data & AI Suite", "description": "An integrated ecosystem of two Flutter apps for seismic research: a field data acquisition tool with high-frequency sensor logging and precision Hz sampling, plus an AI inference app for real-time model validation via WebSocket.", "category": "Flutter • Seismic • AI" },
-    "p4": { "title": "DigiVis — Digital Onboarding & KYC", "description": "A secure digital onboarding SDK for iOS & Android with high-fidelity camera capture, Liveness Detection, Face Matching algorithms, NFC/MRZ document reading, and a centralized dashboard for real-time administrative oversight.", "category": "Flutter • FastAPI • KYC" },
-    "p5": { "title": "IbanVault — Secure IBAN Manager", "description": "Offline-first Flutter app for encrypted IBAN storage with QR code generation & scanning, multi-language support (EN/TR/AR), RTL-aware layouts, and AES-encrypted local database. Clean MVC architecture with Provider.", "category": "Flutter • Security" },
-    "p6": { "title": "Vakit — Smart Prayer Times App", "description": "A multilingual Islamic prayer times app with GPS-based & manual city selection, 3 saved cities, timely local notifications, customizable reminders, and RTL-aware UI available in Turkish, English, and Arabic.", "category": "Flutter • Islamic" },
-    "p7": { "title": "LenDeX — Smart Lending UI", "description": "A high-fidelity Flutter UI kit for personal budgeting and micro-lending app designs. Featuring pixel-perfect layouts, responsive dashboard components, interactive charts, and smooth animation transitions.", "category": "Flutter • UI/UX" },
-    "p8": { "title": "AI Financial — Visually Impaired (Thesis)", "description": "Undergraduate graduation thesis awarded with Honours. A YOLOv5-powered mobile app providing real-time money recognition and full financial management for visually impaired users, backed by Firebase and intelligent accessibility design.", "category": "Flutter • AI • Accessibility" },
-    "p9": { "title": "NetGuard — LAN Security Analyzer", "description": "A Flutter app for non-intrusive LAN network analysis and connected device discovery. Uses an Evidence Scoring engine that combines open ports, response time, and MAC address data to classify devices by risk level. Built with Clean Architecture, MVVM (Provider), and Dart Isolates for parallel scanning without blocking the UI.", "category": "Flutter • Security • Networking" },
+    "p1": {
+      "title": "TurVia — Smart Tourism & Navigation",
+      "description": "A comprehensive tourism app featuring smart routing, real-time recommendations, personalized trip planning, and a tour management system with secure in-app payments (iyzico/Stripe) and real-time operational workflows.",
+      "category": "Flutter • Tourism"
+    },
+    "p2": {
+      "title": "KURTAR — IoT & AI-Based Disaster Response App",
+      "description": "Developed the Flutter app end-to-end, integrating Google Maps for real-time incident visualization, and built an offline-first BLE layer featuring E2EE 1-to-1 and group messaging, RSSI/magnetometer localization, role-based access, and pre-incident health profiles to expedite rescue operations. Co-trained lightweight models (CNN, LSTM, GNN) with PyTorch on time-series IoT and mobile sensor data, then converted and deployed them via TensorFlow Lite for on-device real-time disaster decision support.",
+      "category": "Flutter • PyTorch • CNN/LSTM/GNN • TFLite • BLE"
+    },
+    "p3": {
+      "title": "Kurtar Saha — Field Data & AI Suite",
+      "description": "An integrated ecosystem of two Flutter apps for seismic research: a field data acquisition tool with high-frequency sensor logging and precision Hz sampling, plus an AI inference app for real-time model validation via WebSocket.",
+      "category": "Flutter • Seismic • AI"
+    },
+    "p4": {
+      "title": "DigiVis — Digital Onboarding & KYC",
+      "description": "A secure digital onboarding SDK for iOS & Android with high-fidelity camera capture, Liveness Detection, Face Matching algorithms, NFC/MRZ document reading, and a centralized dashboard for real-time administrative oversight.",
+      "category": "Flutter • FastAPI • KYC"
+    },
+    "p5": {
+      "title": "IbanVault — Secure IBAN Manager",
+      "description": "Offline-first Flutter app for encrypted IBAN storage with QR code generation & scanning, multi-language support (EN/TR/AR), RTL-aware layouts, and AES-encrypted local database. Clean MVC architecture with Provider.",
+      "category": "Flutter • Security"
+    },
+    "p6": {
+      "title": "Vakit — Smart Prayer Times App",
+      "description": "A multilingual Islamic prayer times app with GPS-based & manual city selection, 3 saved cities, timely local notifications, customizable reminders, and RTL-aware UI available in Turkish, English, and Arabic.",
+      "category": "Flutter • Islamic"
+    },
+    "p7": {
+      "title": "LenDeX — Smart Lending UI",
+      "description": "A high-fidelity Flutter UI kit for personal budgeting and micro-lending app designs. Featuring pixel-perfect layouts, responsive dashboard components, interactive charts, and smooth animation transitions.",
+      "category": "Flutter • UI/UX"
+    },
+    "p8": {
+      "title": "AI Financial — Visually Impaired (Thesis)",
+      "description": "Undergraduate graduation thesis awarded with Honours. A YOLOv5-powered mobile app providing real-time money recognition and full financial management for visually impaired users, backed by Firebase and intelligent accessibility design.",
+      "category": "Flutter • AI • Accessibility"
+    },
+    "p9": {
+      "title": "NetGuard — LAN Security Analyzer",
+      "description": "A Flutter app for non-intrusive LAN network analysis and connected device discovery. Uses an Evidence Scoring engine that combines open ports, response time, and MAC address data to classify devices by risk level. Built with Clean Architecture, MVVM (Provider), and Dart Isolates for parallel scanning without blocking the UI.",
+      "category": "Flutter • Security • Networking"
+    },
     "syncledger": {
       "title": "SyncLedger",
       "category": "Mobile App",
@@ -170,17 +221,32 @@
     "s1": {
       "title": "Mobile Development",
       "description": "Production-grade iOS & Android apps with Flutter — Clean Architecture, real-time data pipelines, BLE/NFC hardware integration, and SDK development.",
-      "i1": "Flutter — BLoC, Cubit, Provider, Riverpod", "i2": "Clean Architecture & SDK Development", "i3": "Device sensors: GPS, Accelerometer, Gyroscope", "i4": "BLE & NFC hardware integration", "i5": "E2EE, RBAC & App Store publishing", "i6": "Multi-language (EN/TR/AR) + RTL support"
+      "i1": "Flutter — BLoC, Cubit, Provider, Riverpod",
+      "i2": "Clean Architecture & SDK Development",
+      "i3": "Device sensors: GPS, Accelerometer, Gyroscope",
+      "i4": "BLE & NFC hardware integration",
+      "i5": "E2EE, RBAC & App Store publishing",
+      "i6": "Multi-language (EN/TR/AR) + RTL support"
     },
     "s2": {
       "title": "Backend & API Engineering",
       "description": "Scalable REST & WebSocket backends with Python and .NET — real-time streaming, OAuth security, and cloud deployments.",
-      "i1": "Python: FastAPI, Django, Flask", "i2": ".NET Framework (C#) & RESTful API Design", "i3": "WebSocket & Real-Time Data Streaming", "i4": "OAuth / Token-Based Authentication", "i5": "PostgreSQL, MS SQL Server, MySQL, Firebase", "i6": "GCP, Railway, Render, Nginx & Ngrok"
+      "i1": "Python: FastAPI, Django, Flask",
+      "i2": ".NET Framework (C#) & RESTful API Design",
+      "i3": "WebSocket & Real-Time Data Streaming",
+      "i4": "OAuth / Token-Based Authentication",
+      "i5": "PostgreSQL, MS SQL Server, MySQL, Firebase",
+      "i6": "GCP, Railway, Render, Nginx & Ngrok"
     },
     "s3": {
       "title": "Web & Frontend Development",
       "description": "Responsive admin dashboards and frontend platforms with Angular, Vue.js/Nuxt.js, and modern TypeScript.",
-      "i1": "TypeScript & JavaScript (Angular, Vue.js)", "i2": "Nuxt.js — SSR & SSG web apps", "i3": "Responsive Admin Dashboards", "i4": "HTML5, CSS3 & UI/UX best practices", "i5": "Real-time dashboards with WebSocket", "i6": "Git, GitHub, GitLab, Postman & Figma"
+      "i1": "TypeScript & JavaScript (Angular, Vue.js)",
+      "i2": "Nuxt.js — SSR & SSG web apps",
+      "i3": "Responsive Admin Dashboards",
+      "i4": "HTML5, CSS3 & UI/UX best practices",
+      "i5": "Real-time dashboards with WebSocket",
+      "i6": "Git, GitHub, GitLab, Postman & Figma"
     }
   },
   "tech": {

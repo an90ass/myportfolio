@@ -30,8 +30,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        sans: ['Inter', 'Tajawal', 'Cairo', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Tajawal', 'monospace'],
+        arabic: ['Tajawal', 'Cairo', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         card: '1.25rem',

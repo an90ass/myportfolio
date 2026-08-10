@@ -70,7 +70,7 @@ const builtWith = ['Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS', 'Motion']
 
 const socials = [
   { icon: Github,   href: 'https://github.com/an90ass/' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/anas-a-12815124b/' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/anas-al-maqtari-12815124b/?locale=en' },
   { icon: Mail,     href: 'mailto:anass12976@gmail.com' },
 ]
 </script>

@@ -15,14 +15,14 @@
         <img
           class="avatar-photo"
           :src="avatarSrc"
-          alt="أنس المقتري"
+          alt="أنس اسكندر"
           @error="onAvatarError"
         />
         <div class="avatar-fallback" ref="fallbackRef">A</div>
       </div>
 
       <!-- Name & tagline -->
-      <h1 class="name">أنس المقتري</h1>
+      <h1 class="name">أنس اسكندر</h1>
       <p class="tagline">Software Engineer &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; Mobile &amp; Backend</p>
 
       <!-- Badge -->
@@ -134,7 +134,7 @@
       </nav>
 
       <!-- Footer -->
-      <p class="footer-line">أنس المقتري &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦</p>
+      <p class="footer-line">أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦</p>
 
     </main>
   </div>
@@ -145,13 +145,15 @@ import { ref, onMounted, computed } from 'vue'
 
 // ── SEO / head ──
 useHead({
-  title: 'أنس المقتري | روابطي',
+  title: 'أنس اسكندر | روابطي',
   meta: [
-    { name: 'description', content: 'Software Engineer | AI Engineer | Mobile & Backend — تواصل مع أنس المقتري' },
+    { name: 'description', content: 'Software Engineer | AI Engineer | Mobile & Backend — تواصل مع أنس اسكندر' },
     { name: 'theme-color', content: '#0a0f1a' },
   ],
   htmlAttrs: { lang: 'ar', dir: 'rtl' },
   link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/myportfolio/favicon.ico' },
+    { rel: 'shortcut icon', type: 'image/x-icon', href: '/myportfolio/favicon.ico' },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@400;600;700;900&display=swap' },
