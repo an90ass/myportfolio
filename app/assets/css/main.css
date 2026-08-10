@@ -40,6 +40,35 @@
     font-feature-settings: 'liga' 1, 'kern' 1;
   }
 
+  /* ── Arabic locale: override fonts to support Arabic script ── */
+  html[dir="rtl"] body,
+  html[lang="ar"] body {
+    font-family: 'Tajawal', 'Cairo', 'Inter', system-ui, sans-serif;
+    font-feature-settings: normal;
+  }
+
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3,
+  html[dir="rtl"] h4,
+  html[dir="rtl"] h5,
+  html[dir="rtl"] h6,
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3,
+  html[lang="ar"] h4,
+  html[lang="ar"] h5,
+  html[lang="ar"] h6 {
+    font-family: 'Cairo', 'Tajawal', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+  }
+
+  /* Mono elements keep readable fallback in Arabic mode */
+  html[dir="rtl"] .font-mono,
+  html[lang="ar"] .font-mono {
+    font-family: 'Tajawal', 'JetBrains Mono', monospace;
+  }
+
   * {
     @apply border-bg-border;
   }
