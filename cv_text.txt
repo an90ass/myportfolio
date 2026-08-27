@@ -1,4 +1,4 @@
-﻿--- PAGE 1 ---
+--- PAGE 1 ---
 Anas Eskander
 Flutter Developer | Mobile & Backend | anass12976@gmail.com | +905397924923 | ─░ZM─░T, KOCAEL─░, T├£RK─░YE
 myportfolio | LINKEDIN | GITHUB
@@ -24,23 +24,26 @@ Tools & Platforms ΓÇö Proficient
 Git, GitHub, GitLab, Trello, Nginx, Ngrok, Postman & Newman (API
 Manual ve Automated Testing), Canva, Figma
 WORK EXPERIENCE
-T├£B─░TAK 1001 Project Scholar, Mobile Application Developer 26/03/2025 ΓÇô Present| T├£RK─░YE
-Developed a high-performance mobile application using Flutter, featuring real-time location tracking, live monitoring, Google Maps visualization, and
-multi-threaded data processing.
-Engineered robust background services to ensure continuous application performance and seamless operation under heavy workloads.
-Integrated WebSockets to collect, process, and synchronize real-time data from IoT sensors with the backend infrastructure.
-Optimized data pipelines between mobile IoT data collection, APIs, and databases to enhance synchronization efficiency.
-Engineered a resilient offline communication and navigation ecosystem, featuring a secure, BLE-based peer-to-peer group chat with End-to-End
-Encryption (E2EE), and a precise localization and orientation system leveraging Bluetooth RSSI and Magnetometer data.
-Managed backend integration processes, ensuring high standards for real-time data processing, security, and data integrity.
-Coordinated cross-functional teams, facilitating technical integration and communication between AI research and backend engineering units.
-V─░S─░GHT TECHNOLOGY, Software Engineer Intern 20/01/2025 ΓÇô 20/10/2025 | KOCAEL─░, T├£RK─░YE
-Developed the "DigiVis" mobile application using Flutter, implementing secure biometric authentication through MRZ (Machine Readable Zone) and
-NFC reading.
-Implemented automated identity verification by applying Computer Vision algorithms to enhance security protocols.
-Designed and managed backend services, optimizing biometric data processing and real-time validation workflows.
-Built a comprehensive Admin Panel for centralized system management, including log tracking, user management, and operational monitoring.
-Integrated NFC-enabled passports and ID cards into mobile solutions, ensuring a seamless and secure digital identity verification experience.
+Visight Technology — Junior Software Engineer | Oct 2025 – Jul 2026 | Kocaeli, Türkiye
+● Developed and enhanced backend services with FastAPI for a multi-tenant enterprise platform and its administrative dashboard.
+● Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.
+● Improved system reliability and scalability by addressing database locking and query performance issues, preventing dashboard freezes during peak enterprise traffic.
+● Implemented silent JWT token refresh to keep sessions alive during lengthy passport-scanning operations.
+
+Researcher Scholar (TÜBİTAK 1001 Project Founded) — Mobile Application Developer | Mar 2025 – Jul 2026 | Ankara, Türkiye
+● Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multithreaded processing of live IoT data streams over WebSocket.
+● Engineered resilient background services that kept the app stable and synchronized under sustained heavy workloads.
+● Designed an offline-first communication layer: BLE-based peer-to-peer group chat with E2EE and known-contact group management, plus a localization/orientation module using Bluetooth RSSI and magnetometer data.
+● Trained and optimized lightweight deep learning models for mobile deployment, converting them to TensorFlow Lite and integrating them for efficient real-time on-device inference.
+
+TurVia — Freelance Full-Stack Developer (Mobile, Backend & Web) | Jun 2026 – Jul 2026 | Remote, Türkiye
+● Designed and delivered TurVia, an end-to-end smart tourism and tour-management platform, from initial architecture through production deployment on Google Play and the App Store.
+
+Visight Technology — Software Engineer Intern | Jan 2025 – Oct 2025 | Kocaeli, Türkiye
+● Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID.
+● Developed FastAPI backend services for biometric data processing, identity verification, and real-time validation.
+● Contributed to a multi-tenant administration dashboard for centralized user, operation, and system-log monitoring.
+● Integrated mobile, backend, and computer-vision components to support secure and reliable identity verification workflows.
 EDUCATION
 M.Sc. in Software Engineering, Kocaeli University 10/09/2025 ΓÇô Present | Kocaeli, T├╝rkiye
 B.Sc. in Computer Engineering, BARTIN University 11/10/2021 ΓÇô 24/06/2025 | Bartin, T├╝rkiye

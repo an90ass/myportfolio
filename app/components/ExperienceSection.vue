@@ -91,20 +91,6 @@ const { t } = useI18n()
 
 const experience = computed(() => [
   {
-    role: t('experience.job3.role'),
-    company: t('experience.job3.company'),
-    period: t('experience.job3.period'),
-    location: t('experience.job3.location'),
-    responsibilities: [
-      t('experience.job3.r1'),
-      t('experience.job3.r2'),
-      t('experience.job3.r3'),
-      t('experience.job3.r4'),
-      t('experience.job3.r5'),
-    ],
-    techs: ['FastAPI', 'Python', 'Redis', 'PostgreSQL', 'Flutter', 'JWT'],
-  },
-  {
     role: t('experience.job1.role'),
     company: t('experience.job1.company'),
     period: t('experience.job1.period'),
@@ -114,10 +100,8 @@ const experience = computed(() => [
       t('experience.job1.r2'),
       t('experience.job1.r3'),
       t('experience.job1.r4'),
-      t('experience.job1.r5'),
-      t('experience.job1.r6'),
     ],
-    techs: ['Flutter', 'Provider', 'Google Maps', 'Firebase', 'IoT', 'AI/ML', 'SQLite', 'Dio'],
+    techs: ['FastAPI', 'Python', 'Redis', 'PostgreSQL', 'JWT', 'Server-Side Pagination'],
   },
   {
     role: t('experience.job2.role'),
@@ -129,9 +113,31 @@ const experience = computed(() => [
       t('experience.job2.r2'),
       t('experience.job2.r3'),
       t('experience.job2.r4'),
-      t('experience.job2.r5'),
     ],
-    techs: ['Flutter', 'FastAPI', 'Firebase', 'BLoC', 'NFC', 'MRZ', 'PostgreSQL'],
+    techs: ['Flutter', 'Google Maps', 'WebSocket', 'IoT', 'BLE', 'TensorFlow Lite'],
+  },
+  {
+    role: t('experience.job3.role'),
+    company: t('experience.job3.company'),
+    period: t('experience.job3.period'),
+    location: t('experience.job3.location'),
+    responsibilities: [
+      t('experience.job3.r1'),
+    ],
+    techs: ['Flutter', 'FastAPI', 'Google Play', 'App Store', 'Full-Stack'],
+  },
+  {
+    role: t('experience.job4.role'),
+    company: t('experience.job4.company'),
+    period: t('experience.job4.period'),
+    location: t('experience.job4.location'),
+    responsibilities: [
+      t('experience.job4.r1'),
+      t('experience.job4.r2'),
+      t('experience.job4.r3'),
+      t('experience.job4.r4'),
+    ],
+    techs: ['Flutter', 'FastAPI', 'Biometrics', 'MRZ', 'NFC', 'Computer Vision'],
   },
 ])
 

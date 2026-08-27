@@ -76,36 +76,41 @@
     "factCompanies": "Companies",
     "factTechs": "Technologies",
     "job1": {
+      "role": "Junior Software Engineer",
+      "company": "Visight Technology",
+      "period": "Oct 2025 – Jul 2026",
+      "location": "Kocaeli, Türkiye",
+      "r1": "Developed and enhanced backend services with FastAPI for a multi-tenant enterprise platform and its administrative dashboard.",
+      "r2": "Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.",
+      "r3": "Improved system reliability and scalability by addressing database locking and query performance issues, preventing dashboard freezes during peak enterprise traffic.",
+      "r4": "Implemented silent JWT token refresh to keep sessions alive during lengthy passport-scanning operations."
+    },
+    "job2": {
       "role": "Researcher Scholar (TÜBİTAK 1001 Project Founded) — Mobile Application Developer",
       "company": "TÜBİTAK 1001 Project",
-      "period": "Mar 2025 – Present",
+      "period": "Mar 2025 – Jul 2026",
       "location": "Ankara, Türkiye",
       "r1": "Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multithreaded processing of live IoT data streams over WebSocket.",
       "r2": "Engineered resilient background services that kept the app stable and synchronized under sustained heavy workloads.",
       "r3": "Designed an offline-first communication layer: BLE-based peer-to-peer group chat with E2EE and known-contact group management, plus a localization/orientation module using Bluetooth RSSI and magnetometer data.",
-      "r4": "Co-trained lightweight deep learning models with a fellow researcher, and independently converted and integrated them via TensorFlow Lite into the mobile app.",
-      "r5": "Coordinated between the AI research team and backend engineers to keep technical integration on schedule."
+      "r4": "Trained and optimized lightweight deep learning models for mobile deployment, converting them to TensorFlow Lite and integrating them for efficient real-time on-device inference."
     },
-    "job2": {
+    "job3": {
+      "role": "Freelance Full-Stack Developer (Mobile, Backend & Web)",
+      "company": "TurVia",
+      "period": "Jun 2026 – Jul 2026",
+      "location": "Remote, Türkiye · concurrent freelance engagement alongside the Visight internship",
+      "r1": "Designed and delivered TurVia, an end-to-end smart tourism and tour-management platform, from initial architecture through production deployment on Google Play and the App Store."
+    },
+    "job4": {
       "role": "Software Engineer Intern",
       "company": "Visight Technology",
       "period": "Jan 2025 – Oct 2025",
       "location": "Kocaeli, Türkiye",
-      "r1": "Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID reading and a ResNet-backbone face-recognition model for computer-vision-based identity verification.",
+      "r1": "Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID.",
       "r2": "Developed FastAPI backend services for biometric data processing, identity verification, and real-time validation.",
-      "r3": "Contributed to the development of a multi-tenant administration dashboard for centralized system management, including user, operation, and system log monitoring.",
+      "r3": "Contributed to a multi-tenant administration dashboard for centralized user, operation, and system-log monitoring.",
       "r4": "Integrated mobile, backend, and computer-vision components to support secure and reliable identity verification workflows."
-    },
-    "job3": {
-      "role": "Junior Software Engineer",
-      "company": "Visight Technology",
-      "period": "Oct 2025 – Present",
-      "location": "Kocaeli, Türkiye",
-      "r1": "Developed and enhanced backend services using FastAPI, supporting a multi-tenant enterprise platform and its administrative dashboard.",
-      "r2": "Improved DigiVis dashboard performance by reducing load times from 5 seconds to under 1 second through backend query optimization, server-side pagination, database indexing, and Redis caching for frequently requested data.",
-      "r3": "Improved system reliability and scalability by addressing database locking and query performance issues, preventing dashboard freezes during peak enterprise traffic.",
-      "r4": "Strengthened API reliability by implementing rate limiting on backend endpoints and debouncing in the Flutter application to prevent duplicate submissions and unnecessary server load.",
-      "r5": "Improved authentication reliability by implementing silent JWT token refresh between the backend and application, maintaining sessions during lengthy passport-scanning operations."
     },
     "edu1": {
       "degree": "M.Sc. in Software Engineering",
