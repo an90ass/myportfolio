@@ -62,7 +62,7 @@
     "job1": {
       "role": "Mobil Uygulama Geliştiricisi",
       "company": "TÜBİTAK 1001 Projesi – Yarı zamanlı / Uzaktan araştırma rolü, aşağıdaki endüstri rolleriyle birlikte",
-      "period": "Mart 2025 – Temmuz 2026",
+      "period": "Mart 2025 – Günümüz",
       "location": "Türkiye",
       "r1": "Clean Architecture ve Provider ile çapraz platform Flutter uygulamasını tasarladı",
       "r2": "Yapay zeka/ML modellerini ve IoT sensörlerini (GPS, ivmeölçer, jiroskop, Bluetooth) entegre etti",
@@ -103,7 +103,7 @@
     "job3": {
       "role": "Genç Yazılım Mühendisi",
       "company": "Visight Technology",
-      "period": "Ekim 2025 – Temmuz 2026",
+      "period": "Ekim 2025 – Günümüz",
       "location": "Kocaeli, Türkiye",
       "r1": "FastAPI kullanarak arka uç servislerini geliştirdi ve iyileştirdi, çok kiracılı kurumsal platformu ve yönetim panelini destekledi.",
       "r2": "Arka uç sorgu optimizasyonu, sunucu tarafı sayfalama, veritabanı indeksleme ve Redis önbellekleme ile DigiVis panel performansını yükleme süresini 5 saniyeden 1 saniyenin altına düşürerek iyileştirdi.",

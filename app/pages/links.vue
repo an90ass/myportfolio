@@ -1,5 +1,5 @@
 <template>
-  <div class="links-page">
+  <div class="links-page" :dir="t.dir">
     <!-- Background stars -->
     <div class="stars-layer" ref="starsRef"></div>
 
@@ -9,26 +9,53 @@
 
     <main class="page" role="main">
 
-      <!-- Avatar -->
-      <div class="avatar-wrap">
-        <div class="avatar-ring"></div>
-        <img
-          class="avatar-photo"
-          :src="avatarSrc"
-          alt="أنس اسكندر"
-          @error="onAvatarError"
-        />
-        <div class="avatar-fallback" ref="fallbackRef">A</div>
+      <!-- Language Switcher Bar -->
+      <div class="lang-switcher" role="navigation" aria-label="Language Selection">
+        <button
+          class="lang-btn"
+          :class="{ active: currentLang === 'ar' }"
+          @click="setLang('ar')"
+        >
+          🇸🇦 العربية
+        </button>
+        <button
+          class="lang-btn"
+          :class="{ active: currentLang === 'en' }"
+          @click="setLang('en')"
+        >
+          🇬🇧 English
+        </button>
+        <button
+          class="lang-btn"
+          :class="{ active: currentLang === 'tr' }"
+          @click="setLang('tr')"
+        >
+          🇹🇷 Türkçe
+        </button>
       </div>
 
-      <!-- Name & tagline -->
-      <h1 class="name">أنس اسكندر</h1>
-      <p class="tagline">Software Engineer &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; Mobile &amp; Backend</p>
+      <div class="profile-col">
+        <!-- Avatar -->
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <img
+            class="avatar-photo"
+            :src="avatarSrc"
+            alt="أنس اسكندر"
+            @error="onAvatarError"
+          />
+          <div class="avatar-fallback" ref="fallbackRef">A</div>
+        </div>
 
-      <!-- Badge -->
-      <div class="badge">
-        <span class="heart">🤍</span>
-        <span>حيّاك الله وبيّاك، شرّفتني بزيارتك</span>
+        <!-- Name & tagline -->
+        <h1 class="name" v-html="t.name"></h1>
+        <p class="tagline" v-html="t.tagline"></p>
+
+        <!-- Badge -->
+        <div class="badge">
+          <span class="heart">🤍</span>
+          <span>{{ t.badge }}</span>
+        </div>
       </div>
 
       <!-- 2×3 Links Grid -->
@@ -46,7 +73,7 @@
           </span>
           <span class="btn-label">
             <span class="btn-title">GitHub</span>
-            <span class="btn-subtitle">مشاريعي المفتوحة</span>
+            <span class="btn-subtitle">{{ t.githubSub }}</span>
           </span>
         </a>
 
@@ -62,12 +89,12 @@
           </span>
           <span class="btn-label">
             <span class="btn-title">LinkedIn</span>
-            <span class="btn-subtitle">مسيرتي المهنية</span>
+            <span class="btn-subtitle">{{ t.linkedinSub }}</span>
           </span>
         </a>
 
-        <!-- Phone KSA -->
-        <a id="btn-phone" class="link-btn btn-phone" href="tel:+966592682004">
+        <!-- Dual Phone (KSA & TR) -->
+        <div id="btn-phone" class="link-btn btn-phone btn-dual-phone">
           <span class="btn-icon-wrap">
             <span class="btn-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -76,10 +103,17 @@
             </span>
           </span>
           <span class="btn-label">
-            <span class="btn-title">اتصل بي</span>
-            <span class="btn-subtitle">+966 592 682 004</span>
+            <span class="btn-title">{{ t.phoneTitle }}</span>
+            <div class="phone-chips">
+              <a href="tel:+966592682004" class="phone-chip" title="Saudi Arabia">
+                <span>🇸🇦</span> <span>+966 592 682 004</span>
+              </a>
+              <a href="tel:+905397924923" class="phone-chip" title="Turkey">
+                <span>🇹🇷</span> <span>+90 539 792 4923</span>
+              </a>
+            </div>
           </span>
-        </a>
+        </div>
 
         <!-- WhatsApp -->
         <a id="btn-whatsapp" class="link-btn btn-whatsapp"
@@ -110,8 +144,8 @@
             </span>
           </span>
           <span class="btn-label">
-            <span class="btn-title">Portfolio</span>
-            <span class="btn-subtitle">أعمالي وإنجازاتي</span>
+            <span class="btn-title">{{ t.portfolioTitle }}</span>
+            <span class="btn-subtitle">{{ t.portfolioSub }}</span>
           </span>
         </a>
 
@@ -126,7 +160,7 @@
             </span>
           </span>
           <span class="btn-label">
-            <span class="btn-title">راسلني</span>
+            <span class="btn-title">{{ t.emailTitle }}</span>
             <span class="btn-subtitle">anass12976@gmail.com</span>
           </span>
         </a>
@@ -134,7 +168,7 @@
       </nav>
 
       <!-- Footer -->
-      <p class="footer-line">أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦</p>
+      <p class="footer-line" v-html="t.footer"></p>
 
     </main>
   </div>
@@ -145,9 +179,9 @@ import { ref, onMounted, computed } from 'vue'
 
 // ── SEO / head ──
 useHead({
-  title: 'أنس اسكندر | روابطي',
+  title: 'أنس اسكندر | Software Engineer | Mobile, Backend & AI Development',
   meta: [
-    { name: 'description', content: 'Software Engineer | AI Engineer | Mobile & Backend — تواصل مع أنس اسكندر' },
+    { name: 'description', content: 'Software Engineer | Mobile, Backend & AI Development — تواصل مع أنس اسكندر' },
     { name: 'theme-color', content: '#0a0f1a' },
   ],
   htmlAttrs: { lang: 'ar', dir: 'rtl' },
@@ -156,15 +190,69 @@ useHead({
     { rel: 'shortcut icon', type: 'image/x-icon', href: '/myportfolio/favicon.ico' },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@400;600;700;900&display=swap' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap' },
   ],
 })
+
+type Lang = 'ar' | 'en' | 'tr'
+const currentLang = ref<Lang>('ar')
+
+const dict = {
+  ar: {
+    dir: 'rtl',
+    name: 'أنس اسكندر',
+    tagline: 'Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development',
+    badge: 'حيّاك الله وبيّاك، شرّفتني بزيارتك',
+    githubSub: 'مشاريعي المفتوحة',
+    linkedinSub: 'مسيرتي المهنية',
+    phoneTitle: 'اتصل بي',
+    portfolioTitle: 'Portfolio',
+    portfolioSub: 'أعمالي وإنجازاتي',
+    emailTitle: 'راسلني',
+    footer: 'أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦'
+  },
+  en: {
+    dir: 'ltr',
+    name: 'Anas Iskandar',
+    tagline: 'Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development',
+    badge: 'Welcome! Glad to have you here',
+    githubSub: 'Open Source Projects',
+    linkedinSub: 'Professional Profile',
+    phoneTitle: 'Call Me',
+    portfolioTitle: 'Portfolio',
+    portfolioSub: 'Works & Achievements',
+    emailTitle: 'Email Me',
+    footer: 'Anas Iskandar &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
+  },
+  tr: {
+    dir: 'ltr',
+    name: 'Anas Iskandar',
+    tagline: 'Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development',
+    badge: 'Hoş geldiniz! Ziyaretiniz için teşekkürler',
+    githubSub: 'Açık Kaynak Projeler',
+    linkedinSub: 'Profesyonel Profil',
+    phoneTitle: 'Beni Arayın',
+    portfolioTitle: 'Portfolyo',
+    portfolioSub: 'Çalışmalarım ve Projelerim',
+    emailTitle: 'E-posta Gönder',
+    footer: 'Anas Iskandar &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
+  }
+}
+
+const t = computed(() => dict[currentLang.value])
+
+function setLang(lang: Lang) {
+  currentLang.value = lang
+  try {
+    localStorage.setItem('pref_lang', lang)
+  } catch (e) {}
+}
 
 const runtimeConfig = useRuntimeConfig()
 const starsRef = ref<HTMLElement | null>(null)
 const fallbackRef = ref<HTMLElement | null>(null)
 
-// Build avatar URL from base URL so Vite doesn't try to resolve it as a module
+// Build avatar URL from base URL
 const avatarSrc = computed(() => {
   const base = (runtimeConfig.app.baseURL || '/').replace(/\/$/, '')
   return `${base}/media/avatar.JPG`
@@ -177,8 +265,14 @@ function onAvatarError(e: Event) {
   if (fallbackRef.value) fallbackRef.value.style.display = 'flex'
 }
 
-// Generate stars & ripple on mount
 onMounted(() => {
+  try {
+    const saved = localStorage.getItem('pref_lang') as Lang
+    if (saved && dict[saved]) {
+      currentLang.value = saved
+    }
+  } catch (e) {}
+
   // Stars
   if (starsRef.value) {
     for (let i = 0; i < 55; i++) {
@@ -205,18 +299,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* ── Portfolio colour tokens (dark mode) ──────────────────────
-   accent-blue  : #3b82f6
-   accent-cyan  : #06b6d4
-   accent-green : #10b981
-   accent-purple: #8b5cf6
-   bg-primary   : #0a0f1a
-   bg-card      : #111827
-   bg-border    : #1e2d45
-   ──────────────────────────────────────────────────────────── */
-
 .links-page {
-  font-family: 'Tajawal', 'Cairo', sans-serif;
+  font-family: 'Tajawal', 'Cairo', 'Inter', sans-serif;
   background: radial-gradient(ellipse at 25% 12%, #0d1f4a 0%, #0a0f1a 45%, #040810 100%);
   min-height: 100dvh;
   min-height: 100vh;
@@ -224,7 +308,6 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   position: relative;
-  direction: rtl;
   overflow-y: auto;
   padding: env(safe-area-inset-top, 0)
            env(safe-area-inset-right, 0)
@@ -232,14 +315,53 @@ onMounted(() => {
            env(safe-area-inset-left, 0);
 }
 
-/* ── Stars ── */
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #1e2d45;
+  border-radius: 30px;
+  padding: 4px 6px;
+  margin-bottom: clamp(0.8rem, 2dvh, 1.1rem);
+  backdrop-filter: blur(12px);
+  z-index: 10;
+}
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.lang-btn:hover {
+  color: #f1f5f9;
+  background: rgba(255, 255, 255, 0.08);
+}
+.lang-btn.active {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.4);
+}
+
+/* Stars */
 .stars-layer {
   position: fixed; inset: 0;
   pointer-events: none; overflow: hidden; z-index: 0;
 }
 .star {
   position: absolute; border-radius: 50%;
-  /* blue-tinted stars to match portfolio */
   background: #3b82f6;
   animation: twinkle var(--d, 3s) ease-in-out infinite alternate;
   opacity: 0;
@@ -249,7 +371,7 @@ onMounted(() => {
   100% { opacity: 0.5; transform: scale(1.3); }
 }
 
-/* ── Orbs ── */
+/* Orbs */
 .orb {
   position: fixed; border-radius: 50%;
   filter: blur(90px); pointer-events: none; z-index: 0;
@@ -257,7 +379,6 @@ onMounted(() => {
 .orb-1 {
   width: clamp(200px, 55vw, 380px);
   height: clamp(200px, 55vw, 380px);
-  /* portfolio accent-blue glow */
   background: radial-gradient(circle, rgba(59, 130, 246, 0.14) 0%, transparent 70%);
   top: -100px; left: -100px;
   animation: drift 11s ease-in-out infinite alternate;
@@ -265,7 +386,6 @@ onMounted(() => {
 .orb-2 {
   width: clamp(150px, 38vw, 260px);
   height: clamp(150px, 38vw, 260px);
-  /* portfolio accent-cyan glow */
   background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
   bottom: -60px; right: -60px;
   animation: drift 15s ease-in-out infinite alternate-reverse;
@@ -275,7 +395,7 @@ onMounted(() => {
   100% { transform: translate(24px, 24px) scale(1.1); }
 }
 
-/* ── Page wrapper ── */
+/* Page wrapper */
 .page {
   position: relative; z-index: 1;
   width: min(460px, 96vw);
@@ -283,7 +403,14 @@ onMounted(() => {
   display: flex; flex-direction: column; align-items: center;
 }
 
-/* ── Avatar ── */
+.profile-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Avatar */
 .avatar-wrap {
   position: relative;
   width:  clamp(76px, 20vw, 96px);
@@ -293,7 +420,6 @@ onMounted(() => {
 }
 .avatar-ring {
   position: absolute; inset: -5px; border-radius: 50%;
-  /* portfolio gradient: blue → cyan → green */
   background: conic-gradient(
     #3b82f6 0deg,
     #06b6d4 90deg,
@@ -328,12 +454,11 @@ onMounted(() => {
   text-shadow: 0 0 20px rgba(59,130,246,0.5);
 }
 
-/* ── Name ── */
+/* Name */
 .name {
   font-family: 'Cairo', sans-serif;
   font-size: clamp(1.15rem, 5vw, 1.55rem);
   font-weight: 900; color: #f1f5f9;
-  /* same gradient-text as portfolio hero */
   background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -342,11 +467,11 @@ onMounted(() => {
   filter: drop-shadow(0 0 16px rgba(59,130,246,0.3));
 }
 
-/* ── Tagline ── */
+/* Tagline */
 .tagline {
   font-size: clamp(0.62rem, 2.4vw, 0.76rem);
-  font-weight: 500;
-  color: #94a3b8; /* text-secondary */
+  font-weight: 600;
+  color: #94a3b8;
   letter-spacing: 0.5px;
   margin-bottom: clamp(0.4rem, 1.5dvh, 0.55rem);
   text-align: center; opacity: .9;
@@ -354,16 +479,15 @@ onMounted(() => {
   padding: 0 0.5rem;
 }
 
-/* ── Badge ── */
+/* Badge */
 .badge {
   display: inline-flex; align-items: center; gap: .3rem;
-  /* portfolio card bg + blue border */
   background: rgba(59, 130, 246, 0.08);
   border: 1px solid rgba(59, 130, 246, 0.28);
   border-radius: 9999px;
   padding: clamp(.18rem, .8dvh, .28rem) clamp(.6rem, 3vw, .9rem);
   font-size: clamp(.72rem, 2.8vw, .83rem);
-  color: #93c5fd; /* blue-300 */
+  color: #93c5fd;
   margin-bottom: clamp(0.8rem, 2.5dvh, 1.2rem);
   backdrop-filter: blur(8px);
   animation: pulse 3s ease-in-out infinite;
@@ -379,9 +503,7 @@ onMounted(() => {
   50%       { transform: scale(1.25); }
 }
 
-/* ══════════════════════════════════════
-   2 × 3 GRID
-   ══════════════════════════════════════ */
+/* Grid */
 .links-grid {
   width: 100%;
   display: grid;
@@ -389,16 +511,13 @@ onMounted(() => {
   gap: clamp(0.45rem, 1.5vw, 0.65rem);
 }
 
-/* card base — matches portfolio card-base */
 .link-btn {
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: clamp(0.3rem, 1dvh, 0.5rem);
   padding: clamp(0.7rem, 2.2dvh, 1rem) clamp(0.4rem, 2vw, 0.7rem);
   border-radius: clamp(12px, 3vw, 20px);
-  /* portfolio bg-card */
   background: rgba(17, 24, 39, 0.8);
-  /* portfolio bg-border */
   border: 1px solid #1e2d45;
   backdrop-filter: blur(16px);
   text-decoration: none; color: #f1f5f9;
@@ -415,7 +534,6 @@ onMounted(() => {
 @media (hover: hover) {
   .link-btn:hover {
     transform: translateY(-5px) scale(1.04);
-    /* portfolio card-hover shadow + blue glow */
     background: rgba(17, 24, 39, 0.95);
     border-color: rgba(59, 130, 246, 0.5);
     box-shadow:
@@ -431,7 +549,6 @@ onMounted(() => {
   border-color: rgba(59, 130, 246, 0.4);
 }
 
-/* icon circle */
 .btn-icon-wrap {
   width:  clamp(38px, 10vw, 48px);
   height: clamp(38px, 10vw, 48px);
@@ -449,7 +566,6 @@ onMounted(() => {
   height: clamp(18px, 5vw, 24px);
 }
 
-/* per-button icon ring colours — using portfolio accent palette */
 .btn-github    .btn-icon-wrap {
   background: rgba(30, 45, 69, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -459,7 +575,6 @@ onMounted(() => {
   border: 1px solid rgba(10, 102, 194, 0.45);
 }
 .btn-phone     .btn-icon-wrap {
-  /* accent-green */
   background: rgba(16, 185, 129, 0.12);
   border: 1px solid rgba(16, 185, 129, 0.4);
 }
@@ -468,20 +583,18 @@ onMounted(() => {
   border: 1px solid rgba(37, 211, 102, 0.4);
 }
 .btn-portfolio .btn-icon-wrap {
-  /* accent-blue */
   background: rgba(59, 130, 246, 0.12);
   border: 1px solid rgba(59, 130, 246, 0.4);
 }
 .btn-email     .btn-icon-wrap {
-  /* accent-cyan */
   background: rgba(6, 182, 212, 0.12);
   border: 1px solid rgba(6, 182, 212, 0.4);
 }
 
-/* card text */
 .btn-label {
   position: relative; z-index: 1;
   display: flex; flex-direction: column; align-items: center; gap: .06rem;
+  width: 100%;
 }
 .btn-title {
   font-family: 'Cairo', sans-serif;
@@ -492,24 +605,58 @@ onMounted(() => {
 .btn-subtitle {
   font-size: clamp(0.56rem, 2vw, 0.67rem);
   font-weight: 400;
-  color: #94a3b8; /* text-secondary */
+  color: #94a3b8;
   white-space: nowrap; line-height: 1.2;
 }
 
-/* ── Footer ── */
+/* Dual Phone Chips */
+.phone-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 3px;
+  width: 100%;
+  align-items: center;
+}
+.phone-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #f1f5f9;
+  font-size: clamp(0.55rem, 2vw, 0.65rem);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  direction: ltr;
+  width: 100%;
+  max-width: 175px;
+}
+.phone-chip:hover {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: rgba(16, 185, 129, 0.65);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
 .footer-line {
   margin-top: clamp(0.6rem, 1.8dvh, 1rem);
   font-size: clamp(0.58rem, 2vw, 0.68rem);
-  color: #64748b; /* text-muted */
+  color: #64748b;
   text-align: center; letter-spacing: .6px;
 }
 
-/* ── Entrance animations ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 @media (prefers-reduced-motion: no-preference) {
+  .lang-switcher{ animation: fadeUp .55s  .02s ease both; }
   .avatar-wrap  { animation: fadeUp .55s  .06s ease both; }
   .name         { animation: fadeUp .55s  .14s ease both; }
   .tagline      { animation: fadeUp .55s  .19s ease both; }
@@ -525,15 +672,12 @@ onMounted(() => {
 
 @keyframes rippleAnim { to { transform: scale(1); opacity: 0; } }
 
-/* ── Responsive ── */
-/* Very small phones */
 @media (max-width: 359px) {
   .tagline { font-size: 0.6rem; }
   .badge   { font-size: 0.68rem; }
   .btn-subtitle { display: none; }
 }
 
-/* Landscape phones */
 @media (max-height: 620px) and (orientation: landscape) {
   .page {
     flex-direction: row;
@@ -559,7 +703,6 @@ onMounted(() => {
   .footer-line { display: none; }
 }
 
-/* Tablet+ */
 @media (min-width: 600px) {
   .page { width: min(500px, 90vw); }
   .links-grid { gap: 0.75rem; }

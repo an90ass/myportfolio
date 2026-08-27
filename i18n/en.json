@@ -78,7 +78,7 @@
     "job1": {
       "role": "Researcher Scholar (TÜBİTAK 1001 Project Founded) — Mobile Application Developer",
       "company": "TÜBİTAK 1001 Project",
-      "period": "Mar 2025 – Jul 2026",
+      "period": "Mar 2025 – Present",
       "location": "Ankara, Türkiye",
       "r1": "Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multithreaded processing of live IoT data streams over WebSocket.",
       "r2": "Engineered resilient background services that kept the app stable and synchronized under sustained heavy workloads.",
@@ -99,7 +99,7 @@
     "job3": {
       "role": "Junior Software Engineer",
       "company": "Visight Technology",
-      "period": "Oct 2025 – Jul 2026",
+      "period": "Oct 2025 – Present",
       "location": "Kocaeli, Türkiye",
       "r1": "Developed and enhanced backend services using FastAPI, supporting a multi-tenant enterprise platform and its administrative dashboard.",
       "r2": "Improved DigiVis dashboard performance by reducing load times from 5 seconds to under 1 second through backend query optimization, server-side pagination, database indexing, and Redis caching for frequently requested data.",

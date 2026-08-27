@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>أنس اسكندر | روابطي</title>
-  <meta name="description" content="Software Engineer | AI Engineer | Mobile & Backend — أنس اسكندر" />
+  <title>أنس اسكندر | Software Engineer | Mobile, Backend & AI Development</title>
+  <meta name="description" content="Software Engineer | Mobile, Backend & AI Development — أنس اسكندر" />
   <link rel="icon" type="image/x-icon" href="public/media/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -27,16 +27,14 @@
     /* ── Base reset ── */
     html {
       height: 100%;
-      /* allow scroll on very small screens / zoomed states */
       overflow-y: auto;
     }
 
     body {
-      font-family: 'Tajawal','Cairo', sans-serif;
+      font-family: 'Tajawal', 'Cairo', 'Inter', sans-serif;
       background: radial-gradient(ellipse at 25% 15%, #162060 0%, #0a1228 45%, #040810 100%);
-      /* use dvh so mobile browser chrome is accounted for */
       min-height: 100dvh;
-      min-height: 100vh; /* fallback */
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -78,9 +76,50 @@
     .page {
       position: relative; z-index: 1;
       width: min(460px, 96vw);
-      /* vertical padding scales with viewport height */
       padding: clamp(1rem, 3dvh, 2rem) clamp(1rem, 4vw, 1.6rem) clamp(0.8rem, 2dvh, 1.5rem);
       display: flex; flex-direction: column; align-items: center;
+    }
+
+    /* ══════════════════════════════════════
+       LANGUAGE SWITCHER
+       ══════════════════════════════════════ */
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      border-radius: 30px;
+      padding: 4px 6px;
+      margin-bottom: clamp(0.8rem, 2dvh, 1.1rem);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .lang-btn:hover {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: #0a1228;
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(201, 146, 14, 0.4);
     }
 
     /* ══════════════════════════════════════
@@ -130,11 +169,10 @@
     }
     .tagline {
       font-size: clamp(0.62rem, 2.4vw, 0.76rem);
-      font-weight: 500; color: var(--gold-light);
+      font-weight: 600; color: var(--gold-light);
       letter-spacing: 0.5px;
       margin-bottom: clamp(0.4rem, 1.5dvh, 0.6rem);
-      text-align: center; opacity: .88;
-      /* prevent overflow on tiny screens */
+      text-align: center; opacity: .92;
       white-space: normal; line-height: 1.4;
       padding: 0 0.5rem;
     }
@@ -169,7 +207,6 @@
       gap: clamp(0.45rem, 1.5vw, 0.65rem);
     }
 
-    /* card */
     .link-btn {
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
@@ -183,7 +220,6 @@
       transition: all .38s cubic-bezier(.34,1.56,.64,1);
       position: relative; overflow: hidden; cursor: pointer;
       text-align: center;
-      /* prevent text from making card too tall */
       min-height: 0;
     }
     .link-btn::before {
@@ -192,7 +228,6 @@
       opacity: 0; transition: opacity .3s;
     }
 
-    /* hover — disable on touch devices to avoid sticky hover */
     @media (hover: hover) {
       .link-btn:hover {
         transform: translateY(-5px) scale(1.04);
@@ -204,14 +239,12 @@
       .link-btn:hover .btn-icon { transform: scale(1.18) rotate(-6deg); }
     }
 
-    /* active state for touch */
     .link-btn:active {
       transform: scale(0.96);
       background: var(--card-hover);
       border-color: rgba(201,146,14,.5);
     }
 
-    /* icon circle */
     .btn-icon-wrap {
       width:  clamp(38px, 10vw, 48px);
       height: clamp(38px, 10vw, 48px);
@@ -223,13 +256,11 @@
       transition: transform .3s cubic-bezier(.34,1.56,.64,1);
       display: flex; align-items: center; justify-content: center;
     }
-    /* scale icons inside smaller circles */
     .btn-icon svg {
       width:  clamp(18px, 5vw, 26px);
       height: clamp(18px, 5vw, 26px);
     }
 
-    /* per-button icon backgrounds */
     .btn-github    .btn-icon-wrap { background: rgba(30,35,55,.95);   border: 1px solid rgba(255,255,255,.12); }
     .btn-linkedin  .btn-icon-wrap { background: rgba(10,102,194,.28); border: 1px solid rgba(10,102,194,.5);  }
     .btn-phone     .btn-icon-wrap { background: rgba(52,199,89,.14);  border: 1px solid rgba(52,199,89,.42);  }
@@ -237,10 +268,10 @@
     .btn-portfolio .btn-icon-wrap { background: rgba(201,146,14,.18); border: 1px solid rgba(201,146,14,.42); }
     .btn-email     .btn-icon-wrap { background: rgba(201,146,14,.14); border: 1px solid rgba(201,146,14,.4);  }
 
-    /* card text */
     .btn-label {
       position: relative; z-index: 1;
       display: flex; flex-direction: column; align-items: center; gap: .06rem;
+      width: 100%;
     }
     .btn-title {
       font-family: 'Cairo', sans-serif;
@@ -252,6 +283,41 @@
       font-size: clamp(0.56rem, 2vw, 0.67rem);
       font-weight: 400; color: var(--muted);
       white-space: nowrap; line-height: 1.2;
+    }
+
+    /* Dual Phone Chips */
+    .phone-chips {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-top: 3px;
+      width: 100%;
+      align-items: center;
+    }
+    .phone-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 8px;
+      background: rgba(52, 199, 89, 0.12);
+      border: 1px solid rgba(52, 199, 89, 0.35);
+      color: var(--white);
+      font-size: clamp(0.55rem, 2vw, 0.65rem);
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      direction: ltr;
+      width: 100%;
+      max-width: 175px;
+    }
+    .phone-chip:hover {
+      background: rgba(52, 199, 89, 0.3);
+      border-color: rgba(52, 199, 89, 0.65);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(52, 199, 89, 0.25);
     }
 
     /* ══════════════════════════════════════
@@ -268,10 +334,10 @@
        ENTRANCE ANIMATIONS
        ══════════════════════════════════════ */
     @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
-    /* respect reduced-motion preference */
     @media (prefers-reduced-motion: reduce) {
       * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
     }
+    .lang-switcher{ animation: fadeUp .55s .02s ease both; }
     .avatar-wrap  { animation: fadeUp .55s .06s ease both; }
     .name         { animation: fadeUp .55s .14s ease both; }
     .tagline      { animation: fadeUp .55s .19s ease both; }
@@ -289,15 +355,12 @@
     /* ══════════════════════════════════════
        RESPONSIVE BREAKPOINTS
        ══════════════════════════════════════ */
-
-    /* Very small phones: iPhone SE / 320px wide */
     @media (max-width: 359px) {
       .tagline { font-size: 0.6rem; letter-spacing: 0; }
       .badge   { font-size: 0.68rem; padding: .15rem .6rem; }
-      .btn-subtitle { display: none; } /* hide subtitles to save space */
+      .btn-subtitle { display: none; }
     }
 
-    /* Short screens (landscape phone): use horizontal profile row */
     @media (max-height: 620px) and (orientation: landscape) {
       .page {
         flex-direction: row;
@@ -327,13 +390,11 @@
       .footer-line { display: none; }
     }
 
-    /* Tablet & above: wider card, slightly more spacing */
     @media (min-width: 600px) {
       .page { width: min(500px, 90vw); }
       .links-grid { gap: 0.75rem; }
     }
 
-    /* Desktop */
     @media (min-width: 900px) {
       .page { width: 480px; }
     }
@@ -347,7 +408,14 @@
 
   <main class="page" role="main">
 
-    <!-- Profile block (used as a group in landscape) -->
+    <!-- Language Switcher Bar -->
+    <div class="lang-switcher" role="navigation" aria-label="Language selection">
+      <button class="lang-btn active" data-lang="ar" onclick="setLanguage('ar')">🇸🇦 العربية</button>
+      <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
+    </div>
+
+    <!-- Profile block -->
     <div class="profile-block" style="display:contents">
 
       <!-- Avatar -->
@@ -361,13 +429,13 @@
       </div>
 
       <!-- Name -->
-      <h1 class="name">أنس اسكندر</h1>
-      <p class="tagline">Software Engineer &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; Mobile &amp; Backend</p>
+      <h1 class="name" id="text-name">أنس اسكندر</h1>
+      <p class="tagline" id="text-tagline">Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development</p>
 
       <!-- Badge -->
       <div class="badge">
         <span class="heart">🤍</span>
-        <span>حيّاك الله وبيّاك، شرّفتني بزيارتك</span>
+        <span id="text-badge">حيّاك الله وبيّاك، شرّفتني بزيارتك</span>
       </div>
 
     </div><!-- /profile-block -->
@@ -387,7 +455,7 @@
         </span>
         <span class="btn-label">
           <span class="btn-title">GitHub</span>
-          <span class="btn-subtitle">مشاريعي المفتوحة</span>
+          <span class="btn-subtitle" id="sub-github">مشاريعي المفتوحة</span>
         </span>
       </a>
 
@@ -403,12 +471,12 @@
         </span>
         <span class="btn-label">
           <span class="btn-title">LinkedIn</span>
-          <span class="btn-subtitle">مسيرتي المهنية</span>
+          <span class="btn-subtitle" id="sub-linkedin">مسيرتي المهنية</span>
         </span>
       </a>
 
-      <!-- Phone KSA -->
-      <a id="btn-phone" class="link-btn btn-phone" href="tel:+966592682004">
+      <!-- Dual Phone (KSA & TR) -->
+      <div id="btn-phone" class="link-btn btn-phone btn-dual-phone">
         <span class="btn-icon-wrap">
           <span class="btn-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -417,10 +485,17 @@
           </span>
         </span>
         <span class="btn-label">
-          <span class="btn-title">اتصل بي</span>
-          <span class="btn-subtitle">+966 592 682 004</span>
+          <span class="btn-title" id="title-phone">اتصل بي</span>
+          <div class="phone-chips">
+            <a href="tel:+966592682004" class="phone-chip" title="Saudi Arabia">
+              <span>🇸🇦</span> <span>+966 592 682 004</span>
+            </a>
+            <a href="tel:+905397924923" class="phone-chip" title="Turkey">
+              <span>🇹🇷</span> <span>+90 539 792 4923</span>
+            </a>
+          </div>
         </span>
-      </a>
+      </div>
 
       <!-- WhatsApp -->
       <a id="btn-whatsapp" class="link-btn btn-whatsapp"
@@ -451,8 +526,8 @@
           </span>
         </span>
         <span class="btn-label">
-          <span class="btn-title">Portfolio</span>
-          <span class="btn-subtitle">أعمالي وإنجازاتي</span>
+          <span class="btn-title" id="title-portfolio">Portfolio</span>
+          <span class="btn-subtitle" id="sub-portfolio">أعمالي وإنجازاتي</span>
         </span>
       </a>
 
@@ -467,17 +542,94 @@
           </span>
         </span>
         <span class="btn-label">
-          <span class="btn-title">راسلني</span>
+          <span class="btn-title" id="title-email">راسلني</span>
           <span class="btn-subtitle">anass12976@gmail.com</span>
         </span>
       </a>
 
     </nav>
 
-    <p class="footer-line">أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦</p>
+    <p class="footer-line" id="text-footer">أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦</p>
   </main>
 
   <script>
+    /* ── Translations ── */
+    const translations = {
+      ar: {
+        dir: 'rtl',
+        name: 'أنس اسكندر',
+        tagline: 'Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development',
+        badge: 'حيّاك الله وبيّاك، شرّفتني بزيارتك',
+        githubSub: 'مشاريعي المفتوحة',
+        linkedinSub: 'مسيرتي المهنية',
+        phoneTitle: 'اتصل بي',
+        portfolioTitle: 'Portfolio',
+        portfolioSub: 'أعمالي وإنجازاتي',
+        emailTitle: 'راسلني',
+        footer: 'أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦'
+      },
+      en: {
+        dir: 'ltr',
+        name: 'Anas Iskandar',
+        tagline: 'Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development',
+        badge: 'Welcome! Glad to have you here',
+        githubSub: 'Open Source Projects',
+        linkedinSub: 'Professional Profile',
+        phoneTitle: 'Call Me',
+        portfolioTitle: 'Portfolio',
+        portfolioSub: 'Works & Achievements',
+        emailTitle: 'Email Me',
+        footer: 'Anas Iskandar &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
+      },
+      tr: {
+        dir: 'ltr',
+        name: 'Anas Iskandar',
+        tagline: 'Software Engineer &nbsp;·&nbsp; Mobile, Backend &amp; AI Development',
+        badge: 'Hoş geldiniz! Ziyaretiniz için teşekkürler',
+        githubSub: 'Açık Kaynak Projeler',
+        linkedinSub: 'Profesyonel Profil',
+        phoneTitle: 'Beni Arayın',
+        portfolioTitle: 'Portfolyo',
+        portfolioSub: 'Çalışmalarım ve Projelerim',
+        emailTitle: 'E-posta Gönder',
+        footer: 'Anas Iskandar &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
+      }
+    };
+
+    function setLanguage(lang) {
+      const t = translations[lang] || translations.ar;
+      document.documentElement.dir = t.dir;
+      document.documentElement.lang = lang;
+
+      // Update text contents
+      document.getElementById('text-name').innerHTML = t.name;
+      document.getElementById('text-tagline').innerHTML = t.tagline;
+      document.getElementById('text-badge').innerHTML = t.badge;
+      document.getElementById('sub-github').innerHTML = t.githubSub;
+      document.getElementById('sub-linkedin').innerHTML = t.linkedinSub;
+      document.getElementById('title-phone').innerHTML = t.phoneTitle;
+      document.getElementById('title-portfolio').innerHTML = t.portfolioTitle;
+      document.getElementById('sub-portfolio').innerHTML = t.portfolioSub;
+      document.getElementById('title-email').innerHTML = t.emailTitle;
+      document.getElementById('text-footer').innerHTML = t.footer;
+
+      // Active button highlight
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+
+      // Save preference
+      try { localStorage.setItem('pref_lang', lang); } catch(e){}
+    }
+
+    // Load saved lang on start
+    (function(){
+      const saved = localStorage.getItem('pref_lang');
+      if(saved && translations[saved]) {
+        setLanguage(saved);
+      }
+    })();
+
     /* ── Stars ── */
     (function(){
       const l = document.getElementById('stars');
@@ -507,7 +659,7 @@
       });
     });
 
-    /* ── Landscape layout: wrap profile-block as flex child ── */
+    /* ── Landscape layout ── */
     function applyLandscape(){
       const pb = document.querySelector('.profile-block');
       const isLandscape = window.matchMedia('(max-height:620px) and (orientation:landscape)').matches;
@@ -525,3 +677,4 @@
   </script>
 </body>
 </html>
+
