@@ -21,8 +21,8 @@
     "downloadCV": "Download CV",
     "summaryTitle": "Quick Overview",
     "locationLabel": "Location",
-    "location": "Riyadh, Saudi Arabia",
-    "locationValue": "Riyadh, Saudi Arabia",
+    "location": "Riyadh, Saudi Arabia 🇸🇦 · Kocaeli (İzmit), Türkiye 🇹🇷",
+    "locationValue": "Riyadh, Saudi Arabia 🇸🇦 · Kocaeli (İzmit), Türkiye 🇹🇷",
     "nationalityLabel": "Nationality",
     "nationalityValue": "Yemeni",
     "statusLabel": "Status",
@@ -233,7 +233,7 @@
     "description": "Looking for a dedicated Software Engineer to elevate your team? I am actively open to full-time engineering roles (Remote & Relocation) and ready to deliver impactful results from day one.",
     "emailLabel": "Email",
     "locationLabel": "Location",
-    "locationValue": "Riyadh, Saudi Arabia 🇸🇦",
+    "locationValue": "Riyadh, Saudi Arabia 🇸🇦 · Kocaeli (İzmit), Türkiye 🇹🇷",
     "findMe": "Find me on",
     "formTitle": "Send a Message / Job Inquiry",
     "nameLabel": "Name / Company",
@@ -296,5 +296,11 @@
     "quickLinks": "Quick Links",
     "builtWith": "Built With",
     "copyright": "Crafted with"
+  },
+  "chatbot": {
+    "name": "Anas Eskander (AI)",
+    "role": "Software Engineer · AI Assistant",
+    "welcome": "Hello! I'm Anas Eskander's AI assistant. Ask me anything about my skills, work experience, projects, or job availability.",
+    "placeholder": "Ask Anas anything..."
   }
 }

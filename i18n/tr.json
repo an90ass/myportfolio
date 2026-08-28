@@ -21,8 +21,8 @@
     "downloadCV": "CV İndir",
     "summaryTitle": "Kısa Genel Bakış",
     "locationLabel": "Konum",
-    "location": "Riyad, Suudi Arabistan",
-    "locationValue": "Riyad, Suudi Arabistan 🇸🇦",
+    "location": "Riyad, Suudi Arabistan 🇸🇦 · Kocaeli (İzmit), Türkiye 🇹🇷",
+    "locationValue": "Riyad, Suudi Arabistan 🇸🇦 · Kocaeli (İzmit), Türkiye 🇹🇷",
     "nationalityLabel": "Uyruk",
     "nationalityValue": "Yemen 🇾🇪",
     "statusLabel": "Durum",
@@ -233,7 +233,7 @@
     "description": "Mühendislik ekibinize değer katacak yetenekli ve tutkulu bir Yazılım Mühendisi mi arıyorsunuz? Tam zamanlı pozisyonlar (Remote & Relocation) için açığım ve ilk günden itibaren katkı sağlamaya hazırım.",
     "emailLabel": "E-posta",
     "locationLabel": "Konum",
-    "locationValue": "Riyad, Suudi Arabistan 🇸🇦",
+    "locationValue": "Riyad, Suudi Arabistan 🇸🇦 · Kocaeli (İzmit), Türkiye 🇹🇷",
     "findMe": "Beni Bulun",
     "formTitle": "Mesaj / İş Teklifi Gönderin",
     "nameLabel": "İsim / Şirket",
@@ -296,5 +296,11 @@
     "quickLinks": "Hızlı Bağlantılar",
     "builtWith": "Kullanılan Teknolojiler",
     "copyright": "Tasarım & Geliştirme"
+  },
+  "chatbot": {
+    "name": "Anas Eskander (AI)",
+    "role": "Yazılım Mühendisi · AI Asistanı",
+    "welcome": "Merhaba! Ben Anas Eskander'in yapay zeka asistanıyım. Becerilerim, deneyimim, projelerim veya iş fırsatları hakkında bana her şeyi sorabilirsiniz.",
+    "placeholder": "Anas'a bir şey sor..."
   }
 }
