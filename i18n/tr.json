@@ -1,116 +1,89 @@
 {
   "nav": {
     "about": "Hakkımda",
+    "capabilities": "Yetenekler",
     "services": "Hizmetler",
+    "techStack": "Teknolojiler",
     "projects": "Projeler",
-    "techStack": "Yetenekler",
     "experience": "Deneyim",
+    "education": "Eğitim",
     "contact": "İletişim",
-    "cv": "CV"
+    "cv": "Özgeçmiş"
   },
   "hero": {
-    "available": "Available for work",
-    "greeting": "Hello, I'm",
+    "available": "İşe Açık / Available for Work",
+    "greeting": "Merhaba, ben",
     "role": "Software Engineer",
-    "description": "Full-stack Software Engineer (2+ years) dedicated to architecting high-performance mobile and web systems, clean architecture, and real-time telemetry. #lifelong_learner",
-    "getInTouch": "Get in touch",
-    "viewProjects": "Projects",
-    "downloadCV": "Download CV",
-    "locationLabel": "Location",
-    "location": "Riyadh, Saudi Arabia",
-    "statusLabel": "Status",
-    "status": "Open to Relocation",
-    "specialtyLabel": "Specialty",
+    "description1": "Mobil (Flutter) ve Backend (Python, .NET) mimarilerinde 2+ yıllık deneyime sahip Yazılım Mühendisi.",
+    "description2": "Ölçeklenebilir uçtan uca sistem mimarilerine, derin öğrenme model optimizasyonuna ve endüstriyel kalitede yüksek performanslı yazılımlar geliştirmeye odaklanıyorum.",
+    "getInTouch": "İletişime Geç",
+    "viewProjects": "Projeler",
+    "downloadCV": "CV İndir",
+    "summaryTitle": "Kısa Genel Bakış",
+    "locationLabel": "Konum",
+    "location": "Riyad, Suudi Arabistan",
+    "locationValue": "Riyad, Suudi Arabistan 🇸🇦",
+    "nationalityLabel": "Uyruk",
+    "nationalityValue": "Yemen 🇾🇪",
+    "statusLabel": "Durum",
+    "status": "Relocation & İşe Açık",
+    "statusValue": "Relocation & İşe Açık",
+    "specialtyLabel": "Uzmanlık",
     "specialty": "Mobile · Backend",
-    "remoteLabel": "Work Mode",
+    "remoteLabel": "Çalışma Şekli",
     "remote": "Remote / On-site",
-    "experienceLabel": "Experience",
-    "years": "Years",
-    "projectsLabel": "Projects",
-    "delivered": "Delivered"
-  },
-  "about": {
-    "sectionLabel": "about_me",
-    "title": "About Me",
-    "p1": "Software Engineer with 2+ years of experience in building and shipping production-grade mobile (Flutter) and backend (Python, .NET) applications.",
-    "p2": "Passionate about architecting scalable systems and end-to-end solutions.",
-    "p3": "Currently pursuing an M.Sc. in Software Engineering, where I leverage advanced architectural research and software methodologies to deliver high-performance, robust industrial applications.",
-    "summaryTitle": "Summary",
-    "interestsTitle": "Interests",
-    "experienceLabel": "Experience",
-    "experienceValue": "2+ Years",
-    "locationLabel": "Location",
-    "locationValue": "Riyadh, Saudi Arabia",
-    "nationalityLabel": "Nationality",
-    "nationalityValue": "Yemeni",
-    "statusLabel": "Status",
-    "statusValue": "Open to Relocation",
-    "remoteLabel": "Work Mode",
-    "remoteValue": "✓ Remote & Relocation",
-    "traits": [
-      "Clean Architecture",
-      "Full-Stack",
-      "Real-Time Systems",
-      "IoT & BLE/NFC",
-      "API Design",
-      "SOLID Principles"
-    ],
-    "interests": [
-      "Flutter",
-      "Python/FastAPI",
-      ".NET/C#",
-      "Vue.js",
-      "Angular",
-      "PostgreSQL",
-      "GCP",
-      "Open Source"
-    ]
+    "remoteValue": "Remote & Relocation",
+    "experienceLabel": "Deneyim",
+    "experienceValue": "2+ Yıl",
+    "years": "Yıl",
+    "projectsLabel": "Projeler",
+    "delivered": "Tamamlanan"
   },
   "experience": {
-    "sectionLabel": "experience",
-    "title": "Work Experience",
-    "educationTitle": "Education",
-    "quickFacts": "Quick Facts",
-    "factYears": "Years exp.",
-    "factProjects": "Projects",
-    "factCompanies": "Companies",
-    "factTechs": "Technologies",
+    "sectionLabel": "Deneyim",
+    "title": "İş Deneyimi",
+    "educationTitle": "Eğitim",
+    "quickFacts": "Öne Çıkan Bilgiler",
+    "factYears": "Yıllık Deneyim",
+    "factProjects": "Proje",
+    "factCompanies": "Şirket",
+    "factTechs": "Teknoloji",
     "job1": {
-      "role": "Genç Yazılım Mühendisi (Junior Software Engineer)",
+      "role": "Junior Software Engineer",
       "company": "Visight Technology",
       "period": "Ekim 2025 – Temmuz 2026",
       "location": "Kocaeli, Türkiye",
-      "r1": "FastAPI kullanarak çok kiracılı bir kurumsal platform ve yönetim paneli için arka uç servislerini geliştirdi ve iyileştirdi.",
-      "r2": "Sorgu optimizasyonu, sunucu tarafı sayfalama, veritabanı indeksleme ve Redis önbellekleme ile kontrol paneli yükleme sürelerini 5 saniyeden 1 saniyenin altına düşürdü.",
-      "r3": "Veritabanı kilitleme ve sorgu performansı sorunlarını çözerek sistem güvenilirliğini ve ölçeklenebilirliğini artırdı, yoğun trafik sırasında donmaları önledi.",
-      "r4": "Uzun pasaport tarama işlemleri sırasında oturumları açık tutmak için sessiz JWT belirteç yenilemesi uyguladı."
+      "r1": "FastAPI kullanarak çok kiracılı kurumsal bir platform ve yönetim paneli için Backend servislerini geliştirdim ve optimize ettim.",
+      "r2": "Sorgu optimizasyonu, server-side pagination, veritabanı indeksleme ve Redis caching ile kontrol paneli yükleme sürelerini 5 saniyeden 1 saniyenin altına düşürdüm.",
+      "r3": "Veritabanı kilitleme ve sorgu performans sorunlarını çözerek sistem güvenilirliğini artırdım ve yoğun trafik anlarında donmaları önledim.",
+      "r4": "Uzun pasaport tarama işlemleri sırasında oturumların kesintisiz devam etmesi için sessiz JWT token yenileme mekanizması uyguladım."
     },
     "job2": {
-      "role": "Araştırmacı Bursiyer (TÜBİTAK 1001 Projesi) — Mobil Uygulama Geliştiricisi",
+      "role": "Researcher Scholar (TÜBİTAK 1001) — Mobil Uygulama Geliştiricisi",
       "company": "TÜBİTAK 1001 Projesi",
       "period": "Mart 2025 – Temmuz 2026",
       "location": "Ankara, Türkiye",
-      "r1": "Gerçek zamanlı konum takibi ve canlı izleme için Google Haritalar görselleştirmesi ve WebSocket üzerinden canlı IoT veri akışlarının çok iş parçacıklı işlenmesiyle yüksek performanslı bir Flutter uygulaması oluşturdu.",
-      "r2": "Sürekli ağır iş yükleri altında uygulamayı kararlı ve senkronize tutan dayanıklı arka plan servisleri geliştirdi.",
-      "r3": "Çevrimdışı öncelikli iletişim katmanı tasarladı: E2EE ile BLE tabanlı P2P grup sohbeti ve kişi yönetimi, ayrıca Bluetooth RSSI ve manyetometre verileriyle konumlandırma modülü.",
-      "r4": "Mobil dağıtım için hafif derin öğrenme modellerini eğitti ve optimize etti, TensorFlow Lite'a dönüştürerek cihaz üzerinde gerçek zamanlı çıkarım için entegre etti."
+      "r1": "Google Maps görselleştirmesi ve WebSocket üzerinden canlı IoT veri akışlarının multithread işlenmesiyle gerçek zamanlı konum takibi sağlayan yüksek performanslı bir Flutter uygulaması geliştirdim.",
+      "r2": "Yüksek iş yükü altında uygulamanın kararlı ve senkronize çalışmasını sağlayan dayanıklı arka plan servisleri mimarisini kurdum.",
+      "r3": "Çevrimdışı (offline-first) iletişim katmanı tasarladım: BLE tabanlı P2P E2EE grup mesajlaşması ile Bluetooth RSSI ve manyetometre verileriyle çalışan yön bulma modülü geliştirdim.",
+      "r4": "Hafif derin öğrenme modellerini eğitip TensorFlow Lite formatına dönüştürerek mobil cihaz üzerinde gerçek zamanlı çıkarım (on-device inference) için entegre ettim."
     },
     "job3": {
-      "role": "Serbest Tam Yığın Geliştirici (Mobil, Arka Uç ve Web)",
+      "role": "Freelance Full-Stack Developer (Mobile, Backend & Web)",
       "company": "TurVia",
       "period": "Haziran 2026 – Temmuz 2026",
-      "location": "Uzaktan, Türkiye · Visight stajıyla eşzamanlı serbest çalışma",
-      "r1": "İlk mimariden Google Play ve App Store'daki üretim dağıtımına kadar uçtan uca akıllı turizm ve tur yönetim platformu TurVia'yı tasarladı ve sundu."
+      "location": "Remote, Türkiye · Visight stajı ile eşzamanlı freelance çalışma",
+      "r1": "Akıllı turizm ve tur yönetim platformu TurVia'yı mimari tasarımdan Google Play ve App Store canlı yayın süreçlerine kadar uçtan uca geliştirdim ve teslim ettim."
     },
     "job4": {
-      "role": "Yazılım Mühendisi Stajyeri (Software Engineer Intern)",
+      "role": "Software Engineer Intern",
       "company": "Visight Technology",
       "period": "Ocak 2025 – Ekim 2025",
       "location": "Kocaeli, Türkiye",
-      "r1": "MRZ ve NFC pasaport/kimlik okuma dahil olmak üzere biyometrik kimlik doğrulamalı bir Flutter mobil uygulaması geliştirdi.",
-      "r2": "Biyometrik veri işleme, kimlik doğrulama ve gerçek zamanlı doğrulama için FastAPI arka uç servisleri geliştirdi.",
-      "r3": "Merkezi kullanıcı, operasyon ve sistem günlüğü izlemesi için çok kiracılı bir yönetim paneline katkıda bulundu.",
-      "r4": "Güvenli ve güvenilir kimlik doğrulama iş akışlarını desteklemek için mobil, arka uç ve bilgisayarla görü bileşenlerini entegre etti."
+      "r1": "MRZ ve NFC pasaport/kimlik okuma ve biyometrik kimlik doğrulamaya sahip Flutter mobil uygulaması geliştirdim.",
+      "r2": "Biyometrik veri işleme, kimlik doğrulama ve gerçek zamanlı doğrulama için FastAPI backend servisleri geliştirdim.",
+      "r3": "Kullanıcı, işlem ve sistem günlüklerinin merkezi takibi için çok kiracılı (multi-tenant) yönetim paneli geliştirmelerine katkıda bulundum.",
+      "r4": "Güvenli ve güvenilir kimlik doğrulama akışları için mobil, backend ve bilgisayarla görü (computer vision) bileşenlerini entegre ettim."
     },
     "edu1": {
       "degree": "M.Sc. in Software Engineering",
@@ -132,167 +105,196 @@
     }
   },
   "projects": {
-    "sectionLabel": "projects",
-    "title": "Featured Projects",
-    "viewAll": "View all on GitHub",
-    "clickExpand": "Click to expand",
+    "sectionLabel": "Projeler",
+    "title": "Öne Çıkan Projeler",
+    "viewAll": "GitHub'da Tümünü Gör",
+    "clickExpand": "Genişletmek için tıklayın",
+    "showMore": "Daha Fazla Proje Göster",
+    "showLess": "Daha Az Göster",
     "p1": {
-      "title": "TurVia — Smart Tourism & Navigation",
-      "description": "A comprehensive tourism app featuring smart routing, real-time recommendations, personalized trip planning, and a tour management system with secure in-app payments (iyzico/Stripe) and real-time operational workflows.",
+      "title": "TurVia — Akıllı Turizm & Navigasyon",
+      "description": "Akıllı rota planlama, anlık öneriler, kişiselleştirilmiş seyahat planlaması ve güvenli uygulama içi ödeme (iyzico/Stripe) altyapısına sahip kapsamlı turizm ve tur yönetim platformu.",
       "category": "Flutter • Tourism"
     },
     "p2": {
-      "title": "KURTAR — IoT & AI-Based Disaster Response App",
-      "description": "Developed the Flutter app end-to-end, integrating Google Maps for real-time incident visualization, and built an offline-first BLE layer featuring E2EE 1-to-1 and group messaging, RSSI/magnetometer localization, role-based access, and pre-incident health profiles to expedite rescue operations. Co-trained lightweight models (CNN, LSTM, GNN) with PyTorch on time-series IoT and mobile sensor data, then converted and deployed them via TensorFlow Lite for on-device real-time disaster decision support.",
+      "title": "KURTAR — IoT & Yapay Zeka Destekli Afet Müdahale Platformu",
+      "description": "Canlı harita görselleştirmesi, BLE tabanlı E2EE çevrimdışı grup mesajlaşması, RSSI/manyetometre ile konum belirleme ve acil müdahaleyi hızlandıran sağlık profilleri içeren Flutter mobil uygulamasını uçtan uca geliştirdim. PyTorch ile eğitilen hafif CNN, LSTM ve GNN modellerini TensorFlow Lite'a dönüştürerek cihaz üzerinde anlık afet karar desteği için entegre ettim.",
       "category": "Flutter • PyTorch • CNN/LSTM/GNN • TFLite • BLE"
     },
     "p3": {
-      "title": "Kurtar Saha — Field Data & AI Suite",
-      "description": "An integrated ecosystem of two Flutter apps for seismic research: a field data acquisition tool with high-frequency sensor logging and precision Hz sampling, plus an AI inference app for real-time model validation via WebSocket.",
+      "title": "Kurtar Saha — Saha Veri Toplama & AI Test Ekosistemi",
+      "description": "Sismik araştırmalar için iki Flutter uygulamasından oluşan entegre ekosistem: yüksek frekanslı sensör kaydı yapan saha veri toplama aracı ve WebSocket üzerinden anlık model doğrulama yapan yapay zeka test uygulaması.",
       "category": "Flutter • Seismic • AI"
     },
     "p4": {
-      "title": "DigiVis — Digital Onboarding & KYC",
-      "description": "A secure digital onboarding SDK for iOS & Android with high-fidelity camera capture, Liveness Detection, Face Matching algorithms, NFC/MRZ document reading, and a centralized dashboard for real-time administrative oversight.",
+      "title": "DigiVis — Dijital Kimlik Doğrulama & KYC SDK",
+      "description": "iOS ve Android için yüksek kaliteli kamera çekimi, canlılık tespiti (Liveness Detection), yüz eşleme, NFC/MRZ belge okuma ve merkezi yönetim paneline sahip güvenli dijital kimlik doğrulama SDK'sı.",
       "category": "Flutter • FastAPI • KYC"
     },
     "p5": {
-      "title": "IbanVault — Secure IBAN Manager",
-      "description": "Offline-first Flutter app for encrypted IBAN storage with QR code generation & scanning, multi-language support (EN/TR/AR), RTL-aware layouts, and AES-encrypted local database. Clean MVC architecture with Provider.",
+      "title": "IbanVault — Güvenli IBAN Yöneticisi",
+      "description": "Şifreli IBAN saklama, QR kod üretme/tarama, çoklu dil desteği (TR/EN/AR), RTL uyumlu arayüz ve AES şifreli yerel veritabanı içeren offline-first Flutter uygulaması.",
       "category": "Flutter • Security"
     },
     "p6": {
-      "title": "Vakit — Smart Prayer Times App",
-      "description": "A multilingual Islamic prayer times app with GPS-based & manual city selection, 3 saved cities, timely local notifications, customizable reminders, and RTL-aware UI available in Turkish, English, and Arabic.",
+      "title": "Vakit — Akıllı Ezan Vakitleri Uygulaması",
+      "description": "GPS tabanlı ve manuel şehir seçimi, 3 kayıtlı şehir, anlık yerel bildirimler, özelleştirilebilir hatırlatıcılar ve RTL destekli arayüze sahip çok dilli İslami namaz vakitleri uygulaması.",
       "category": "Flutter • Islamic"
     },
     "p7": {
-      "title": "LenDeX — Smart Lending UI",
-      "description": "A high-fidelity Flutter UI kit for personal budgeting and micro-lending app designs. Featuring pixel-perfect layouts, responsive dashboard components, interactive charts, and smooth animation transitions.",
+      "title": "LenDeX — Akıllı Finans & Kredi UI Kiti",
+      "description": "Kişisel bütçeleme ve mikro kredi uygulamaları için yüksek kaliteli Flutter UI kiti. Kusursuz piksel düzenleri, duyarlı panel bileşenleri, etkileşimli grafikler ve akıcı animasyonlar içerir.",
       "category": "Flutter • UI/UX"
     },
     "p8": {
-      "title": "AI Financial — Visually Impaired (Thesis)",
-      "description": "Undergraduate graduation thesis awarded with Honours. A YOLOv5-powered mobile app providing real-time money recognition and full financial management for visually impaired users, backed by Firebase and intelligent accessibility design.",
+      "title": "AI Financial — Görme Engelliler İçin Finans Asistanı (Tez)",
+      "description": "Onur derecesi ile ödüllendirilen lisans bitirme tezi. YOLOv5 tabanlı gerçek zamanlı para tanıma ve görme engelli kullanıcılar için tam erişilebilir finansal yönetim sağlayan mobil uygulama.",
       "category": "Flutter • AI • Accessibility"
     },
     "p9": {
-      "title": "NetGuard — LAN Security Analyzer",
-      "description": "A Flutter app for non-intrusive LAN network analysis and connected device discovery. Uses an Evidence Scoring engine that combines open ports, response time, and MAC address data to classify devices by risk level. Built with Clean Architecture, MVVM (Provider), and Dart Isolates for parallel scanning without blocking the UI.",
+      "title": "NetGuard — Yerel Ağ Güvenlik Analizcisi",
+      "description": "Yerel ağları analiz eden ve bağlı cihazları tespit eden Flutter uygulaması. Cihazları risk seviyesine göre sınıflandırmak için açık portları, yanıt süresini ve MAC adres verilerini birleştiren Evidence Scoring motorunu kullanır. Clean Architecture ve Dart Isolates ile geliştirildi.",
       "category": "Flutter • Security • Networking"
     },
     "syncledger": {
       "title": "SyncLedger",
-      "category": "Mobile App",
-      "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
+      "category": "Mobil Uygulama",
+      "description": "Küçük işletmelerin faturalandırma, ürün yönetimi, mağaza ayarları ve Bluetooth termal yazdırma işlemlerini yönetebileceği modern bir Flutter uygulaması."
     },
     "pharma": {
       "title": "Pharma",
-      "description": "A full-featured pharmacy management system built with Flutter and Firebase. Features role-based authentication (Admin/Manager/Cashier), real-time dashboard KPIs, medicine CRUD with barcode & voice search, batch/FIFO inventory tracking, purchase orders, POS with cart/tax/discount, PDF invoice generation, daily/weekly/monthly profit reports with charts, customer & supplier management, push notifications for expiry and low stock, Excel/PDF export, AI medicine recommendations, dark mode, multi-store support, and Firebase backup & restore.",
-      "category": "Mobile App"
+      "description": "Flutter ve Firebase ile geliştirilmiş kapsamlı eczane yönetim sistemi. Rol tabanlı yetkilendirme (Yönetici/Müdür/Kasiyer), anlık KPI paneli, barkod/sesli ilaç arama, FIFO stok takibi, satış noktası (POS), PDF fatura üretimi, kâr/zarar raporları, son kullanma tarihi bildirimleri ve yapay zeka destekli ilaç önerileri içerir.",
+      "category": "Mobil Uygulama"
     },
-    "webSectionLabel": "web",
-    "webTitle": "Web Dashboards & Admin Platforms",
+    "webSectionLabel": "Web Platformları",
+    "webTitle": "Web Panelleri & Yönetim Platformları",
     "web1": {
-      "title": "Kurtar Command Dashboard",
-      "category": "Command Center",
-      "description": "Live command center for the KURTAR mobile app with role-based access: real-time earthquake/incident mapping, shortest-safe-path routing for rescue teams, field-responder tracking, and resource, incident, and alert management."
+      "title": "Kurtar Komuta Kontrol Paneli",
+      "category": "Komuta Merkezi",
+      "description": "KURTAR mobil uygulaması için rol tabanlı canlı komuta merkezi: gerçek zamanlı deprem/olay haritası, kurtarma ekipleri için en kısa güvenli rota planlama ve saha görevlisi takibi."
     },
     "web2": {
-      "title": "DigiVis Enterprise Dashboard",
-      "category": "Admin Panel",
-      "description": "Multi-tenant admin panel giving each partner company its own scoped, role-based access to manage users and track its KYC pipeline — request status, approval history, and audit logs for compliance."
+      "title": "DigiVis Kurumsal Yönetim Paneli",
+      "category": "Yönetim Paneli",
+      "description": "Her iş ortağı şirkete kendi kullanıcılarını yönetme ve KYC süreçlerini (talep durumu, onay geçmişi ve denetim kayıtları) takip etme imkanı sunan çok kiracılı kurumsal web paneli."
     },
     "web3": {
-      "title": "Malahi Vending Machine Fleet Dashboard",
-      "category": "Fleet Monitoring",
-      "description": "Role-based fleet monitoring across 150+ vending machines: real-time machine/payment telemetry, automated low-stock and maintenance alerts, and per-machine sales/inventory analytics."
+      "title": "Malahi Otomat Filo Yönetim Paneli",
+      "category": "Filo İzleme",
+      "description": "150'den fazla otomat makinesi için rol tabanlı filo izleme paneli: anlık makine/ödeme telemetrisi, otomatik düşük stok/bakım uyarıları ve makine bazlı satış analitiği."
     },
     "web4": {
-      "title": "TurVia Partner Dashboard",
-      "category": "Operator Console",
-      "description": "Role-based, operator-facing web console for the TurVia tour management system: booking and itinerary management, in-app payment reconciliation, and real-time operational workflow tracking."
+      "title": "TurVia İş Ortağı Paneli",
+      "category": "Operatör Konsolu",
+      "description": "TurVia tur yönetim sistemi için operatör odaklı web konsolu: rezervasyon ve rota yönetimi, uygulama içi ödeme mutabakatı ve operasyonel iş akışı takibi."
     },
     "web5": {
-      "title": "Invoice Management App",
-      "category": "Invoicing Platform",
-      "description": "Debt collection and invoicing platform for managing customer accounts, tracking outstanding balances, and generating invoices."
+      "title": "Fatura Yönetim Platformu",
+      "category": "Faturalandırma Platformu",
+      "description": "Müşteri hesaplarını yönetmek, bakiye takibi yapmak ve fatura düzenlemek için geliştirilmiş tahsilat ve faturalandırma platformu."
     }
   },
   "services": {
-    "sectionLabel": "services",
-    "title": "What I Do",
-    "subtitle": "Freelance, remote & on-site — end-to-end engineering",
+    "sectionLabel": "Uzmanlık",
+    "title": "Uzmanlık Alanları",
     "s1": {
-      "title": "Mobile Development",
-      "description": "Production-grade iOS & Android apps with Flutter — Clean Architecture, real-time data pipelines, BLE/NFC hardware integration, and SDK development.",
-      "i1": "Flutter — BLoC, Cubit, Provider, Riverpod",
-      "i2": "Clean Architecture & SDK Development",
-      "i3": "Device sensors: GPS, Accelerometer, Gyroscope",
-      "i4": "BLE & NFC hardware integration",
-      "i5": "E2EE, RBAC & App Store publishing",
-      "i6": "Multi-language (EN/TR/AR) + RTL support"
+      "title": "Mobil Uygulama & SDK Mühendisliği",
+      "description": "Offline-first çalışan, donanım sensörleri ve düşük gecikmeli kablosuz protokol entegrasyonlarına sahip, güvenli şifreleme ve App Store / Play Store yayın süreçleriyle üretime hazır mobil uygulamalar geliştiriyorum."
     },
     "s2": {
-      "title": "Backend & API Engineering",
-      "description": "Scalable REST & WebSocket backends with Python and .NET — real-time streaming, OAuth security, and cloud deployments.",
-      "i1": "Python: FastAPI, Django, Flask",
-      "i2": ".NET Framework (C#) & RESTful API Design",
-      "i3": "WebSocket & Real-Time Data Streaming",
-      "i4": "OAuth / Token-Based Authentication",
-      "i5": "PostgreSQL, MS SQL Server, MySQL, Firebase",
-      "i6": "GCP, Railway, Render, Nginx & Ngrok"
+      "title": "Dağıtık Sistemler & Backend API Mimarisi",
+      "description": "Event-driven mimariler, çift yönlü gerçek zamanlı veri akışları ve yüksek eşzamanlılık altında kesintisiz çalışacak kurumsal güvenlik modelleriyle yüksek performanslı Backend sistemleri tasarlıyorum."
     },
     "s3": {
-      "title": "Web & Frontend Development",
-      "description": "Responsive admin dashboards and frontend platforms with Angular, Vue.js/Nuxt.js, and modern TypeScript.",
-      "i1": "TypeScript & JavaScript (Angular, Vue.js)",
-      "i2": "Nuxt.js — SSR & SSG web apps",
-      "i3": "Responsive Admin Dashboards",
-      "i4": "HTML5, CSS3 & UI/UX best practices",
-      "i5": "Real-time dashboards with WebSocket",
-      "i6": "Git, GitHub, GitLab, Postman & Figma"
+      "title": "Uygulamalı Yapay Zeka & Edge Inference",
+      "description": "Derin öğrenme modellerini eğitiyor, fine-tuning yapıyor ve sinir ağlarını doğrudan mobil/edge cihazlarda hafif ve hızlı çıkarım için optimize ediyorum."
+    },
+    "s4": {
+      "title": "Kurumsal Web Platformları & Bulut Altyapısı",
+      "description": "Kritik yönetim panelleri geliştiriyor, Docker ve CI/CD süreçlerini otomatikleştiriyor ve yüksek erişilebilirlikli ölçeklenebilir bulut altyapılarını yönetiyorum."
     }
   },
   "tech": {
-    "sectionLabel": "tech_stack",
-    "title": "Technologies & Tools",
-    "subtitle": "Full-stack engineering across mobile & backend systems",
-    "mobile": "Mobile Development",
-    "backend": "Backend & API Development",
-    "web": "Web & Frontend Development",
-    "database": "Databases & Data Management",
-    "cloud": "Cloud, DevOps & Infrastructure",
-    "architecture": "Software Architecture & Practices",
-    "security": "Security, IoT & Connectivity",
-    "tools": "Tools & Collaboration"
+    "sectionLabel": "Teknolojiler",
+    "title": "Teknolojiler & Araçlar",
+    "mobile": "Mobil Geliştirme",
+    "backend": "Backend & API Geliştirme",
+    "ai": "Yapay Zeka & Makine Öğrenimi",
+    "web": "Web & Frontend Geliştirme",
+    "database": "Veritabanı & Veri Yönetimi",
+    "cloud": "Bulut, DevOps & Altyapı",
+    "architecture": "Yazılım Mimarisi & Mühendislik",
+    "security": "Güvenlik, IoT & Bağlantı",
+    "tools": "Araçlar & İş Birliği"
   },
   "contact": {
-    "sectionLabel": "contact",
-    "title": "Let's Work Together",
-    "description": "Have a project in mind? Looking for a developer who can bring your idea to life? I'm currently available for freelance, contract, and on-site work.",
-    "emailLabel": "Email",
-    "locationLabel": "Location",
-    "locationValue": "Riyadh, Saudi Arabia 🇸🇦",
-    "findMe": "Find me on",
-    "formTitle": "Send a Message",
-    "nameLabel": "Name",
-    "namePlaceholder": "ANAS ESKANDER",
-    "emailFormLabel": "Email",
-    "emailPlaceholder": "anass12976{'@'}gmail.com",
-    "subjectLabel": "Subject",
-    "subjectPlaceholder": "Project discussion, collaboration...",
-    "messageLabel": "Message",
-    "messagePlaceholder": "Tell me about your project...",
-    "sending": "Sending...",
-    "send": "Send Message",
-    "success": "Message sent! I'll get back to you soon.",
-    "error": "Something went wrong. Please try emailing me directly."
+    "sectionLabel": "İletişim & Fırsatlar",
+    "title": "Ekibinize Katılmaya Hazırım",
+    "description": "Mühendislik ekibinize değer katacak yetenekli ve tutkulu bir Yazılım Mühendisi mi arıyorsunuz? Tam zamanlı pozisyonlar (Remote & Relocation) için açığım ve ilk günden itibaren katkı sağlamaya hazırım.",
+    "emailLabel": "E-posta",
+    "locationLabel": "Konum",
+    "locationValue": "Riyad, Suudi Arabistan 🇸🇦",
+    "findMe": "Beni Bulun",
+    "formTitle": "Mesaj / İş Teklifi Gönderin",
+    "nameLabel": "İsim / Şirket",
+    "namePlaceholder": "İşe Alım Sorumlusu / Ekip Lideri",
+    "emailFormLabel": "İş E-postası",
+    "emailPlaceholder": "recruiter{'@'}company.com",
+    "subjectLabel": "Konu",
+    "subjectPlaceholder": "İş teklifi, mülakat daveti, pozisyon hakkında...",
+    "messageLabel": "Pozisyon Detayları / Mesaj",
+    "messagePlaceholder": "Pozisyon, ekip veya fırsat hakkında bilgi verin...",
+    "sending": "Gönderiliyor...",
+    "send": "Mesajı Gönder",
+    "success": "Mesajınız iletildi! En kısa sürede dönüş yapacağım.",
+    "error": "Bir şeyler ters gitti. Lütfen doğrudan e-posta gönderin."
+  },
+  "education": {
+    "sectionLabel": "Eğitim",
+    "title": "Eğitim",
+    "visitUniversity": "Üniversite Sitesini Ziyaret Et",
+    "viewCertificate": "Onur Belgesini Görüntüle",
+    "certBootcamp": "Bootcamp Katılım Belgesi",
+    "certWeb": "Web Geliştirme Belgesi",
+    "certEntrepreneurship": "Girişimcilik Belgesi",
+    "edu1": {
+      "degree": "Yazılım Mühendisliği Yüksek Lisans (M.Sc.)",
+      "school": "Kocaeli Üniversitesi (Kocaeli University)",
+      "url": "https://www.kocaeli.edu.tr/",
+      "location": "Kocaeli, Türkiye",
+      "period": "Eylül 2025 – Ocak 2027",
+      "gpa": "GNO: 3.95 / 4.00",
+      "badge": "Yüksek Lisans",
+      "thesisTitle": "Thesis",
+      "note": "On the Limits of Generative AI Cryptanalysis: A Systematic Methodological Ablation Study under AES-CTR"
+    },
+    "edu2": {
+      "degree": "Bilgisayar Mühendisliği Lisans (B.Sc.)",
+      "school": "Bartın Üniversitesi (Bartın University)",
+      "url": "https://www.bartin.edu.tr/",
+      "location": "Bartın, Türkiye",
+      "period": "Ekim 2021 – Haziran 2025",
+      "gpa": "GNO: 3.42 / 4.00",
+      "badge": "Onur Derecesi",
+      "thesisTitle": "Thesis",
+      "note": "AI-Powered Mobile App for the Visually Impaired — Görme Engelliler İçin Yapay Zeka Destekli Mobil Uygulama (Onur Derecesi ile Ödüllendirildi)"
+    },
+    "edu3": {
+      "degree": "Yapay Zeka Uygulama Geliştirme Programı",
+      "school": "Yapay Zeka ve Teknoloji Akademisi",
+      "url": "https://yapayzekaveteknolojiakademisi.com/",
+      "location": "Uzaktan / Türkiye",
+      "period": "Kasım 2024 – Eylül 2025",
+      "gpa": "Tam Burslu",
+      "badge": "1 Yıllık Burs Programı",
+      "thesisTitle": "Uzmanlık & Sertifikalar",
+      "note": "Google ve T.C. Sanayi ve Teknoloji Bakanlığı destekli; Makine Öğrenimi, Bilgisayarla Görü, Yapay Zeka Destekli Mobil ve Web Uygulama Geliştirme ile Teknoloji Girişimciliğini kapsayan 1 yıllık burslu eğitim programı."
+    }
   },
   "footer": {
-    "brand": "Software Engineer specializing in mobile & backend systems — Flutter, Python, .NET. Available for remote and relocation.",
-    "quickLinks": "Quick Links",
-    "builtWith": "Built With",
-    "copyright": "Crafted with"
+    "brand": "Mobil & Backend sistemlerinde uzmanlaşmış Yazılım Mühendisi — Flutter, Python, .NET. Remote ve relocation fırsatlarına açık.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "builtWith": "Kullanılan Teknolojiler",
+    "copyright": "Tasarım & Geliştirme"
   }
 }

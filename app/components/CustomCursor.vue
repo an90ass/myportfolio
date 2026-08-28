@@ -93,8 +93,8 @@ onUnmounted(() => {
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background: #3b82f6;
-  box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f640;
+  background: #f59e0b;
+  box-shadow: 0 0 10px #f59e0b, 0 0 20px rgba(245, 158, 11, 0.4);
   transition: width 0.2s, height 0.2s, background 0.2s;
 }
 
@@ -102,7 +102,7 @@ onUnmounted(() => {
 .cursor-ring {
   width: 40px;
   height: 40px;
-  border: 1.5px solid rgba(59, 130, 246, 0.5);
+  border: 1.5px solid rgba(245, 158, 11, 0.5);
   background: transparent;
   transition: width 0.25s cubic-bezier(.25,.46,.45,.94),
               height 0.25s cubic-bezier(.25,.46,.45,.94),
@@ -114,15 +114,15 @@ onUnmounted(() => {
 .cursor-ring--hover {
   width: 56px;
   height: 56px;
-  border-color: rgba(99, 211, 255, 0.7);
-  background: rgba(99, 211, 255, 0.06);
+  border-color: rgba(251, 191, 36, 0.7);
+  background: rgba(251, 191, 36, 0.06);
 }
 
 /* On click: ring shrinks */
 .cursor-ring--click {
   width: 28px;
   height: 28px;
-  background: rgba(59, 130, 246, 0.15);
-  border-color: rgba(59, 130, 246, 0.9);
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.9);
 }
 </style>

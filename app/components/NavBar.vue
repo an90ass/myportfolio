@@ -7,8 +7,8 @@
   >
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#" class="font-mono font-medium text-sm text-text-primary hover:text-accent-blue transition-colors">
-        <span class="text-accent-blue">#</span>anas.dev
+      <a href="#" class="font-mono font-medium text-sm text-text-primary hover:text-accent-amber transition-colors">
+        <span class="text-accent-amber font-bold">#</span>anas.dev
       </a>
 
       <!-- Desktop nav -->
@@ -28,7 +28,7 @@
         <div class="relative lang-switcher">
           <button
             @click="isLangOpen = !isLangOpen"
-            class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-bg-card border border-bg-border hover:border-accent-blue/40
+            class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-bg-card border border-bg-border hover:border-accent-amber/40
                    transition-all duration-200 text-text-secondary hover:text-text-primary text-sm font-medium"
             aria-label="Select Language"
           >
@@ -49,14 +49,14 @@
               class="absolute right-0 mt-2 w-32 rounded-xl bg-bg-card/95 backdrop-blur-md border border-bg-border shadow-lg py-1 z-50"
             >
               <button
-                v-for="loc in locales"
+                v-for="loc in availableLocales"
                 :key="loc.code"
                 @click="changeLocale(loc.code)"
-                class="w-full text-left px-4 py-2 text-sm hover:bg-bg-hover transition-colors duration-150 flex items-center justify-between"
-                :class="locale === loc.code ? 'text-accent-blue font-semibold' : 'text-text-secondary'"
+                class="w-full text-left px-4 py-2 text-sm hover:bg-bg-hover transition-colors duration-150 flex items-center justify-between cursor-pointer"
+                :class="locale === loc.code ? 'text-accent-amber font-semibold' : 'text-text-secondary'"
               >
                 <span>{{ loc.name }}</span>
-                <span class="text-xs uppercase text-text-muted">{{ loc.code }}</span>
+                <span class="text-xs uppercase text-text-muted font-mono">{{ loc.code }}</span>
               </button>
             </div>
           </Transition>
@@ -65,7 +65,7 @@
         <!-- Theme toggle -->
         <button
           @click="toggleColorMode"
-          class="p-2 rounded-lg bg-bg-card border border-bg-border hover:border-accent-blue/40
+          class="p-2 rounded-lg bg-bg-card border border-bg-border hover:border-accent-amber/40
                  transition-all duration-200 text-text-secondary hover:text-text-primary"
           :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
         >
@@ -75,17 +75,18 @@
 
         <!-- Download CV -->
         <a href="/Anas_Eskander_CV.pdf" download="Anas_Eskander_CV.pdf"
-           class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-green/10 border border-accent-green/30
-                  text-accent-green text-sm font-medium hover:bg-accent-green/20 transition-all duration-200">
+           class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-amber/10 border border-accent-amber/30
+                  text-accent-amber text-sm font-medium hover:bg-accent-amber/20 transition-all duration-200">
           <Download :size="14" />
           {{ $t('nav.cv') }}
         </a>
 
-        <!-- Contact CTA -->
-        <a href="#contact"
-           class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-blue
-                  text-white text-sm font-medium hover:bg-accent-blue/90 transition-all duration-200"
-           @click.prevent="scrollTo('#contact')">
+        <!-- Contact CTA (Direct Gmail) -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anass12976@gmail.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-amber
+                  text-stone-950 text-sm font-bold hover:bg-accent-gold shadow-sm hover:shadow-accent-amber/20 transition-all duration-200 cursor-pointer">
           <Mail :size="14" />
           {{ $t('nav.contact') }}
         </a>
@@ -98,18 +99,24 @@
 import { Sun, Moon, Mail, Download, Globe } from 'lucide-vue-next'
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
-const { t, locale, locales, setLocale } = useI18n()
+const { t, locale, setLocale } = useI18n()
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 const scrolled = ref(false)
 const isLangOpen = ref(false)
 
+const availableLocales = computed(() => [
+  { code: 'en', name: 'English' },
+  { code: 'ar', name: 'العربية' },
+  { code: 'tr', name: 'Türkçe' },
+])
+
 const navItems = computed(() => [
-  { href: '#about',      label: t('nav.about') },
   { href: '#services',   label: t('nav.services') },
-  { href: '#projects',   label: t('nav.projects') },
   { href: '#tech',       label: t('nav.techStack') },
+  { href: '#projects',   label: t('nav.projects') },
   { href: '#experience', label: t('nav.experience') },
+  { href: '#education',  label: t('nav.education') },
   { href: '#contact',    label: t('nav.contact') },
 ])
 
@@ -119,6 +126,10 @@ function toggleColorMode() {
 
 function changeLocale(code: string) {
   setLocale(code)
+  if (typeof document !== 'undefined') {
+    document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr'
+    document.documentElement.lang = code
+  }
   isLangOpen.value = false
 }
 

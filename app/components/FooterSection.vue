@@ -5,7 +5,7 @@
         <!-- Brand -->
         <div>
           <a href="#" class="font-mono font-medium text-sm text-text-primary mb-3 inline-block">
-            <span class="text-accent-blue">#</span>anas.dev
+            <span class="text-accent-amber font-bold">#</span>anas.dev
           </a>
           <p class="text-text-muted text-xs leading-relaxed max-w-xs">
             {{ $t('footer.brand') }}
@@ -58,11 +58,11 @@ import { computed } from 'vue'
 const { t } = useI18n()
 
 const navLinks = computed(() => [
-  { href: '#about',      label: t('nav.about') },
   { href: '#services',   label: t('nav.services') },
-  { href: '#projects',   label: t('nav.projects') },
   { href: '#tech',       label: t('nav.techStack') },
+  { href: '#projects',   label: t('nav.projects') },
   { href: '#experience', label: t('nav.experience') },
+  { href: '#education',  label: t('nav.education') },
   { href: '#contact',    label: t('nav.contact') },
 ])
 

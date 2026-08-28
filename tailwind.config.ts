@@ -17,16 +17,22 @@ export default {
           border:    'var(--bg-border)',
         },
         accent: {
-          blue:  '#3b82f6',
-          cyan:  '#06b6d4',
-          green: '#10b981',
-          purple:'#8b5cf6',
+          amber:     '#10b981', // Strategic Emerald 500 (5% Accent)
+          gold:      '#34d399', // Mint / Light Emerald 400
+          warm:      '#059669', // Deep Emerald 600
+          terracotta:'#047857', // Forest Emerald 700
+          emerald:   '#10b981',
+          mint:      '#34d399',
+          green:     '#10b981',
+          blue:      '#10b981',
+          cyan:      '#34d399',
+          purple:    '#059669',
         },
         text: {
           primary:   'var(--text-primary)',
           secondary: 'var(--text-secondary)',
           muted:     'var(--text-muted)',
-          dark:      '#0f172a',
+          dark:      '#111827',
         },
       },
       fontFamily: {
@@ -64,9 +70,9 @@ export default {
         },
       },
       boxShadow: {
-        card:       '0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3)',
-        'card-hover':'0 8px 32px rgba(0,0,0,0.5)',
-        glow:       '0 0 20px rgba(59,130,246,0.15)',
+        card:        '0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)',
+        'card-hover':'0 12px 30px -10px rgba(0,0,0,0.7), 0 0 20px -5px rgba(16,185,129,0.18)',
+        glow:        '0 0 25px rgba(16,185,129,0.18)',
       },
       transitionTimingFunction: {
         spring: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',

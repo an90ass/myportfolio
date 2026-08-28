@@ -20,9 +20,9 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     lazy: false,
     locales: [
-      { code: 'en', language: 'en-US' },
-      { code: 'ar', language: 'ar-YE', dir: 'rtl' },
-      { code: 'tr', language: 'tr-TR' },
+      { code: 'en', name: 'English', language: 'en-US' },
+      { code: 'ar', name: 'العربية', language: 'ar-YE', dir: 'rtl' },
+      { code: 'tr', name: 'Türkçe', language: 'tr-TR' },
     ],
     bundle: {
       fullInstall: true,

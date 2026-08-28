@@ -58,8 +58,8 @@ const glowStyle = computed(() => {
   return {
     opacity: '1',
     background: `radial-gradient(350px circle at ${mouse.x}px ${mouse.y}px,
-      rgba(59,130,246,0.12) 0%,
-      rgba(99,211,255,0.05) 40%,
+      rgba(245,158,11,0.09) 0%,
+      rgba(251,191,36,0.03) 40%,
       transparent 70%)`,
   }
 })
@@ -70,7 +70,7 @@ const borderStyle = computed(() => {
   return {
     opacity: '1',
     background: `radial-gradient(300px circle at ${mouse.x}px ${mouse.y}px,
-      rgba(59,130,246,0.35),
+      rgba(245,158,11,0.35),
       transparent 60%)`,
   }
 })

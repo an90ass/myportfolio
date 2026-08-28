@@ -1,22 +1,23 @@
 <template>
   <!-- ============ MOBILE PROJECTS ============ -->
-  <section id="projects" class="scroll-mt-20">
+  <section id="projects" class="scroll-mt-20 pt-16 border-t border-bg-border/60">
     <div
       v-motion
       :initial="{ opacity: 0, y: 20 }"
       :visible="{ opacity: 1, y: 0, transition: { duration: 600 } }"
     >
-      <div class="card-base p-8 mb-4">
-        <div class="section-label">
-          <span class="font-mono text-accent-blue">~/</span> {{ $t('projects.sectionLabel') }}
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight text-text-primary">{{ $t('projects.title') }}</h2>
         </div>
-        <div class="flex items-end justify-between flex-wrap gap-3">
-          <h2 class="text-2xl font-bold text-text-primary">{{ $t('projects.title') }}</h2>
-          <a href="https://github.com/an90ass" target="_blank" class="flex items-center gap-1.5 text-sm text-accent-blue hover:text-accent-cyan transition-colors">
-            {{ $t('projects.viewAll') }}
-            <ArrowRight :size="14" />
-          </a>
-        </div>
+        <a
+          href="https://github.com/an90ass"
+          target="_blank"
+          class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent-amber hover:text-accent-gold transition-colors group"
+        >
+          {{ $t('projects.viewAll') }}
+          <ArrowRight :size="15" class="group-hover:translate-x-1 transition-transform" />
+        </a>
       </div>
 
       <ProjectGrid :projects="mobileProjects" @open="openLightbox" />
@@ -24,19 +25,14 @@
   </section>
 
   <!-- ============ WEB PROJECTS ============ -->
-  <section id="web-projects" class="scroll-mt-20 mt-10">
+  <section id="web-projects" class="scroll-mt-20 pt-14 mt-12 border-t border-bg-border/40">
     <div
       v-motion
       :initial="{ opacity: 0, y: 20 }"
       :visible="{ opacity: 1, y: 0, transition: { duration: 600 } }"
     >
-      <div class="card-base p-8 mb-4">
-        <div class="section-label">
-          <span class="font-mono text-accent-blue">~/</span> {{ $t('projects.webSectionLabel') }}
-        </div>
-        <div class="flex items-end justify-between flex-wrap gap-3">
-          <h2 class="text-2xl font-bold text-text-primary">{{ $t('projects.webTitle') }}</h2>
-        </div>
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold tracking-tight text-text-primary">{{ $t('projects.webTitle') }}</h2>
       </div>
 
       <ProjectGrid :projects="webProjects" @open="openLightbox" />
@@ -114,7 +110,7 @@
 import { ref, computed, onMounted, onUnmounted, h, defineComponent } from 'vue'
 import {
   Github, ExternalLink, ArrowRight,
-  Smartphone, ChevronLeft, ChevronRight,
+  Smartphone, ChevronLeft, ChevronRight, ChevronDown, ChevronUp,
   Shield, Clock, Map, Activity, Brain,
   X, Maximize2, Monitor, LayoutDashboard,
   Truck, Receipt
@@ -517,7 +513,7 @@ const webProjects = computed(() => [
     iconBg: 'bg-accent-cyan/10',
     iconColor: 'text-accent-cyan',
     gradient: 'bg-gradient-to-br from-cyan-700/50 via-blue-600/30 to-cyan-900/50',
-    tags: ['Vue.js', 'FastAPI', 'PostgreSQL', 'RBAC'],
+    tags: ['Admin Dashboard', 'FastAPI', 'PostgreSQL', 'RBAC'],
     github: null,
     live: null,
     images: [] as string[],
@@ -547,6 +543,7 @@ const ProjectGrid = defineComponent({
   emits: ['open'],
   setup(props, { emit }) {
     const activeSlide = ref<Record<string, number>>({})
+    const visibleCount = ref(3)
 
     function nextSlide(key: string, total: number) {
       activeSlide.value[key] = ((activeSlide.value[key] || 0) + 1) % total
@@ -558,113 +555,157 @@ const ProjectGrid = defineComponent({
       activeSlide.value[key] = slide
     }
 
-    return () =>
-      h(
-        'div',
-        { class: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4' },
-        props.projects.map((project, i) => {
-          const slide = activeSlide.value[project.key] || 0
-          const hasImages = project.images.length > 0
+    function toggleShowMore() {
+      if (visibleCount.value < props.projects.length) {
+        visibleCount.value = Math.min(visibleCount.value + 3, props.projects.length)
+      } else {
+        visibleCount.value = 3
+      }
+    }
 
-          return h(
-            'div',
-            {
-              key: project.key,
-              class: [
-                'card-base overflow-hidden group flex flex-col',
-                hasImages ? 'cursor-pointer' : '',
-              ],
-              onClick: () => hasImages && emit('open', project.images, project.title, slide),
-            },
-            [
-              // Image / gradient area
-              h('div', { class: 'relative overflow-hidden', style: 'height:220px;' }, [
-                hasImages
-                  ? h('div', {
-                      class: 'flex h-full transition-transform duration-500 ease-in-out',
-                      style: `transform: translateX(-${slide * 100}%); width:${project.images.length * 100}%`,
-                    }, project.images.map((img: string, imgIdx: number) =>
-                      h('img', {
-                        key: imgIdx,
-                        src: img,
-                        alt: `${project.title} screenshot ${imgIdx + 1}`,
-                        class: 'object-cover object-top flex-shrink-0',
-                        style: `width:${100 / project.images.length}%; height:220px;`,
-                        loading: 'lazy',
-                      })
-                    ))
-                  : h('div', { class: ['absolute inset-0 flex flex-col items-center justify-center', project.gradient] }, [
-                      h('div', { class: 'p-5 rounded-2xl bg-white/10 backdrop-blur-sm mb-3 border border-white/10' }, [
-                        h(project.icon, { size: 36, class: 'text-white' }),
+    return () => {
+      const visibleProjects = props.projects.slice(0, visibleCount.value)
+      const hasMore = visibleCount.value < props.projects.length
+      const canToggle = props.projects.length > 3
+
+      return h('div', { class: 'space-y-6' }, [
+        h(
+          'div',
+          { class: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4' },
+          visibleProjects.map((project, i) => {
+            const slide = activeSlide.value[project.key] || 0
+            const hasImages = project.images.length > 0
+
+            return h(
+              'div',
+              {
+                key: project.key,
+                class: [
+                  'card-base overflow-hidden group flex flex-col',
+                  hasImages ? 'cursor-pointer' : '',
+                ],
+                onClick: () => hasImages && emit('open', project.images, project.title, slide),
+              },
+              [
+                // Image / gradient area
+                h('div', { class: 'relative overflow-hidden', style: 'height:220px;' }, [
+                  hasImages
+                    ? h('div', {
+                        class: 'flex h-full transition-transform duration-500 ease-in-out',
+                        style: `transform: translateX(-${slide * 100}%); width:${project.images.length * 100}%`,
+                      }, project.images.map((img: string, imgIdx: number) =>
+                        h('img', {
+                          key: imgIdx,
+                          src: img,
+                          alt: `${project.title} screenshot ${imgIdx + 1}`,
+                          class: 'object-cover object-top flex-shrink-0',
+                          style: `width:${100 / project.images.length}%; height:220px;`,
+                          loading: 'lazy',
+                        })
+                      ))
+                    : h('div', { class: ['absolute inset-0 flex flex-col items-center justify-center', project.gradient] }, [
+                        h('div', { class: 'p-5 rounded-2xl bg-white/10 backdrop-blur-sm mb-3 border border-white/10' }, [
+                          h(project.icon, { size: 36, class: 'text-white' }),
+                        ]),
+                        h('p', { class: 'text-white/70 text-xs font-mono px-4 text-center' }, project.category),
                       ]),
-                      h('p', { class: 'text-white/70 text-xs font-mono px-4 text-center' }, project.category),
+
+                  hasImages && h('div', { class: 'absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300 flex items-center justify-center pointer-events-none' }, [
+                    h('div', { class: 'opacity-0 group-hover:opacity-100 transition-all duration-300 scale-90 group-hover:scale-100 bg-black/60 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-xs text-white border border-white/20' }, [
+                      h(Maximize2, { size: 13 }),
+                      t('projects.clickExpand'),
                     ]),
+                  ]),
 
-                hasImages && h('div', { class: 'absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300 flex items-center justify-center pointer-events-none' }, [
-                  h('div', { class: 'opacity-0 group-hover:opacity-100 transition-all duration-300 scale-90 group-hover:scale-100 bg-black/60 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-xs text-white border border-white/20' }, [
-                    h(Maximize2, { size: 13 }),
-                    t('projects.clickExpand'),
+                  hasImages && h('div', { class: 'absolute inset-0 bg-gradient-to-t from-bg-primary/60 via-transparent to-transparent pointer-events-none' }),
+
+                  hasImages && project.images.length > 1 && h('button', {
+                    class: 'absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-bg-primary/80 backdrop-blur-sm flex items-center justify-center text-text-primary hover:bg-bg-hover transition-all opacity-0 group-hover:opacity-100 duration-200 border border-bg-border z-10',
+                    onClick: (e: Event) => { e.stopPropagation(); prevSlide(project.key, project.images.length) },
+                  }, [h(ChevronLeft, { size: 14 })]),
+
+                  hasImages && project.images.length > 1 && h('button', {
+                    class: 'absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-bg-primary/80 backdrop-blur-sm flex items-center justify-center text-text-primary hover:bg-bg-hover transition-all opacity-0 group-hover:opacity-100 duration-200 border border-bg-border z-10',
+                    onClick: (e: Event) => { e.stopPropagation(); nextSlide(project.key, project.images.length) },
+                  }, [h(ChevronRight, { size: 14 })]),
+
+                  hasImages && project.images.length > 1 && h('div', { class: 'absolute bottom-2 left-0 right-0 flex justify-center gap-1.5 z-10' },
+                    project.images.map((_: string, dotIdx: number) =>
+                      h('button', {
+                        key: dotIdx,
+                        class: ['rounded-full transition-all duration-300', slide === dotIdx ? 'w-4 h-1.5 bg-accent-amber' : 'w-1.5 h-1.5 bg-white/40'],
+                        onClick: (e: Event) => { e.stopPropagation(); setSlide(project.key, dotIdx) },
+                      })
+                    )
+                  ),
+
+                  h('div', { class: 'absolute top-3 left-3 z-10' }, [
+                    h('span', { class: 'text-xs px-2 py-1 rounded-lg bg-bg-primary/80 backdrop-blur-sm text-text-muted border border-bg-border font-mono' }, project.category),
                   ]),
                 ]),
 
-                hasImages && h('div', { class: 'absolute inset-0 bg-gradient-to-t from-bg-primary/60 via-transparent to-transparent pointer-events-none' }),
-
-                hasImages && project.images.length > 1 && h('button', {
-                  class: 'absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-bg-primary/80 backdrop-blur-sm flex items-center justify-center text-text-primary hover:bg-bg-hover transition-all opacity-0 group-hover:opacity-100 duration-200 border border-bg-border z-10',
-                  onClick: (e: Event) => { e.stopPropagation(); prevSlide(project.key, project.images.length) },
-                }, [h(ChevronLeft, { size: 14 })]),
-
-                hasImages && project.images.length > 1 && h('button', {
-                  class: 'absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-bg-primary/80 backdrop-blur-sm flex items-center justify-center text-text-primary hover:bg-bg-hover transition-all opacity-0 group-hover:opacity-100 duration-200 border border-bg-border z-10',
-                  onClick: (e: Event) => { e.stopPropagation(); nextSlide(project.key, project.images.length) },
-                }, [h(ChevronRight, { size: 14 })]),
-
-                hasImages && project.images.length > 1 && h('div', { class: 'absolute bottom-2 left-0 right-0 flex justify-center gap-1.5 z-10' },
-                  project.images.map((_: string, dotIdx: number) =>
-                    h('button', {
-                      key: dotIdx,
-                      class: ['rounded-full transition-all duration-300', slide === dotIdx ? 'w-4 h-1.5 bg-accent-blue' : 'w-1.5 h-1.5 bg-white/40'],
-                      onClick: (e: Event) => { e.stopPropagation(); setSlide(project.key, dotIdx) },
-                    })
-                  )
-                ),
-
-                h('div', { class: 'absolute top-3 left-3 z-10' }, [
-                  h('span', { class: 'text-xs px-2 py-1 rounded-lg bg-bg-primary/80 backdrop-blur-sm text-text-muted border border-bg-border font-mono' }, project.category),
-                ]),
-              ]),
-
-              // Content area
-              h('div', { class: 'flex flex-col flex-1 p-5' }, [
-                h('div', { class: 'flex items-start justify-between mb-2 gap-2' }, [
-                  h('div', { class: 'flex items-center gap-2' }, [
-                    h('div', { class: ['p-2 rounded-xl flex-shrink-0', project.iconBg] }, [
-                      h(project.icon, { size: 16, class: project.iconColor }),
+                // Content area
+                h('div', { class: 'flex flex-col flex-1 p-5' }, [
+                  h('div', { class: 'flex items-start justify-between mb-2 gap-2' }, [
+                    h('div', { class: 'flex items-center gap-2' }, [
+                      h('div', { class: ['p-2 rounded-xl flex-shrink-0', project.iconBg] }, [
+                        h(project.icon, { size: 16, class: project.iconColor }),
+                      ]),
+                      h('h3', { class: 'font-semibold text-text-primary text-sm leading-tight' }, project.title),
                     ]),
-                    h('h3', { class: 'font-semibold text-text-primary text-sm leading-tight' }, project.title),
+                    h('div', { class: 'flex gap-1.5 flex-shrink-0' }, [
+                      project.github && h('a', {
+                        href: project.github, target: '_blank',
+                        class: 'p-1.5 rounded-lg bg-bg-border hover:bg-bg-hover text-text-muted hover:text-text-primary transition-all duration-200',
+                        onClick: (e: Event) => e.stopPropagation(),
+                      }, [h(Github, { size: 13 })]),
+                      project.live && h('a', {
+                        href: project.live, target: '_blank',
+                        class: 'p-1.5 rounded-lg bg-bg-border hover:bg-bg-hover text-text-muted hover:text-text-primary transition-all duration-200',
+                        onClick: (e: Event) => e.stopPropagation(),
+                      }, [h(ExternalLink, { size: 13 })]),
+                    ]),
                   ]),
-                  h('div', { class: 'flex gap-1.5 flex-shrink-0' }, [
-                    project.github && h('a', {
-                      href: project.github, target: '_blank',
-                      class: 'p-1.5 rounded-lg bg-bg-border hover:bg-bg-hover text-text-muted hover:text-text-primary transition-all duration-200',
-                      onClick: (e: Event) => e.stopPropagation(),
-                    }, [h(Github, { size: 13 })]),
-                    project.live && h('a', {
-                      href: project.live, target: '_blank',
-                      class: 'p-1.5 rounded-lg bg-bg-border hover:bg-bg-hover text-text-muted hover:text-text-primary transition-all duration-200',
-                      onClick: (e: Event) => e.stopPropagation(),
-                    }, [h(ExternalLink, { size: 13 })]),
-                  ]),
+                  h('p', { class: 'text-text-muted text-xs leading-relaxed mb-3 flex-1' }, project.description),
+                  h('div', { class: 'flex flex-wrap gap-1.5 mt-auto' },
+                    project.tags.map((tag: string) => h('span', { key: tag, class: 'tech-badge' }, tag))
+                  ),
                 ]),
-                h('p', { class: 'text-text-muted text-xs leading-relaxed mb-3 flex-1' }, project.description),
-                h('div', { class: 'flex flex-wrap gap-1.5 mt-auto' },
-                  project.tags.map((tag: string) => h('span', { key: tag, class: 'tech-badge' }, tag))
-                ),
-              ]),
-            ]
-          )
-        })
-      )
+              ]
+            )
+          })
+        ),
+
+        canToggle &&
+          h('div', { class: 'flex justify-center pt-2' }, [
+            h(
+              'button',
+              {
+                type: 'button',
+                class:
+                  'inline-flex items-center gap-2.5 px-6 py-2.5 rounded-xl bg-bg-secondary/70 hover:bg-bg-secondary border border-bg-border/60 hover:border-accent-amber/40 text-text-primary text-xs font-semibold shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer backdrop-blur-sm',
+                onClick: toggleShowMore,
+              },
+              [
+                h('span', hasMore ? t('projects.showMore') : t('projects.showLess')),
+                hasMore &&
+                  h(
+                    'span',
+                    {
+                      class:
+                        'px-1.5 py-0.5 rounded-md bg-accent-amber/10 text-accent-amber text-[10px] font-mono font-bold border border-accent-amber/20',
+                    },
+                    `+${props.projects.length - visibleCount.value}`
+                  ),
+                h(hasMore ? ChevronDown : ChevronUp, {
+                  size: 14,
+                  class: 'text-accent-amber transition-transform duration-200 group-hover:scale-110',
+                }),
+              ]
+            ),
+          ]),
+      ])
+    }
   },
 })
 </script>
