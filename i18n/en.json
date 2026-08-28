@@ -300,7 +300,7 @@
   "chatbot": {
     "name": "Anas Eskander (AI)",
     "role": "Software Engineer · AI Assistant",
-    "welcome": "Hello! I'm Anas Eskander's AI assistant. Ask me anything about my skills, work experience, projects, or job availability.",
-    "placeholder": "Ask Anas anything..."
+    "welcome": "Hello! I'm Anas Eskander's AI Assistant. Ask me anything about Anas's skills, work experience, projects, or job availability.",
+    "placeholder": "Ask anything about Anas..."
   }
 }

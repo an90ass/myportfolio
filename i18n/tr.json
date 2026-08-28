@@ -14,8 +14,8 @@
     "available": "İşe Açık / Available for Work",
     "greeting": "Merhaba, ben",
     "role": "Software Engineer",
-    "description1": "Mobil (Flutter) ve Backend (Python, .NET) mimarilerinde 2+ yıllık deneyime sahip Yazılım Mühendisi.",
-    "description2": "Ölçeklenebilir uçtan uca sistem mimarilerine, derin öğrenme model optimizasyonuna ve endüstriyel kalitede yüksek performanslı yazılımlar geliştirmeye odaklanıyorum.",
+    "description1": "Üretime hazır (production-grade) mobil (Flutter) ve backend (Python, .NET) uygulamaları geliştirme ve canlıya alma konusunda 2 yılı aşkın deneyime sahip Yazılım Mühendisi.",
+    "description2": "İleri düzey mimari araştırmalardan, uygulamalı derin öğrenme model tasarımı ve ince ayarından (fine-tuning) ve yazılım metodolojilerinden yararlanarak; yüksek performanslı, dayanıklı endüstriyel uygulamalar sunmaya ve ölçeklenebilir uçtan uca (end-to-end) sistemler tasarlamaya tutkuluyum.",
     "getInTouch": "İletişime Geç",
     "viewProjects": "Projeler",
     "downloadCV": "CV İndir",
@@ -300,7 +300,7 @@
   "chatbot": {
     "name": "Anas Eskander (AI)",
     "role": "Yazılım Mühendisi · AI Asistanı",
-    "welcome": "Merhaba! Ben Anas Eskander'in yapay zeka asistanıyım. Becerilerim, deneyimim, projelerim veya iş fırsatları hakkında bana her şeyi sorabilirsiniz.",
-    "placeholder": "Anas'a bir şey sor..."
+    "welcome": "Merhaba! Ben Anas Eskander'in yapay zeka asistanıyım. Anas'ın becerileri, deneyimi, projeleri veya iş fırsatları hakkında bana her şeyi sorabilirsiniz.",
+    "placeholder": "Anas hakkında bir şey sorun..."
   }
 }
