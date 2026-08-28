@@ -2,6 +2,7 @@
   <div :class="['min-h-screen transition-colors duration-300', colorMode.value === 'dark' ? 'dark' : '']">
     <NuxtPage />
     <ChatBot />
+    <JobMatcherModal />
   </div>
 </template>
 

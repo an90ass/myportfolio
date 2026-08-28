@@ -33,6 +33,16 @@
 
           <!-- Harmonious Links Row -->
           <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-1">
+            <!-- Job Matcher Button (Clean & Professional) -->
+            <button
+              type="button"
+              @click="openJobMatcher()"
+              class="h-11 px-5 rounded-xl bg-bg-secondary/90 hover:bg-bg-hover text-text-primary border border-emerald-500/30 hover:border-emerald-500/60 font-semibold text-xs sm:text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 backdrop-blur-sm whitespace-nowrap cursor-pointer shadow-sm hover:shadow-emerald-500/10"
+            >
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>{{ $t('jobMatcher.ctaButton') }}</span>
+            </button>
+
             <!-- Projects -->
             <a
               href="#projects"
@@ -103,10 +113,12 @@
 </template>
 
 <script setup lang="ts">
-import { Folder, Github, Linkedin } from 'lucide-vue-next'
+import { Folder, Github, Linkedin, Sparkles } from 'lucide-vue-next'
 import { computed } from 'vue'
+import { useJobMatcher } from '~/composables/useJobMatcher'
 
 const { t } = useI18n()
+const { openJobMatcher } = useJobMatcher()
 
 const p1Formatted = computed(() => t('hero.description1'))
 const p2Formatted = computed(() => t('hero.description2'))

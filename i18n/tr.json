@@ -302,5 +302,29 @@
     "role": "Yazılım Mühendisi · AI Asistanı",
     "welcome": "Merhaba! Ben Anas Eskander'in yapay zeka asistanıyım. Anas'ın becerileri, deneyimi, projeleri veya iş fırsatları hakkında bana her şeyi sorabilirsiniz.",
     "placeholder": "Anas hakkında bir şey sorun..."
+  },
+  "jobMatcher": {
+    "ctaButton": "Rolü Eşleştir",
+    "badge": "Teknik Eşleştirme",
+    "title": "İş Gereksinimleri Eşleştirme",
+    "subtitle": "İş tanımınızı ve aranan teknolojileri, Anas Eskander'in mühendislik geçmişi ve üretim projeleriyle karşılaştırın.",
+    "placeholder": "İş gereksinimlerini, aranan teknolojileri veya görev tanımını buraya yapıştırın...",
+    "presetsLabel": "Veya hızlı karşılaştırma için bir rol seçin:",
+    "preset1": "Flutter Mobil Geliştirici",
+    "preset2": "Python Backend Geliştirici",
+    "preset3": ".NET Backend Geliştirici",
+    "analyzeBtn": "Gereksinim Uyumunu Değerlendir",
+    "analyzing": "Gereksinimler üretim tecrübesiyle karşılaştırılıyor...",
+    "matchScore": "Uyum Oranı",
+    "exceptional": "Mükemmel ve Doğrudan Uyum",
+    "strong": "Güçlü Uyum",
+    "moderate": "Kısmi Uyum",
+    "matchedSkills": "Eşleşen Temel Teknik Beceriler",
+    "evidenceTitle": "Üretim Kanıtları ve İlgili Projeler",
+    "pitchTitle": "Yönetici Özeti: Neden Anas?",
+    "inviteEmail": "Mülakata Davet Et (E-posta)",
+    "chatWhatsApp": "WhatsApp'tan İletişime Geç",
+    "tryAnother": "Başka Bir İlan Dene",
+    "errorMsg": "Şu anda analiz tamamlanamadı. Lütfen tekrar deneyin veya doğrudan iletişime geçin!"
   }
 }

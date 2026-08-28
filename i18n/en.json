@@ -302,5 +302,29 @@
     "role": "Software Engineer · AI Assistant",
     "welcome": "Hello! I'm Anas Eskander's AI Assistant. Ask me anything about Anas's skills, work experience, projects, or job availability.",
     "placeholder": "Ask anything about Anas..."
+  },
+  "jobMatcher": {
+    "ctaButton": "Match Role",
+    "badge": "Technical Match",
+    "title": "Role & Requirements Matcher",
+    "subtitle": "Evaluate your job requirements and required tech stack against Anas Eskander's engineering background and shipped projects.",
+    "placeholder": "Paste job requirements, required technologies, or engineering scope here...",
+    "presetsLabel": "Or select a sample role for a quick test:",
+    "preset1": "Flutter Mobile Developer",
+    "preset2": "Python Backend Developer",
+    "preset3": ".NET Backend Developer",
+    "analyzeBtn": "Evaluate Requirements Alignment",
+    "analyzing": "Comparing requirements against hands-on project track record...",
+    "matchScore": "Alignment",
+    "exceptional": "High Fit",
+    "strong": "Good Fit",
+    "moderate": "Partial Fit",
+    "matchedSkills": "Matching Technologies & Skills",
+    "evidenceTitle": "Relevant Production Track Record",
+    "pitchTitle": "Technical Fit Summary",
+    "inviteEmail": "Email for Interview",
+    "chatWhatsApp": "Connect via WhatsApp",
+    "tryAnother": "Test Another Role",
+    "errorMsg": "Unable to complete evaluation right now. Feel free to reach out directly!"
   }
 }
