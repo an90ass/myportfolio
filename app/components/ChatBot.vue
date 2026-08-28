@@ -181,7 +181,7 @@ async function sendMessage() {
   scrollToBottom()
 
   try {
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwUg64qDSFOksh-nGviX-EAQxyKo9xGe3QTRyAXO_wjcXYZhGGbHD9jC1ZJ8rEKSWGeAQ/exec'
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwo_rPQ-5ejt53gK6nFoAbV5QZr7bIFv3xFRg408OXPK4USz6UaUVaFhWGSUNk-y3SzWQ/exec'
     let replyText = ''
     
     try {
