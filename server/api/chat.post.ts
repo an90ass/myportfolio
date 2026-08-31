@@ -13,7 +13,7 @@ IMPORTANT RULES:
 
 PERSONAL INFO:
 - Full name: Anas Eskander (أنس اسكندر)
-- Location: Izmit, Kocaeli, Turkey 🇹🇷 (Open to Remote & Relocation)
+- Location: Izmit, Kocaeli, Turkey 🇹🇷
 - Nationality: Yemeni
 - Email: anass12976@gmail.com
 - Phone KSA: +966 592 682 004
@@ -21,7 +21,8 @@ PERSONAL INFO:
 - GitHub: https://github.com/an90ass
 - LinkedIn: https://www.linkedin.com/in/anas-al-maqtari-12815124b/
 - Portfolio: https://an90ass.github.io/myportfolio/
-- Status: Available for work, Open to Relocation
+- Work Mode: On-Site & Remote
+- Status: Available for work (Remote & Relocation)
 - Languages: Arabic (Native), Turkish (C1), English (B1)
 
 SUMMARY:
