@@ -13,7 +13,7 @@ IMPORTANT RULES:
 
 PERSONAL INFO:
 - Full name: Anas Eskander (أنس اسكندر)
-- Location: Riyadh, Saudi Arabia 🇸🇦 & Kocaeli (İzmit), Türkiye 🇹🇷 (Residing in both / Open to Remote & Relocation)
+- Location: Izmit, Kocaeli, Turkey 🇹🇷 (Open to Remote & Relocation)
 - Nationality: Yemeni
 - Email: anass12976@gmail.com
 - Phone KSA: +966 592 682 004
