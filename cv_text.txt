@@ -1,106 +1,80 @@
---- PAGE 1 ---
-Anas Eskander
-Flutter Developer | Mobile & Backend | anass12976@gmail.com | +905397924923 | ─░ZM─░T, KOCAEL─░, T├£RK─░YE
-myportfolio | LINKEDIN | GITHUB
-ABOUT ME
-Dedicated Flutter Developer with 2+ years of experience in building scalable, high-performance mobile applications. Backed by a strong foundation in
-Python for backend development, I specialize in implementing Clean Architecture principles to create robust, maintainable systems. I am proficient in
-designing fluid, user-centric interfaces and developing solid application logic. My focus is on delivering high-quality mobile solutions that meet user needs,
-generate real value, and drive tangible impact..
-TECHNICAL SKILLS
-Mobile Application DevelopmentΓÇö Advanced Security & Deployment ΓÇö Expert
-Flutter/Dart, State Management: Provider, BLOC, API Integration (HTTP, App Security Best Practices, Token & Authentication Management, Play
-Dio), WebSocket, Push Notifications (FCM, Local), Local Storage & Store & App Store Publishing
-Secure Storage, Offline-first Architecture, Device Sensors, Google Maps &
-Mapbox, Background/Foreground Servisler, SDK Geli┼ƒtirme, UI/UX Databases ΓÇö Advanced
-Principles, Responsive & Adaptive Design, Custom Widget Development PostgreSQL, MySQL, SQLite, Firebase
-Backend & API Development ΓÇö Advanced Cloud & Services ΓÇö Advanced
-Python, FastAPI, Flask, Django, RESTful API Firebase (Authentication, Firestore, Realtime Database, Cloud Functions),
-Google Cloud Platform (GCP), Railway, Render
-Architectural & Software Principles ΓÇö Advanced
-Clean Architecture, MVC, MVVM, SDLC, Data Structures and
-Algorithms (Java)
-Tools & Platforms ΓÇö Proficient
-Git, GitHub, GitLab, Trello, Nginx, Ngrok, Postman & Newman (API
-Manual ve Automated Testing), Canva, Figma
-WORK EXPERIENCE
-Visight Technology — Junior Software Engineer | Oct 2025 – Jul 2026 | Kocaeli, Türkiye
-● Developed and enhanced backend services with FastAPI for a multi-tenant enterprise platform and its administrative dashboard.
-● Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.
-● Improved system reliability and scalability by addressing database locking and query performance issues, preventing dashboard freezes during peak enterprise traffic.
-● Implemented silent JWT token refresh to keep sessions alive during lengthy passport-scanning operations.
+ANAS ESKANDER
+Yazılım Mühendisi | Mobil, Backend ve Yapay Zekâ Geliştirme
+Ataşehir, İstanbul, Türkiye · Uzaktan veya Ofisten Çalışmaya Açık
+anass12976@gmail.com · +90 539 792 49 23
+Portfolyo | LinkedIn | GitHub
 
-Researcher Scholar (TÜBİTAK 1001 Project Founded) — Mobile Application Developer | Mar 2025 – Jul 2026 | Ankara, Türkiye
-● Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multithreaded processing of live IoT data streams over WebSocket.
-● Engineered resilient background services that kept the app stable and synchronized under sustained heavy workloads.
-● Designed an offline-first communication layer: BLE-based peer-to-peer group chat with E2EE and known-contact group management, plus a localization/orientation module using Bluetooth RSSI and magnetometer data.
-● Trained and optimized lightweight deep learning models for mobile deployment, converting them to TensorFlow Lite and integrating them for efficient real-time on-device inference.
+ÖZET
+Üretim seviyesinde Flutter mobil ve Python/.NET backend uygulamaları geliştirme ve yayına alma konusunda 2 yıllık deneyime sahip Yazılım Mühendisi. Ölçeklenebilir sistemler ve uçtan uca çözümler geliştirme deneyimine sahip; yüksek performanslı uygulamalar için yazılım mimarisi, derin öğrenme modeli tasarımı, fine-tuning ve modern yazılım geliştirme metodolojilerini kullanıyorum.
 
-TurVia — Freelance Full-Stack Developer (Mobile, Backend & Web) | Jun 2026 – Jul 2026 | Remote, Türkiye
-● Designed and delivered TurVia, an end-to-end smart tourism and tour-management platform, from initial architecture through production deployment on Google Play and the App Store.
+DENEYİM
+TurVia Technology — Freelance Software Engineer
+Haz 2025 – Eyl 2026
+● Akıllı turizm ve tur yönetim platformu TurVia'yı mimari tasarımdan Google Play ve App Store canlı yayın süreçlerine kadar uçtan uca geliştirdim ve teslim ettim.
 
-Visight Technology — Software Engineer Intern | Jan 2025 – Oct 2025 | Kocaeli, Türkiye
-● Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID.
-● Developed FastAPI backend services for biometric data processing, identity verification, and real-time validation.
-● Contributed to a multi-tenant administration dashboard for centralized user, operation, and system-log monitoring.
-● Integrated mobile, backend, and computer-vision components to support secure and reliable identity verification workflows.
-EDUCATION
-M.Sc. in Software Engineering, Kocaeli University 10/09/2025 ΓÇô Present | Kocaeli, T├╝rkiye
-B.Sc. in Computer Engineering, BARTIN University 11/10/2021 ΓÇô 24/06/2025 | Bartin, T├╝rkiye
-GPA: 3.42/4.00 | Thesis: AI-Powered Financial System for the Visually Impaired
-AI Application Development Program (1-Year Scholarship) | AI and Technology Academy 01/11/2024 ΓÇô 01/09/2025
-PROJECTS
-ΓÇó TurVia | Smart Tourism & Navigation App, Developed a comprehensive mobile tourism 01/06/2025 ΓÇô Present
-application featuring smart routing, real-time recommendations, and personalized trip planning, and a
-tour management system with secure in-app payments and real-time operational workflows.
-Tech Stack: Flutter, Clean Architecture, Bloc/Cubit, FastAPI, Mapbox, Dio, get it, iyzico/Stripe
-Links: Google Play | App Store
-26/03/2025 ΓÇô Present
-ΓÇó KURTAR | IoT & AI-Based Disaster Response Platform, Developed a disaster response mobile
-application that provides real-time decision support by integrating IoT, mobile sensors, and AI technologies.
-Tech Stack: Flutter, Provider, Clean Architecture, Dio, loT, Al Models, Background/Foreground
-Services, Secure Storage, SQLite, Bluetooth, Push Notifications, Google Maps, Multi-language
-Support, RBAC
-Links: Testflight | APK
---- PAGE 2 ---
-ΓÇó Kurtar Saha Operasyon | Field Data & AI Inference Suite, Developed an integrated ecosystem consisting 01/01/2026 ΓÇô 20/06/2026
-of two independent mobile applications for seismic research: a field data acquisition tool for high-frequency sensor logging with
-precision sampling control (Hz) and time-series windowing, and an AI inference
-app for real-time model validation. Both integrated via a WebSocket-based architecture
-for seamless data streaming and synchronization with the command dashboard.
-Tech Stack: Flutter, Sensor Framework, Multi-threading, Time-Series Preprocessing, WebSockets, SQLite, AI Inference.
-Links: Available upon request; pending academic paper publication
-ΓÇó DigiVis | Digital Onboarding & KYC SDK, Developed a secure digital onboarding SDK for remote customer 01/03/2025 ΓÇô 30/05/2025
-verification on iOS and Android platforms. The solution integrates high-fidelity camera capture with advanced Liveness Detection
-and Face Matching algorithms for identity verification, complemented by a centralized dashboard for real-time administrative oversight.
-Tech Stack: Flutter, FastAPI, PostgreSQL, MVVM, BLOC, Camera, Text-to-Speech
-(TTS), Multi-language Support, OpenCV, Google ML Kit
-Links: Available upon request
-ΓÇó IbanVault | Secure IBAN Management Utility, Developed a Flutter application using an offline-first approach 01/05/2025 ΓÇô 21/06/2025
-that provides secure IBAN storage using an encrypted local database. The application includes QR code generation/scannin
-g and multi-language support features.
-Tech Stack: Flutter, MVC, Provider, Encrypted Local Storage, QR Code Scanner/Generator, Multi-language Support
-Links: APK
-ΓÇó Vakit | Location-Based Prayer Times App, Developed a multilingual prayer times app that supports GPS 01/07/2025 ΓÇô 21/12/2025
-and manual city selection, and provides timely local notifications.
-Tech Stack: Flutter, Bloc, Hive, Local Notifications
-Links: APK
-ΓÇó AI-Powered Financial System for the Visually Impaired (Undergraduate Graduation Project),
-Using YOLOV5, I developed a mobile application that provides money recognition and financial management for visually impaired users.
-Tech Stack: Flutter, Firebase, Provider, YOLOV5
-Links: Available upon request.
-CERTIFICATIONS
-Mobile Application Development with Google Flutter, BTK Academy 01/07/2024 ΓÇô 10/09/2024
-Python Programming: From Beginner to Advanced, BTK Academy 25/07/2023 ΓÇô 28/09/2023
-HONORS & AWARDS
-Certificate of Honor, Bart─▒n University 24/06/2025
-Awarded for outstanding academic performance and graduating with an Honor Degree in Computer Engineering.
-LANGUAGES
-Arabic: Native| Turkish: C1 | English: B1
-REFERANSLAR
-Muhammed ┼₧ara, Co-Founder, Visight Technology
-muhammedsaraa@gmail.com
-RADHWAN ALI ABDULGHANI SALEH, Researcher, University of A Coru├▒a
-radhwan.saleh@udc.es
-Mustafa Mohammed Saeed GHALEB, Asst. Prof., Kocaeli University
-mustafa.ghaleb@kocaeli.edu.tr
+Visight Technology — Junior Software Engineer
+Eki 2025 – Haz 2026
+Kocaeli, Türkiye
+● Çok kiracılı (multi-tenant) biyometrik kimlik doğrulama platformunun backend servisleri ve yönetim panelini uçtan uca geliştirdim; 25+ iş ortağı şirket için kullanıcı yönetimi, KYC takibi ve audit log süreçlerini sağladım.
+● Sorgu optimizasyonu, sunucu taraflı sayfalama, veritabanı indeksleme ve Redis önbellekleme ile panel yüklenme sürelerini 5 saniyeden 1 saniyenin altına düşürdüm.
+● Eşzamanlı işlemlerde oluşan veritabanı kilitlenmesi (lock contention) sorunlarını gidererek sistem kararlılığını ve performansını artırdım.
+● Uzun süren belge tarama işlemlerinde oturum sürekliliğini sağlamak için sessiz JWT token yenileme mekanizması geliştirdim.
+
+Visight Technology — Yazılım Mühendisi Stajyeri
+Oca 2025 – Eki 2025
+Kocaeli, Türkiye
+● Biyometrik kimlik doğrulama platformunun mobil uygulama ve SDK bileşenlerini geliştirdim.
+● Kimlik ve belge doğrulama süreçlerinin mobil taraftaki entegrasyonlarını ve kullanıcı akışlarını geliştirdim.
+
+TEKNİK YETKİNLİKLER
+Mobil Geliştirme: Flutter (BLoC, Cubit, Provider, Riverpod, Clean Architecture, SDK Geliştirme)
+Backend ve API: Python (FastAPI, Django, Flask), .NET 8 (C#, ASP.NET Core Web API, EF Core, LINQ, CQRS, MediatR, FluentValidation, SignalR), RabbitMQ, RESTful API Tasarımı, WebSocket, JWT, OAuth 2.0
+Makine Öğrenmesi ve Yapay Zekâ: Klasik ML, PyTorch, GenAI, RAG, Model Fine-tuning ve Değerlendirme
+Web ve Frontend: JavaScript, HTML5, CSS3
+Veritabanları ve Veri Yönetimi: PostgreSQL, MS SQL Server, MySQL, SQLite, Firestore, Redis
+Bulut, DevOps ve Altyapı: Firebase (Authentication, Cloud Functions), Google Cloud Platform, Railway, Render, Nginx, Ngrok
+Yazılım Mimarisi ve Mühendislik Uygulamaları: Clean Architecture, MVC, MVVM, SOLID Prensipleri, SDLC, Veri Yapıları ve Algoritmalar
+Güvenlik, IoT ve Bağlantı: Cihaz Sensörleri, BLE ve NFC Entegrasyonu, RBAC, Uygulama Güvenliği En İyi Uygulamaları
+Araçlar ve İş Birliği: Docker, Git, GitHub, GitLab, Postman, Play Store ve App Store'da Yayınlama
+
+EĞİTİM
+Bilgisayar Mühendisliği Lisans Derecesi, Bartın Üniversitesi | Eki 2021 – Haz 2025 | GNO: 3.42/4.00
+Tez: Görme Engelliler İçin Yapay Zekâ Destekli Mobil Uygulama
+Yapay Zekâ Uygulama Geliştirme Programı (1 Yıllık Burs), AI and Technology Academy | Kas 2024 – Eyl 2025 | Uzaktan
+
+SEÇİLMİŞ PROJELER
+Mobil Uygulamalar
+TurVia — Akıllı Turizm ve Tur Yönetimi Uygulaması · Flutter, FastAPI, Mapbox
+● Gezginleri tur acenteleriyle buluşturan; mekân keşfi, özel tur rotası oluşturma, reklam ve abonelik özelliklerine sahip turizm uygulamasını geliştirip Google Play ve App Store'da yayınladım.
+Bağlantılar: Google Play | App Store
+
+KURTAR — IoT ve Yapay Zekâ Tabanlı Afet Müdahale Platformu · Flutter, IoT, BLE, WebSocket, Time Series
+● TÜBİTAK 1001 destekli bu sismik araştırma projesinde Araştırmacı Bursiyer olarak görev aldım; mobil uygulama geliştirme ve teknik araştırma süreçlerine katkıda bulundum.
+● Harita tabanlı olay görselleştirme, offline-first BLE iletişim, E2EE mesajlaşma, RSSI/manyetometre tabanlı konumlandırma ve rol tabanlı erişim özelliklerini içeren Flutter mobil uygulamasını uçtan uca geliştirdim.
+● Sismik araştırmalar için yüksek frekanslı sensör verisi kaydı ve gerçek zamanlı cihaz üzeri yapay zekâ çıkarımı/doğrulaması yapan iki yardımcı saha uygulaması geliştirdim.
+Bağlantılar: Proje Web Sitesi | TestFlight | APK | Saha uygulamaları: Yayın sürecine kadar talep üzerine paylaşılabilir.
+
+Pharma — Eczane Yönetim Sistemi · Flutter, Riverpod, Firebase Firestore
+● Rol tabanlı kimlik doğrulama, barkodlu envanter yönetimi, POS faturalandırma, satış/kâr raporlarının dışa aktarımı, yapay zekâ destekli ilaç önerileri ve çoklu mağaza desteğine sahip eczane yönetim sistemi geliştirdim.
+Bağlantılar: GitHub
+
+Web Panelleri
+Kurtar Komuta Paneli · Angular, .NET, WebSocket, Redis, PostgreSQL
+● KURTAR mobil uygulaması için rol tabanlı erişime sahip canlı komuta merkezi: gerçek zamanlı deprem/olay haritalama, kurtarma ekipleri için en kısa güvenli rota belirleme, saha müdahale ekibi takibi ile kaynak, olay ve uyarı yönetimi.
+
+TurVia Yönetim Paneli · Angular, .NET, Redis, PostgreSQL
+● TurVia platformunu yönetmek amacıyla gerçek zamanlı analitik, acente ve kullanıcı yönetimi, rezervasyon ve abonelik takibi, anlık bildirimler ve rol tabanlı erişim kontrolü özelliklerini içeren kurum içi yönetim panelini geliştirdim.
+
+Backend / API
+FastAPI Real-Time Chat API · PostgreSQL, Redis, WebSocket, Docker
+Bağlantılar: GitHub
+
+Django REST E-Commerce API · DRF, PostgreSQL, JWT, Docker
+Bağlantılar: GitHub
+
+SERTİFİKALAR
+● Onur Belgesi, Bartın Üniversitesi (Haz 2025) — üstün akademik başarısı nedeniyle, onur derecesiyle mezun olması üzerine verilmiştir.
+● Google Flutter ile Mobil Uygulama Geliştirme, BTK Akademi (2024)
+
+DİLLER
+Arapça: Ana dil | Türkçe: Tam profesyonel yeterlilik | İngilizce: Profesyonel çalışma yeterliliği

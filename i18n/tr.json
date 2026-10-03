@@ -14,15 +14,15 @@
     "available": "İşe Açık / Available for Work",
     "greeting": "Merhaba, ben",
     "role": "Software Engineer",
-    "description1": "Üretime hazır (production-grade) mobil (Flutter) ve backend (Python, .NET) uygulamaları geliştirme ve canlıya alma konusunda 2 yılı aşkın deneyime sahip Yazılım Mühendisi.",
-    "description2": "İleri düzey mimari araştırmalardan, uygulamalı derin öğrenme model tasarımı ve ince ayarından (fine-tuning) ve yazılım metodolojilerinden yararlanarak; yüksek performanslı, dayanıklı endüstriyel uygulamalar sunmaya ve ölçeklenebilir uçtan uca (end-to-end) sistemler tasarlamaya tutkuluyum.",
+    "description1": "Üretim seviyesinde Flutter mobil ve Python/.NET backend uygulamaları geliştirme ve yayına alma konusunda 2 yıllık deneyime sahip Yazılım Mühendisi.",
+    "description2": "Ölçeklenebilir sistemler ve uçtan uca çözümler geliştirme deneyimine sahip; yüksek performanslı uygulamalar için yazılım mimarisi, derin öğrenme modeli tasarımı, fine-tuning ve modern yazılım geliştirme metodolojilerini kullanıyorum.",
     "getInTouch": "İletişime Geç",
     "viewProjects": "Projeler",
     "downloadCV": "CV İndir",
     "summaryTitle": "Kısa Genel Bakış",
     "locationLabel": "Konum",
-    "location": "İzmit, Kocaeli, Türkiye 🇹🇷",
-    "locationValue": "İzmit, Kocaeli, Türkiye 🇹🇷",
+    "location": "Ataşehir, İstanbul, Türkiye 🇹🇷",
+    "locationValue": "Ataşehir, İstanbul, Türkiye 🇹🇷",
     "nationalityLabel": "Uyruk",
     "nationalityValue": "Yemen 🇾🇪",
     "statusLabel": "Durum",
@@ -49,41 +49,29 @@
     "factCompanies": "Şirket",
     "factTechs": "Teknoloji",
     "job1": {
-      "role": "Junior Software Engineer",
-      "company": "Visight Technology",
-      "period": "Ekim 2025 – Temmuz 2026",
-      "location": "Kocaeli, Türkiye",
-      "r1": "FastAPI kullanarak çok kiracılı kurumsal bir platform ve yönetim paneli için Backend servislerini geliştirdim ve optimize ettim.",
-      "r2": "Sorgu optimizasyonu, server-side pagination, veritabanı indeksleme ve Redis caching ile kontrol paneli yükleme sürelerini 5 saniyeden 1 saniyenin altına düşürdüm.",
-      "r3": "Veritabanı kilitleme ve sorgu performans sorunlarını çözerek sistem güvenilirliğini artırdım ve yoğun trafik anlarında donmaları önledim.",
-      "r4": "Uzun pasaport tarama işlemleri sırasında oturumların kesintisiz devam etmesi için sessiz JWT token yenileme mekanizması uyguladım."
-    },
-    "job2": {
-      "role": "Researcher Scholar (TÜBİTAK 1001) — Mobil Uygulama Geliştiricisi",
-      "company": "TÜBİTAK 1001 Projesi",
-      "period": "Mart 2025 – Temmuz 2026",
-      "location": "Ankara, Türkiye",
-      "r1": "Google Maps görselleştirmesi ve WebSocket üzerinden canlı IoT veri akışlarının multithread işlenmesiyle gerçek zamanlı konum takibi sağlayan yüksek performanslı bir Flutter uygulaması geliştirdim.",
-      "r2": "Yüksek iş yükü altında uygulamanın kararlı ve senkronize çalışmasını sağlayan dayanıklı arka plan servisleri mimarisini kurdum.",
-      "r3": "Çevrimdışı (offline-first) iletişim katmanı tasarladım: BLE tabanlı P2P E2EE grup mesajlaşması ile Bluetooth RSSI ve manyetometre verileriyle çalışan yön bulma modülü geliştirdim.",
-      "r4": "Hafif derin öğrenme modellerini eğitip TensorFlow Lite formatına dönüştürerek mobil cihaz üzerinde gerçek zamanlı çıkarım (on-device inference) için entegre ettim."
-    },
-    "job3": {
-      "role": "Freelance Full-Stack Developer (Mobile, Backend & Web)",
-      "company": "TurVia",
-      "period": "Haziran 2026 – Temmuz 2026",
-      "location": "Remote, Türkiye · Visight stajı ile eşzamanlı freelance çalışma",
+      "role": "Freelance Software Engineer",
+      "company": "TurVia Technology",
+      "period": "Haz 2025 – Eyl 2026",
+      "location": "Uzaktan (Remote)",
       "r1": "Akıllı turizm ve tur yönetim platformu TurVia'yı mimari tasarımdan Google Play ve App Store canlı yayın süreçlerine kadar uçtan uca geliştirdim ve teslim ettim."
     },
-    "job4": {
-      "role": "Software Engineer Intern",
+    "job2": {
+      "role": "Junior Software Engineer",
       "company": "Visight Technology",
-      "period": "Ocak 2025 – Ekim 2025",
+      "period": "Eki 2025 – Haz 2026",
       "location": "Kocaeli, Türkiye",
-      "r1": "MRZ ve NFC pasaport/kimlik okuma ve biyometrik kimlik doğrulamaya sahip Flutter mobil uygulaması geliştirdim.",
-      "r2": "Biyometrik veri işleme, kimlik doğrulama ve gerçek zamanlı doğrulama için FastAPI backend servisleri geliştirdim.",
-      "r3": "Kullanıcı, işlem ve sistem günlüklerinin merkezi takibi için çok kiracılı (multi-tenant) yönetim paneli geliştirmelerine katkıda bulundum.",
-      "r4": "Güvenli ve güvenilir kimlik doğrulama akışları için mobil, backend ve bilgisayarla görü (computer vision) bileşenlerini entegre ettim."
+      "r1": "Çok kiracılı (multi-tenant) biyometrik kimlik doğrulama platformunun backend servisleri ve yönetim panelini uçtan uca geliştirdim; 25+ iş ortağı şirket için kullanıcı yönetimi, KYC takibi ve audit log süreçlerini sağladım.",
+      "r2": "Sorgu optimizasyonu, sunucu taraflı sayfalama, veritabanı indeksleme ve Redis önbellekleme ile panel yüklenme sürelerini 5 saniyeden 1 saniyenin altına düşürdüm.",
+      "r3": "Eşzamanlı işlemlerde oluşan veritabanı kilitlenmesi (lock contention) sorunlarını gidererek sistem kararlılığını ve performansını artırdım.",
+      "r4": "Uzun süren belge tarama işlemlerinde oturum sürekliliğini sağlamak için sessiz JWT token yenileme mekanizması geliştirdim."
+    },
+    "job3": {
+      "role": "Yazılım Mühendisi Stajyeri",
+      "company": "Visight Technology",
+      "period": "Oca 2025 – Eki 2025",
+      "location": "Kocaeli, Türkiye",
+      "r1": "Biyometrik kimlik doğrulama platformunun mobil uygulama ve SDK bileşenlerini geliştirdim.",
+      "r2": "Kimlik ve belge doğrulama süreçlerinin mobil taraftaki entegrasyonlarını ve kullanıcı akışlarını geliştirdim."
     },
     "edu1": {
       "degree": "M.Sc. in Software Engineering",
@@ -112,14 +100,14 @@
     "showMore": "Daha Fazla Proje Göster",
     "showLess": "Daha Az Göster",
     "p1": {
-      "title": "TurVia — Akıllı Turizm & Navigasyon",
-      "description": "Akıllı rota planlama, anlık öneriler, kişiselleştirilmiş seyahat planlaması ve güvenli uygulama içi ödeme (iyzico/Stripe) altyapısına sahip kapsamlı turizm ve tur yönetim platformu.",
+      "title": "TurVia — Akıllı Turizm ve Tur Yönetimi Uygulaması",
+      "description": "Gezginleri tur acenteleriyle buluşturan; mekân keşfi, özel tur rotası oluşturma, reklam ve abonelik özelliklerine sahip turizm uygulamasını geliştirip Google Play ve App Store'da yayınladım.",
       "category": "Flutter • Tourism"
     },
     "p2": {
-      "title": "KURTAR — IoT & Yapay Zeka Destekli Afet Müdahale Platformu",
-      "description": "Canlı harita görselleştirmesi, BLE tabanlı E2EE çevrimdışı grup mesajlaşması, RSSI/manyetometre ile konum belirleme ve acil müdahaleyi hızlandıran sağlık profilleri içeren Flutter mobil uygulamasını uçtan uca geliştirdim. PyTorch ile eğitilen hafif CNN, LSTM ve GNN modellerini TensorFlow Lite'a dönüştürerek cihaz üzerinde anlık afet karar desteği için entegre ettim.",
-      "category": "Flutter • PyTorch • CNN/LSTM/GNN • TFLite • BLE"
+      "title": "KURTAR — IoT ve Yapay Zekâ Tabanlı Afet Müdahale Platformu",
+      "description": "TÜBİTAK 1001 destekli bu sismik araştırma projesinde Araştırmacı Bursiyer olarak görev aldım; mobil uygulama geliştirme ve teknik araştırma süreçlerine katkıda bulundum. Harita tabanlı olay görselleştirme, offline-first BLE iletişim, E2EE mesajlaşma, RSSI/manyetometre tabanlı konumlandırma ve rol tabanlı erişim özelliklerini içeren Flutter mobil uygulamasını uçtan uca geliştirdim. Sismik araştırmalar için yüksek frekanslı sensör verisi kaydı ve gerçek zamanlı cihaz üzeri yapay zekâ çıkarımı/doğrulaması yapan iki yardımcı saha uygulaması geliştirdim.",
+      "category": "Flutter • IoT • BLE • WebSocket • Time Series"
     },
     "p3": {
       "title": "Kurtar Saha — Saha Veri Toplama & AI Test Ekosistemi",
@@ -162,16 +150,16 @@
       "description": "Küçük işletmelerin faturalandırma, ürün yönetimi, mağaza ayarları ve Bluetooth termal yazdırma işlemlerini yönetebileceği modern bir Flutter uygulaması."
     },
     "pharma": {
-      "title": "Pharma",
-      "description": "Flutter ve Firebase ile geliştirilmiş kapsamlı eczane yönetim sistemi. Rol tabanlı yetkilendirme (Yönetici/Müdür/Kasiyer), anlık KPI paneli, barkod/sesli ilaç arama, FIFO stok takibi, satış noktası (POS), PDF fatura üretimi, kâr/zarar raporları, son kullanma tarihi bildirimleri ve yapay zeka destekli ilaç önerileri içerir.",
-      "category": "Mobil Uygulama"
+      "title": "Pharma — Eczane Yönetim Sistemi",
+      "description": "Rol tabanlı kimlik doğrulama, barkodlu envanter yönetimi, POS faturalandırma, satış/kâr raporlarının dışa aktarımı, yapay zekâ destekli ilaç önerileri ve çoklu mağaza desteğine sahip eczane yönetim sistemi geliştirdim.",
+      "category": "Flutter • Riverpod • Firebase Firestore"
     },
     "webSectionLabel": "Web Platformları",
     "webTitle": "Web Panelleri & Yönetim Platformları",
     "web1": {
-      "title": "Kurtar Komuta Kontrol Paneli",
+      "title": "Kurtar Komuta Paneli",
       "category": "Komuta Merkezi",
-      "description": "KURTAR mobil uygulaması için rol tabanlı canlı komuta merkezi: gerçek zamanlı deprem/olay haritası, kurtarma ekipleri için en kısa güvenli rota planlama ve saha görevlisi takibi."
+      "description": "KURTAR mobil uygulaması için rol tabanlı erişime sahip canlı komuta merkezi: gerçek zamanlı deprem/olay haritalama, kurtarma ekipleri için en kısa güvenli rota belirleme, saha müdahale ekibi takibi ile kaynak, olay ve uyarı yönetimi."
     },
     "web2": {
       "title": "DigiVis Kurumsal Yönetim Paneli",
@@ -184,9 +172,9 @@
       "description": "150'den fazla otomat makinesi için rol tabanlı filo izleme paneli: anlık makine/ödeme telemetrisi, otomatik düşük stok/bakım uyarıları ve makine bazlı satış analitiği."
     },
     "web4": {
-      "title": "TurVia İş Ortağı Paneli",
-      "category": "Operatör Konsolu",
-      "description": "TurVia tur yönetim sistemi için operatör odaklı web konsolu: rezervasyon ve rota yönetimi, uygulama içi ödeme mutabakatı ve operasyonel iş akışı takibi."
+      "title": "TurVia Yönetim Paneli",
+      "category": "Yönetim Paneli",
+      "description": "TurVia platformunu yönetmek amacıyla gerçek zamanlı analitik, acente ve kullanıcı yönetimi, rezervasyon ve abonelik takibi, anlık bildirimler ve rol tabanlı erişim kontrolü özelliklerini içeren kurum içi yönetim panelini geliştirdim."
     },
     "web5": {
       "title": "Fatura Yönetim Platformu",
@@ -233,7 +221,7 @@
     "description": "Mühendislik ekibinize değer katacak yetenekli ve tutkulu bir Yazılım Mühendisi mi arıyorsunuz? Tam zamanlı pozisyonlar (Remote & Relocation) için açığım ve ilk günden itibaren katkı sağlamaya hazırım.",
     "emailLabel": "E-posta",
     "locationLabel": "Konum",
-    "locationValue": "İzmit, Kocaeli, Türkiye 🇹🇷",
+    "locationValue": "Ataşehir, İstanbul, Türkiye 🇹🇷",
     "findMe": "Beni Bulun",
     "formTitle": "Mesaj / İş Teklifi Gönderin",
     "nameLabel": "İsim / Şirket",

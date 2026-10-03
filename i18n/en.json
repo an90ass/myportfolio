@@ -14,15 +14,15 @@
     "available": "Available for work",
     "greeting": "Hello, I'm",
     "role": "Software Engineer",
-    "description1": "Software Engineer with 2+ years of experience in building and shipping production-grade mobile (Flutter) and backend (Python, .NET) applications.",
-    "description2": "Passionate about architecting scalable systems and end-to-end solutions, leveraging advanced architectural research, hands-on deep learning model design and fine-tuning, and software methodologies to deliver high-performance, robust industrial applications.",
+    "description1": "Software Engineer with 2 years of experience in building and shipping production-grade Flutter mobile and Python/.NET backend applications.",
+    "description2": "Experienced in building scalable systems and end-to-end solutions; utilizing software architecture, deep learning model design, fine-tuning, and modern software development methodologies for high-performance applications.",
     "getInTouch": "Get in touch",
     "viewProjects": "Projects",
     "downloadCV": "Download CV",
     "summaryTitle": "Quick Overview",
     "locationLabel": "Location",
-    "location": "Izmit, Kocaeli, Turkey 🇹🇷",
-    "locationValue": "Izmit, Kocaeli, Turkey 🇹🇷",
+    "location": "Ataşehir, Istanbul, Turkey 🇹🇷",
+    "locationValue": "Ataşehir, Istanbul, Turkey 🇹🇷",
     "nationalityLabel": "Nationality",
     "nationalityValue": "Yemeni",
     "statusLabel": "Status",
@@ -49,41 +49,29 @@
     "factCompanies": "Companies",
     "factTechs": "Technologies",
     "job1": {
-      "role": "Junior Software Engineer",
-      "company": "Visight Technology",
-      "period": "Oct 2025 – Jul 2026",
-      "location": "Kocaeli, Türkiye",
-      "r1": "Developed and enhanced backend services with FastAPI for a multi-tenant enterprise platform and its administrative dashboard.",
-      "r2": "Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.",
-      "r3": "Improved system reliability and scalability by addressing database locking and query performance issues, preventing dashboard freezes during peak enterprise traffic.",
-      "r4": "Implemented silent JWT token refresh to keep sessions alive during lengthy passport-scanning operations."
+      "role": "Freelance Software Engineer",
+      "company": "TurVia Technology",
+      "period": "Jun 2025 – Sep 2026",
+      "location": "Remote",
+      "r1": "Designed and delivered TurVia, an end-to-end smart tourism and tour management platform, from architectural design to production deployment on Google Play and App Store."
     },
     "job2": {
-      "role": "Researcher Scholar (TÜBİTAK 1001 Project Founded) — Mobile Application Developer",
-      "company": "TÜBİTAK 1001 Project",
-      "period": "Mar 2025 – Jul 2026",
-      "location": "Ankara, Türkiye",
-      "r1": "Built a high-performance Flutter app for real-time location tracking and live monitoring, with Google Maps visualization and multithreaded processing of live IoT data streams over WebSocket.",
-      "r2": "Engineered resilient background services that kept the app stable and synchronized under sustained heavy workloads.",
-      "r3": "Designed an offline-first communication layer: BLE-based peer-to-peer group chat with E2EE and known-contact group management, plus a localization/orientation module using Bluetooth RSSI and magnetometer data.",
-      "r4": "Trained and optimized lightweight deep learning models for mobile deployment, converting them to TensorFlow Lite and integrating them for efficient real-time on-device inference."
+      "role": "Junior Software Engineer",
+      "company": "Visight Technology",
+      "period": "Oct 2025 – Jun 2026",
+      "location": "Kocaeli, Türkiye",
+      "r1": "Developed end-to-end backend services and the admin dashboard for a multi-tenant biometric identity verification platform; managed user administration, KYC tracking, and audit logging for 25+ partner companies.",
+      "r2": "Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.",
+      "r3": "Resolved database lock contention issues during concurrent operations, significantly enhancing system stability and performance.",
+      "r4": "Engineered a silent JWT token refresh mechanism to maintain session continuity during lengthy document scanning processes."
     },
     "job3": {
-      "role": "Freelance Full-Stack Developer (Mobile, Backend & Web)",
-      "company": "TurVia",
-      "period": "Jun 2026 – Jul 2026",
-      "location": "Remote, Türkiye · concurrent freelance engagement alongside the Visight internship",
-      "r1": "Designed and delivered TurVia, an end-to-end smart tourism and tour-management platform, from initial architecture through production deployment on Google Play and the App Store."
-    },
-    "job4": {
       "role": "Software Engineer Intern",
       "company": "Visight Technology",
       "period": "Jan 2025 – Oct 2025",
       "location": "Kocaeli, Türkiye",
-      "r1": "Developed a Flutter mobile application with biometric authentication, including MRZ and NFC passport/ID.",
-      "r2": "Developed FastAPI backend services for biometric data processing, identity verification, and real-time validation.",
-      "r3": "Contributed to a multi-tenant administration dashboard for centralized user, operation, and system-log monitoring.",
-      "r4": "Integrated mobile, backend, and computer-vision components to support secure and reliable identity verification workflows."
+      "r1": "Developed mobile application and SDK components for the biometric identity verification platform.",
+      "r2": "Built mobile integrations and user flows for identity and document verification processes."
     },
     "edu1": {
       "degree": "M.Sc. in Software Engineering",
@@ -112,14 +100,14 @@
     "showMore": "Show More Projects",
     "showLess": "Show Less",
     "p1": {
-      "title": "TurVia — Smart Tourism & Navigation",
-      "description": "A comprehensive tourism app featuring smart routing, real-time recommendations, personalized trip planning, and a tour management system with secure in-app payments (iyzico/Stripe) and real-time operational workflows.",
+      "title": "TurVia — Smart Tourism & Tour Management App",
+      "description": "A comprehensive tourism app connecting travelers with tour agencies; featuring location discovery, custom tour route planning, advertisements, and subscriptions. Developed and published on Google Play and App Store.",
       "category": "Flutter • Tourism"
     },
     "p2": {
-      "title": "KURTAR — IoT & AI-Based Disaster Response App",
-      "description": "Developed the Flutter app end-to-end, integrating Google Maps for real-time incident visualization, and built an offline-first BLE layer featuring E2EE 1-to-1 and group messaging, RSSI/magnetometer localization, role-based access, and pre-incident health profiles to expedite rescue operations. Co-trained lightweight models (CNN, LSTM, GNN) with PyTorch on time-series IoT and mobile sensor data, then converted and deployed them via TensorFlow Lite for on-device real-time disaster decision support.",
-      "category": "Flutter • PyTorch • CNN/LSTM/GNN • TFLite • BLE"
+      "title": "KURTAR — IoT & AI-Based Disaster Response Platform",
+      "description": "Served as a Researcher Scholar in this TÜBİTAK 1001-supported seismic research project, contributing to mobile development and technical research. Developed the Flutter mobile app end-to-end featuring map-based incident visualization, offline-first BLE communication, E2EE messaging, RSSI/magnetometer localization, and role-based access. Built two field companion apps for high-frequency sensor logging and real-time on-device AI inference/validation.",
+      "category": "Flutter • IoT • BLE • WebSocket • Time Series"
     },
     "p3": {
       "title": "Kurtar Saha — Field Data & AI Suite",
@@ -162,16 +150,16 @@
       "description": "A Flutter app for small businesses to manage billing, products, shop settings, and Bluetooth thermal printing in a streamlined ledger workflow."
     },
     "pharma": {
-      "title": "Pharma",
-      "description": "A full-featured pharmacy management system built with Flutter and Firebase. Features role-based authentication (Admin/Manager/Cashier), real-time dashboard KPIs, medicine CRUD with barcode & voice search, batch/FIFO inventory tracking, purchase orders, POS with cart/tax/discount, PDF invoice generation, daily/weekly/monthly profit reports with charts, customer & supplier management, push notifications for expiry and low stock, Excel/PDF export, AI medicine recommendations, dark mode, multi-store support, and Firebase backup & restore.",
-      "category": "Mobile App"
+      "title": "Pharma — Pharmacy Management System",
+      "description": "Developed a comprehensive pharmacy management system featuring role-based authentication, barcode inventory management, POS billing, sales/profit report export, AI-powered medicine recommendations, and multi-store support.",
+      "category": "Flutter • Riverpod • Firebase Firestore"
     },
     "webSectionLabel": "web",
     "webTitle": "Web Dashboards & Admin Platforms",
     "web1": {
       "title": "Kurtar Command Dashboard",
       "category": "Command Center",
-      "description": "Live command center for the KURTAR mobile app with role-based access: real-time earthquake/incident mapping, shortest-safe-path routing for rescue teams, field-responder tracking, and resource, incident, and alert management."
+      "description": "Live command center with role-based access for the KURTAR mobile app: real-time earthquake/incident mapping, shortest safe route calculation for rescue teams, field responder tracking, and resource, incident, and alert management."
     },
     "web2": {
       "title": "DigiVis Enterprise Dashboard",
@@ -184,9 +172,9 @@
       "description": "Role-based fleet monitoring across 150+ vending machines: real-time machine/payment telemetry, automated low-stock and maintenance alerts, and per-machine sales/inventory analytics."
     },
     "web4": {
-      "title": "TurVia Partner Dashboard",
-      "category": "Operator Console",
-      "description": "Role-based, operator-facing web console for the TurVia tour management system: booking and itinerary management, in-app payment reconciliation, and real-time operational workflow tracking."
+      "title": "TurVia Admin Dashboard",
+      "category": "Admin Panel",
+      "description": "Developed the internal admin dashboard to manage the TurVia platform, featuring real-time analytics, agency and user management, booking and subscription tracking, push notifications, and role-based access control."
     },
     "web5": {
       "title": "Invoice Management App",
@@ -233,7 +221,7 @@
     "description": "Looking for a dedicated Software Engineer to elevate your team? I am actively open to full-time engineering roles (Remote & Relocation) and ready to deliver impactful results from day one.",
     "emailLabel": "Email",
     "locationLabel": "Location",
-    "locationValue": "Izmit, Kocaeli, Turkey 🇹🇷",
+    "locationValue": "Ataşehir, Istanbul, Turkey 🇹🇷",
     "findMe": "Find me on",
     "formTitle": "Send a Message / Job Inquiry",
     "nameLabel": "Name / Company",

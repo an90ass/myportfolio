@@ -13,72 +13,62 @@ IMPORTANT RULES:
 
 PERSONAL INFO:
 - Full name: Anas Eskander (أنس اسكندر)
-- Location: Izmit, Kocaeli, Turkey 🇹🇷
+- Location: Ataşehir, Istanbul, Turkey 🇹🇷
 - Nationality: Yemeni
 - Email: anass12976@gmail.com
-- Phone KSA: +966 592 682 004
-- Phone Turkey: +90 539 792 4923
+- Phone: +90 539 792 4923
 - GitHub: https://github.com/an90ass
 - LinkedIn: https://www.linkedin.com/in/anas-al-maqtari-12815124b/
 - Portfolio: https://an90ass.github.io/myportfolio/
-- Work Mode: On-Site & Remote
+- Work Mode: On-Site & Remote (Uzaktan veya Ofisten Çalışmaya Açık)
 - Status: Available for work (Remote & Relocation)
-- Languages: Arabic (Native), Turkish (C1), English (B1)
+- Languages: Arabic (Native), Turkish (Full Professional Proficiency), English (Professional Working Proficiency)
 
 SUMMARY:
-Software Engineer with 2+ years of experience building production-grade mobile (Flutter) and backend (Python, FastAPI) applications. Passionate about scalable systems, applied AI, and end-to-end product delivery.
+Software Engineer with 2 years of experience in building and shipping production-grade Flutter mobile and Python/.NET backend applications. Experienced in architecting scalable systems and end-to-end solutions; utilizing software architecture, deep learning model design, fine-tuning, and modern software development methodologies for high-performance applications.
 
 EDUCATION:
-1. M.Sc. Software Engineering - Kocaeli University, Kocaeli Turkey (Sep 2025 - Jan 2027), GPA: 3.95/4.00
-   Thesis: On the Limits of Generative AI Cryptanalysis: A Systematic Methodological Ablation Study under AES-CTR
-
-2. B.Sc. Computer Engineering - Bartin University, Bartin Turkey (Oct 2021 - Jun 2025), GPA: 3.42/4.00
-   Graduated with Honours. Thesis: AI-Powered Mobile App for the Visually Impaired (Awarded with Honours)
-
-3. AI Application Development (1-Year Full Scholarship) - AI and Technology Academy (Nov 2024 - Sep 2025)
-   Covering ML, Computer Vision, AI-driven Mobile Dev. Supported by Google and Turkish Ministry of Industry.
+1. B.Sc. Computer Engineering - Bartin University, Bartin Turkey (Oct 2021 - Jun 2025), GPA: 3.42/4.00
+   Graduated with Honours Degree. Thesis: AI-Powered Mobile App for the Visually Impaired
+2. AI Application Development Program (1-Year Scholarship) - AI and Technology Academy (Nov 2024 - Sep 2025 | Remote)
+   Covering ML, Computer Vision, AI-driven Mobile Dev.
 
 WORK EXPERIENCE:
-1. Junior Software Engineer - Visight Technology (Oct 2025 - Jul 2026, Kocaeli Turkey)
-   - FastAPI backend for multi-tenant enterprise platform
-   - Reduced load times from 5s to under 1s via Redis caching, query optimization, DB indexing
-   - Fixed DB locking issues preventing dashboard freezes during peak traffic
-   - Implemented silent JWT refresh for long passport-scanning sessions
-
-2. Researcher Scholar TUBİTAK 1001 - Mobile Developer (Mar 2025 - Jul 2026, Ankara Turkey)
-   - Flutter app for real-time IoT tracking with Google Maps and WebSocket
-   - Offline-first BLE layer: E2EE group chat, RSSI/magnetometer localization
-   - Trained CNN/LSTM/GNN models (PyTorch) converted to TFLite for on-device inference
-
-3. Freelance Full-Stack Developer - TurVia (Jun 2026 - Jul 2026, Remote)
-   - Built complete smart tourism platform from architecture to Google Play and App Store
+1. Freelance Software Engineer - TurVia Technology (Jun 2025 – Sep 2026 | Remote)
+   - Designed and delivered TurVia, an end-to-end smart tourism and tour management platform, from architectural design to production deployment on Google Play and App Store.
    - Website: https://turviapp.com/
 
-4. Software Engineer Intern - Visight Technology (Jan 2025 - Oct 2025, Kocaeli Turkey)
-   - Flutter app with biometric auth (MRZ and NFC passport/ID)
-   - FastAPI backend for KYC identity verification
-   - Multi-tenant admin dashboard
-   - Company: https://www.visight.com.tr/
+2. Junior Software Engineer - Visight Technology (Oct 2025 – Jun 2026 | Kocaeli, Turkey)
+   - Developed end-to-end backend services and the admin dashboard for a multi-tenant biometric identity verification platform; managed user administration, KYC tracking, and audit logging for 25+ partner companies.
+   - Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.
+   - Resolved database lock contention issues during concurrent operations, enhancing system stability and performance.
+   - Implemented silent JWT token refresh to maintain session continuity during lengthy document scanning processes.
+
+3. Software Engineer Intern - Visight Technology (Jan 2025 – Oct 2025 | Kocaeli, Turkey)
+   - Developed mobile application and SDK components for the biometric identity verification platform.
+   - Built mobile integrations and user flows for identity and document verification processes.
 
 FEATURED PROJECTS:
-1. TurVia - Smart Tourism App (Flutter, FastAPI, Mapbox, Stripe/iyzico) - on Google Play and App Store
-2. KURTAR - IoT and AI Disaster Response (Flutter, PyTorch, TFLite, BLE, Google Maps) - https://kurtarplatform.github.io/
-3. DigiVis - KYC SDK (Flutter, FastAPI, PostgreSQL, Liveness Detection, NFC/MRZ)
-4. IbanVault - Encrypted IBAN Manager (Flutter, AES, QR codes, offline-first)
-5. Vakit - Prayer Times App (Flutter, GPS, Local Notifications)
-6. AI Financial App for Visually Impaired - Thesis project using YOLOv5 (Awarded Honours)
-7. NetGuard - LAN Security Analyzer (Flutter, Clean Architecture, Dart Isolates)
-8. Pharma - Pharmacy Management System (Flutter, Firebase, POS, barcode)
-9. SyncLedger - Small Business Billing with Bluetooth thermal printing
+1. TurVia - Smart Tourism & Tour Management App (Flutter, FastAPI, Mapbox, Google Play & App Store):
+   Connects travelers with tour agencies; features location discovery, custom tour route planning, advertisements, and subscriptions. Published on Google Play and App Store.
+2. KURTAR - IoT & AI-Based Disaster Response Platform (Flutter, IoT, BLE, WebSocket, Time Series):
+   TÜBİTAK 1001-supported seismic research project as Researcher Scholar. Built the Flutter app end-to-end with map incident visualization, offline-first BLE communication, E2EE messaging, RSSI/magnetometer localization, and role-based access. Built two field companion apps for high-frequency sensor logging and real-time on-device AI inference/validation.
+3. Pharma - Pharmacy Management System (Flutter, Riverpod, Firebase Firestore):
+   Role-based authentication, barcode inventory management, POS billing, sales/profit reports export, AI-powered medicine recommendations, and multi-store support.
+4. Kurtar Command Dashboard (Angular, .NET, WebSocket, Redis, PostgreSQL):
+   Live command center with role-based access for the KURTAR mobile app: real-time earthquake/incident mapping, shortest safe route calculation for rescue teams, field responder tracking, and resource, incident, and alert management.
+5. TurVia Admin Dashboard (Angular, .NET, Redis, PostgreSQL):
+   Internal admin dashboard to manage the TurVia platform, featuring real-time analytics, agency and user management, booking and subscription tracking, push notifications, and role-based access control.
+6. FastAPI Real-Time Chat API (PostgreSQL, Redis, WebSocket, Docker)
+7. Django REST E-Commerce API (DRF, PostgreSQL, JWT, Docker)
 
 TECHNICAL SKILLS:
-Mobile: Flutter/Dart, Provider, BLOC, Clean Architecture, MVC, MVVM, WebSocket, BLE, NFC/MRZ, TFLite, Google Maps, FCM, Offline-first
-Backend: Python, FastAPI, Flask, Django, .NET, RESTful APIs
-Databases: PostgreSQL, MySQL, SQLite, Firebase, Redis
-AI/ML: TensorFlow Lite, PyTorch, YOLOv5, CNN, LSTM, GNN, Computer Vision
-Cloud: GCP, Firebase, Railway, Render, Nginx
-Security: JWT, E2EE, AES, Biometric Auth, KYC
-Tools: Git, GitHub, GitLab, Postman, Figma, Canva
+Mobile: Flutter (BLoC, Cubit, Provider, Riverpod, Clean Architecture, SDK Development)
+Backend & API: Python (FastAPI, Django, Flask), .NET 8 (C#, ASP.NET Core Web API, EF Core, LINQ, CQRS, MediatR, FluentValidation, SignalR), RabbitMQ, RESTful API Design, WebSocket, JWT, OAuth 2.0
+AI / ML: Classical ML, PyTorch, GenAI, RAG, Model Fine-tuning and Evaluation, TFLite
+Web & Frontend: JavaScript, HTML5, CSS3, Angular
+Databases: PostgreSQL, MS SQL Server, MySQL, SQLite, Firestore, Redis
+Cloud & DevOps: Firebase, GCP, Railway, Render, Nginx, Ngrok, Docker
 
 AVAILABILITY:
 Open to full-time roles, remote work, and relocation. Actively seeking new opportunities.

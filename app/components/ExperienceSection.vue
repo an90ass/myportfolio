@@ -99,21 +99,18 @@ const experience = computed(() => [
   {
     role: t('experience.job1.role'),
     company: t('experience.job1.company'),
-    url: 'https://www.visight.com.tr/',
+    url: 'https://turviapp.com/',
     period: t('experience.job1.period'),
     location: t('experience.job1.location'),
     responsibilities: [
       t('experience.job1.r1'),
-      t('experience.job1.r2'),
-      t('experience.job1.r3'),
-      t('experience.job1.r4'),
     ],
-    techs: ['FastAPI', 'Python', 'Redis', 'PostgreSQL', 'JWT', 'Server-Side Pagination'],
+    techs: ['Flutter', 'FastAPI', 'Mapbox', 'Google Play', 'App Store', 'Architecture'],
   },
   {
     role: t('experience.job2.role'),
     company: t('experience.job2.company'),
-    url: 'https://kurtarplatform.github.io/',
+    url: 'https://www.visight.com.tr/',
     period: t('experience.job2.period'),
     location: t('experience.job2.location'),
     responsibilities: [
@@ -122,39 +119,26 @@ const experience = computed(() => [
       t('experience.job2.r3'),
       t('experience.job2.r4'),
     ],
-    techs: ['Flutter', 'Google Maps', 'WebSocket', 'IoT', 'BLE', 'TensorFlow Lite'],
+    techs: ['FastAPI', 'Python', '.NET', 'Redis', 'PostgreSQL', 'Multi-tenant', 'JWT'],
   },
   {
     role: t('experience.job3.role'),
     company: t('experience.job3.company'),
-    url: 'https://turviapp.com/',
+    url: 'https://www.visight.com.tr/',
     period: t('experience.job3.period'),
     location: t('experience.job3.location'),
     responsibilities: [
       t('experience.job3.r1'),
+      t('experience.job3.r2'),
     ],
-    techs: ['Flutter', 'FastAPI', 'Google Play', 'App Store', 'Full-Stack'],
-  },
-  {
-    role: t('experience.job4.role'),
-    company: t('experience.job4.company'),
-    url: 'https://www.visight.com.tr/',
-    period: t('experience.job4.period'),
-    location: t('experience.job4.location'),
-    responsibilities: [
-      t('experience.job4.r1'),
-      t('experience.job4.r2'),
-      t('experience.job4.r3'),
-      t('experience.job4.r4'),
-    ],
-    techs: ['Flutter', 'FastAPI', 'Biometrics', 'MRZ', 'NFC', 'Computer Vision'],
+    techs: ['Flutter', 'SDK', 'Biometrics', 'KYC', 'Mobile Integration'],
   },
 ])
 
 const facts = computed(() => [
   { value: '2+',  label: t('experience.factYears') },
   { value: '10+', label: t('experience.factProjects') },
-  { value: '3',   label: t('experience.factCompanies') },
+  { value: '2',   label: t('experience.factCompanies') },
   { value: '30+', label: t('experience.factTechs') },
 ])
 </script>
