@@ -115,7 +115,7 @@
           <button
             type="submit"
             :disabled="sending"
-            class="w-full flex items-center justify-center gap-2 py-3 px-6 bg-accent-amber hover:bg-accent-gold disabled:opacity-60 disabled:cursor-not-allowed text-stone-950 font-bold shadow-md shadow-accent-amber/20 hover:shadow-accent-amber/35 rounded-xl transition-all duration-200 text-sm"
+            class="w-full flex items-center justify-center gap-2 py-3 px-6 bg-accent-amber hover:bg-accent-gold disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold shadow-md shadow-accent-amber/20 hover:shadow-accent-amber/35 rounded-xl transition-all duration-200 text-sm"
           >
             <Loader2 v-if="sending" :size="16" class="animate-spin" />
             <Send v-else :size="16" />

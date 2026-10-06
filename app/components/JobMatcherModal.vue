@@ -261,7 +261,7 @@ const scoreBadgeText = computed(() => {
 })
 
 function openEmailDirectly() {
-  const subject = encodeURIComponent('Interview Invitation: Software Engineer Role - Anas Eskander')
+  const subject = encodeURIComponent('Interview Invitation: Software Engineer Role - Anas AL-Maqtari')
   const body = encodeURIComponent(
     `Hi Anas,\n\nI reviewed your portfolio for our software engineering role and would like to schedule an introductory conversation to discuss the position.\n\nBest regards,`
   )
@@ -304,11 +304,11 @@ async function analyzeJob() {
     const scriptUrl = 'https://script.google.com/macros/s/AKfycbynKNKN38wzNpZ9TBtL5A-pPpuJtIwNUfx6ovLvVyUnY22l3WfCuhc1vXW4W1zZeQPIIA/exec'
     const promptForGemini = `EVALUATE_JOB_MATCH_STRICT:
 You are an expert Technical Recruiter & Engineering Evaluator.
-Evaluate this Job Description objectively and rigorously against Anas Eskander (Software Engineer).
+Evaluate this Job Description objectively and rigorously against Anas AL-Maqtari (Software Engineer).
 
-=== ANAS ESKANDER FACT SHEET ===
+=== ANAS AL-MAQTARI FACT SHEET ===
 - Core Stack: Mobile (Flutter, Dart, BLoC, Clean Architecture, Offline-first, BLE, App Store/Play Store), Backend (Python, FastAPI, .NET, C#, RESTful APIs, Redis, PostgreSQL, MySQL, Database Indexing/Locking), Applied AI (PyTorch to TFLite, Computer Vision, Real-time WebSockets IoT).
-- Proven Track Record: Slashed FastAPI latency from 5s to <1s at Visight Technology; Delivered TurVia live on App Store & Play Store; Built P2P E2EE BLE mesh and IoT data streaming at TÜBİTAK 1001; M.Sc. in Software Engineering (GPA 3.95/4.00).
+- Proven Track Record: Slashed FastAPI latency from 5s to <1s at Visight Technology; Delivered TurVia live on App Store & Play Store; Built P2P E2EE BLE mesh and IoT data streaming at TÜBİTAK 1001; M.Sc. in Software Engineering (GPA 3.94/4.00).
 
 === JOB DESCRIPTION TO EVALUATE ===
 ${text}

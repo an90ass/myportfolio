@@ -74,19 +74,21 @@
         </button>
 
         <!-- Download CV -->
-        <a href="/Anas_Eskander_CV.pdf" download="Anas_Eskander_CV.pdf"
+        <button
+           type="button"
+           @click="openCvModal()"
            class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-amber/10 border border-accent-amber/30
-                  text-accent-amber text-sm font-medium hover:bg-accent-amber/20 transition-all duration-200">
+                  text-accent-amber text-sm font-medium hover:bg-accent-amber/20 transition-all duration-200 cursor-pointer">
           <Download :size="14" />
           {{ $t('nav.cv') }}
-        </a>
+        </button>
 
         <!-- Contact CTA (Direct Gmail) -->
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anass12976@gmail.com"
            target="_blank"
            rel="noopener noreferrer"
            class="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg bg-accent-amber
-                  text-stone-950 text-sm font-bold hover:bg-accent-gold shadow-sm hover:shadow-accent-amber/20 transition-all duration-200 cursor-pointer">
+                  text-white text-sm font-bold hover:bg-accent-gold shadow-sm hover:shadow-accent-amber/20 transition-all duration-200 cursor-pointer">
           <Mail :size="14" />
           {{ $t('nav.contact') }}
         </a>
@@ -100,6 +102,7 @@ import { Sun, Moon, Mail, Download, Globe } from 'lucide-vue-next'
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 const { t, locale, setLocale } = useI18n()
+const { openCvModal } = useCvModal()
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 const scrolled = ref(false)

@@ -580,7 +580,7 @@ const ProjectGrid = defineComponent({
               },
               [
                 // Image / gradient area
-                h('div', { class: 'relative overflow-hidden', style: 'height:220px;' }, [
+                h('div', { class: 'relative overflow-hidden', style: 'height:270px;' }, [
                   hasImages
                     ? h('div', {
                         class: 'flex h-full transition-transform duration-500 ease-in-out',
@@ -591,7 +591,7 @@ const ProjectGrid = defineComponent({
                           src: img,
                           alt: `${project.title} screenshot ${imgIdx + 1}`,
                           class: 'object-cover object-top flex-shrink-0',
-                          style: `width:${100 / project.images.length}%; height:220px;`,
+                          style: `width:${100 / project.images.length}%; height:270px;`,
                           loading: 'lazy',
                         })
                       ))
@@ -599,7 +599,6 @@ const ProjectGrid = defineComponent({
                         h('div', { class: 'p-5 rounded-2xl bg-white/10 backdrop-blur-sm mb-3 border border-white/10' }, [
                           h(project.icon, { size: 36, class: 'text-white' }),
                         ]),
-                        h('p', { class: 'text-white/70 text-xs font-mono px-4 text-center' }, project.category),
                       ]),
 
                   hasImages && h('div', { class: 'absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-300 flex items-center justify-center pointer-events-none' }, [
@@ -630,10 +629,6 @@ const ProjectGrid = defineComponent({
                       })
                     )
                   ),
-
-                  h('div', { class: 'absolute top-3 left-3 z-10' }, [
-                    h('span', { class: 'text-xs px-2 py-1 rounded-lg bg-bg-primary/80 backdrop-blur-sm text-text-muted border border-bg-border font-mono' }, project.category),
-                  ]),
                 ]),
 
                 // Content area

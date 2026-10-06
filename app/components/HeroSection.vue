@@ -22,7 +22,7 @@
           <!-- Big Editorial Headline -->
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-text-primary leading-[1.12] mb-6">
             {{ $t('hero.greeting') }}
-            <span class="block mt-1 gradient-text font-extrabold">ANAS ESKANDER</span>
+            <span class="block mt-1 gradient-text font-extrabold">ANAS AL-MAQTARI</span>
           </h1>
 
           <!-- Single Unified Rich Narrative -->
@@ -46,12 +46,22 @@
             <!-- Projects -->
             <a
               href="#projects"
-              class="h-11 px-5 rounded-xl bg-accent-amber hover:bg-accent-warm text-stone-950 font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-md shadow-accent-amber/20 hover:shadow-accent-amber/35 transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
+              class="h-11 px-5 rounded-xl bg-accent-amber hover:bg-accent-warm text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-md shadow-accent-amber/20 hover:shadow-accent-amber/35 transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
               @click.prevent="scrollTo('#projects')"
             >
               <Folder :size="16" class="flex-shrink-0" />
               <span>{{ $t('hero.viewProjects') }}</span>
             </a>
+
+            <!-- Download CV -->
+            <button
+              type="button"
+              @click="openCvModal()"
+              class="h-11 px-5 rounded-xl bg-bg-secondary/90 hover:bg-bg-hover text-text-primary border border-bg-border/80 hover:border-accent-amber/40 font-semibold text-xs sm:text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 backdrop-blur-sm whitespace-nowrap cursor-pointer shadow-sm hover:shadow-accent-amber/10"
+            >
+              <Download :size="16" class="flex-shrink-0 text-accent-amber" />
+              <span>{{ $t('hero.downloadCV') }}</span>
+            </button>
 
             <!-- Social Links (GitHub & LinkedIn) -->
             <a
@@ -78,7 +88,7 @@
               <div class="w-full h-full rounded-xl overflow-hidden relative bg-bg-secondary">
                 <img
                   :src="useAsset('media/avatar.JPG')"
-                  alt="ANAS ESKANDER"
+                  alt="ANAS AL-MAQTARI"
                   class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
@@ -102,10 +112,10 @@
         <div
           v-for="info in summary"
           :key="info.label"
-          class="p-4 rounded-xl bg-bg-secondary/40 border border-bg-border/50 backdrop-blur-sm"
+          class="p-3.5 sm:p-4 rounded-xl bg-bg-secondary/40 border border-bg-border/50 backdrop-blur-sm flex flex-col justify-between"
         >
-          <div class="text-[11px] font-mono uppercase tracking-wider text-text-muted mb-1">{{ info.label }}</div>
-          <div class="text-xs sm:text-sm font-semibold text-text-primary truncate">{{ info.value }}</div>
+          <div class="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-text-muted mb-1">{{ info.label }}</div>
+          <div class="text-xs sm:text-[13px] font-semibold text-text-primary leading-snug">{{ info.value }}</div>
         </div>
       </div>
     </div>
@@ -113,12 +123,14 @@
 </template>
 
 <script setup lang="ts">
-import { Folder, Github, Linkedin, Sparkles } from 'lucide-vue-next'
+import { Folder, Github, Linkedin, Sparkles, Download } from 'lucide-vue-next'
 import { computed } from 'vue'
 import { useJobMatcher } from '~/composables/useJobMatcher'
+import { useCvModal } from '~/composables/useCvModal'
 
 const { t } = useI18n()
 const { openJobMatcher } = useJobMatcher()
+const { openCvModal } = useCvModal()
 
 const p1Formatted = computed(() => t('hero.description1'))
 const p2Formatted = computed(() => t('hero.description2'))

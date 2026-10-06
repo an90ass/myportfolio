@@ -34,7 +34,7 @@ EDUCATION:
    Covering ML, Computer Vision, AI-driven Mobile Dev.
 
 WORK EXPERIENCE:
-1. Freelance Software Engineer - TurVia Technology (Jun 2025 – Sep 2026 | Remote)
+1. Freelance Software Engineer - TurVia Technology (Jun 2026 – Sep 2026 | Remote)
    - Designed and delivered TurVia, an end-to-end smart tourism and tour management platform, from architectural design to production deployment on Google Play and App Store.
    - Website: https://turviapp.com/
 

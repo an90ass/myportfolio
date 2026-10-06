@@ -25,6 +25,16 @@
             </div>
           </div>
         </div>
+
+        <!-- Download CV Button -->
+        <button
+          @click="openCvModal"
+          type="button"
+          class="w-full h-11 px-5 rounded-xl bg-bg-secondary/90 hover:bg-bg-hover text-text-primary border border-bg-border/80 hover:border-accent-amber/40 font-semibold text-xs sm:text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 backdrop-blur-sm shadow-sm hover:shadow-accent-amber/10 cursor-pointer"
+        >
+          <Download :size="16" class="flex-shrink-0 text-accent-amber" />
+          <span>{{ $t('hero.downloadCV') }}</span>
+        </button>
       </div>
 
       <!-- Right: Detailed Work Timeline -->
@@ -44,17 +54,7 @@
             <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
               <div>
                 <h3 class="text-base font-bold text-text-primary group-hover:text-accent-amber transition-colors">{{ job.role }}</h3>
-                <a
-                  v-if="job.url"
-                  :href="job.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1 text-accent-amber hover:text-accent-gold text-xs font-semibold font-mono transition-colors group/company"
-                >
-                  <span>{{ job.company }}</span>
-                  <ExternalLink :size="11" class="opacity-70 group-hover/company:opacity-100 group-hover/company:translate-x-0.5 transition-all" />
-                </a>
-                <p v-else class="text-accent-amber text-xs font-semibold font-mono">{{ job.company }}</p>
+                <p class="text-accent-amber text-xs font-semibold font-mono">{{ job.company }}</p>
               </div>
               <div class="text-left sm:text-right">
                 <span class="text-xs text-text-muted font-mono bg-bg-secondary px-2.5 py-1 rounded-full border border-bg-border/50">{{ job.period }}</span>
@@ -90,27 +90,29 @@
 </template>
 
 <script setup lang="ts">
-import { ChevronRight, ExternalLink } from 'lucide-vue-next'
+import { ChevronRight, Download } from 'lucide-vue-next'
 import { computed } from 'vue'
 
 const { t } = useI18n()
+const { openCvModal } = useCvModal()
 
 const experience = computed(() => [
   {
     role: t('experience.job1.role'),
     company: t('experience.job1.company'),
-    url: 'https://turviapp.com/',
     period: t('experience.job1.period'),
     location: t('experience.job1.location'),
     responsibilities: [
       t('experience.job1.r1'),
+      t('experience.job1.r2'),
+      t('experience.job1.r3'),
+      t('experience.job1.r4'),
     ],
-    techs: ['Flutter', 'FastAPI', 'Mapbox', 'Google Play', 'App Store', 'Architecture'],
+    techs: ['Flutter', 'CM30', 'NearPay', 'NFC', '.NET 9.0', 'Hangfire', 'IoT'],
   },
   {
     role: t('experience.job2.role'),
     company: t('experience.job2.company'),
-    url: 'https://www.visight.com.tr/',
     period: t('experience.job2.period'),
     location: t('experience.job2.location'),
     responsibilities: [
@@ -124,19 +126,18 @@ const experience = computed(() => [
   {
     role: t('experience.job3.role'),
     company: t('experience.job3.company'),
-    url: 'https://www.visight.com.tr/',
     period: t('experience.job3.period'),
     location: t('experience.job3.location'),
     responsibilities: [
       t('experience.job3.r1'),
       t('experience.job3.r2'),
     ],
-    techs: ['Flutter', 'SDK', 'Biometrics', 'KYC', 'Mobile Integration'],
+    techs: ['Flutter', 'SDK Development', 'Biometrics', 'KYC', 'Mobile Integration'],
   },
 ])
 
 const facts = computed(() => [
-  { value: '2+',  label: t('experience.factYears') },
+  { value: '2',   label: t('experience.factYears') },
   { value: '10+', label: t('experience.factProjects') },
   { value: '2',   label: t('experience.factCompanies') },
   { value: '30+', label: t('experience.factTechs') },

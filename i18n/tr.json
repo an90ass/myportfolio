@@ -34,7 +34,7 @@
     "remote": "On-Site & Remote",
     "remoteValue": "On-Site & Remote",
     "experienceLabel": "Deneyim",
-    "experienceValue": "2+ Yıl",
+    "experienceValue": "2 Yıl",
     "years": "Yıl",
     "projectsLabel": "Projeler",
     "delivered": "Tamamlanan"
@@ -49,16 +49,19 @@
     "factCompanies": "Şirket",
     "factTechs": "Teknoloji",
     "job1": {
-      "role": "Freelance Software Engineer",
-      "company": "TurVia Technology",
-      "period": "Haz 2025 – Eyl 2026",
-      "location": "Uzaktan (Remote)",
-      "r1": "Akıllı turizm ve tur yönetim platformu TurVia'yı mimari tasarımdan Google Play ve App Store canlı yayın süreçlerine kadar uçtan uca geliştirdim ve teslim ettim."
+      "role": "Yazılım Mühendisi",
+      "company": "Malahi",
+      "period": "Ara 2025 – Ağu 2026",
+      "location": "Riyad, Suudi Arabistan — Uzaktan",
+      "r1": "500+ akıllı otomat için Flutter tabanlı CM30 ödeme ve saha operasyon uygulamalarının geliştirilmesine aktif katkı sağladım ve backend ile entegrasyonlarını gerçekleştirdim.",
+      "r2": "NearPay ödeme sisteminin otomat makinelerindeki ödeme terminalleriyle entegrasyonunda aktif rol aldım; NFC tabanlı ödeme işlemleri ve cihazlar arası iletişim süreçleri üzerinde çalıştım.",
+      "r3": ".NET 9.0 kullanarak yönetim panelinin geliştirilmesine katkıda bulundum; envanter analitiği, otomatik bakım uyarıları ve dinamik ödül mekanizmaları üzerinde çalıştım.",
+      "r4": "Hangfire tabanlı zamanlanmış dinamik indirim mekanizması geliştirerek yoğun saatlerde satışlarda %25 artış sağlanmasına katkıda bulundum."
     },
     "job2": {
-      "role": "Junior Software Engineer",
+      "role": "Junior Yazılım Mühendisi",
       "company": "Visight Technology",
-      "period": "Eki 2025 – Haz 2026",
+      "period": "Haz 2025 – Ara 2025",
       "location": "Kocaeli, Türkiye",
       "r1": "Çok kiracılı (multi-tenant) biyometrik kimlik doğrulama platformunun backend servisleri ve yönetim panelini uçtan uca geliştirdim; 25+ iş ortağı şirket için kullanıcı yönetimi, KYC takibi ve audit log süreçlerini sağladım.",
       "r2": "Sorgu optimizasyonu, sunucu taraflı sayfalama, veritabanı indeksleme ve Redis önbellekleme ile panel yüklenme sürelerini 5 saniyeden 1 saniyenin altına düşürdüm.",
@@ -68,7 +71,7 @@
     "job3": {
       "role": "Yazılım Mühendisi Stajyeri",
       "company": "Visight Technology",
-      "period": "Oca 2025 – Eki 2025",
+      "period": "Oca 2025 – May 2025",
       "location": "Kocaeli, Türkiye",
       "r1": "Biyometrik kimlik doğrulama platformunun mobil uygulama ve SDK bileşenlerini geliştirdim.",
       "r2": "Kimlik ve belge doğrulama süreçlerinin mobil taraftaki entegrasyonlarını ve kullanıcı akışlarını geliştirdim."
@@ -207,11 +210,11 @@
     "title": "Teknolojiler & Araçlar",
     "mobile": "Mobil Geliştirme",
     "backend": "Backend & API Geliştirme",
-    "ai": "Yapay Zeka & Makine Öğrenimi",
+    "ai": "Makine Öğrenimi, Yapay Zeka & GenAI",
     "web": "Web & Frontend Geliştirme",
     "database": "Veritabanı & Veri Yönetimi",
     "cloud": "Bulut, DevOps & Altyapı",
-    "architecture": "Yazılım Mimarisi & Mühendislik",
+    "architecture": "Yazılım Mimarisi & Mühendislik Pratikleri",
     "security": "Güvenlik, IoT & Bağlantı",
     "tools": "Araçlar & İş Birliği"
   },
@@ -251,7 +254,7 @@
       "url": "https://www.kocaeli.edu.tr/",
       "location": "Kocaeli, Türkiye",
       "period": "Eylül 2025 – Ocak 2027",
-      "gpa": "GNO: 3.95 / 4.00",
+      "gpa": "GNO: 3.94 / 4.00",
       "badge": "Yüksek Lisans",
       "thesisTitle": "Thesis",
       "note": "On the Limits of Generative AI Cryptanalysis: A Systematic Methodological Ablation Study under AES-CTR"
@@ -286,16 +289,16 @@
     "copyright": "Tasarım & Geliştirme"
   },
   "chatbot": {
-    "name": "Anas Eskander (AI)",
+    "name": "Anas AL-Maqtari (AI)",
     "role": "Yazılım Mühendisi · AI Asistanı",
-    "welcome": "Merhaba! Ben Anas Eskander'in yapay zeka asistanıyım. Anas'ın becerileri, deneyimi, projeleri veya iş fırsatları hakkında bana her şeyi sorabilirsiniz.",
+    "welcome": "Merhaba! Ben Anas AL-Maqtari'nin yapay zeka asistanıyım. Anas'ın becerileri, deneyimi, projeleri veya iş fırsatları hakkında bana her şeyi sorabilirsiniz.",
     "placeholder": "Anas hakkında bir şey sorun..."
   },
   "jobMatcher": {
     "ctaButton": "Rolü Eşleştir",
     "badge": "Teknik Eşleştirme",
     "title": "İş Gereksinimleri Eşleştirme",
-    "subtitle": "İş tanımınızı ve aranan teknolojileri, Anas Eskander'in mühendislik geçmişi ve üretim projeleriyle karşılaştırın.",
+    "subtitle": "İş tanımınızı ve aranan teknolojileri, Anas AL-Maqtari'nin mühendislik geçmişi ve üretim projeleriyle karşılaştırın.",
     "placeholder": "İş gereksinimlerini, aranan teknolojileri veya görev tanımını buraya yapıştırın...",
     "presetsLabel": "Veya hızlı karşılaştırma için bir rol seçin:",
     "preset1": "Flutter Mobil Geliştirici",

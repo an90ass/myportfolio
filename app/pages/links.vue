@@ -65,7 +65,7 @@
           <img
             class="avatar-photo"
             :src="avatarSrc"
-            alt="ANAS ESKANDER"
+            alt="ANAS AL-MAQTARI"
             @error="onAvatarError"
           />
           <div class="avatar-fallback" ref="fallbackRef">A</div>
@@ -205,16 +205,16 @@ type Lang = 'ar' | 'en' | 'tr'
 const currentLang = ref<Lang>('ar')
 
 useHead({
-  title: 'ANAS ESKANDER | Links & Connect',
+  title: 'ANAS AL-MAQTARI | Links & Connect',
   meta: [
-    { name: 'description', content: 'Software Engineer | Mobile & Backend Systems — Connect with ANAS ESKANDER' },
+    { name: 'description', content: 'Software Engineer | Mobile & Backend Systems — Connect with ANAS AL-MAQTARI' },
   ],
 })
 
 const dict = {
   ar: {
     dir: 'rtl',
-    name: 'أنس اسكندر',
+    name: 'أنس المقطري',
     tagline: 'Software Engineer &nbsp;·&nbsp; Mobile &amp; Backend Systems',
     badge: 'حيّاك الله وبيّاك، شرّفتني بزيارتك',
     githubSub: 'مشاريعي المفتوحة',
@@ -225,11 +225,11 @@ const dict = {
     emailTitle: 'راسلني مباشرة',
     home: 'البورتفوليو',
     backToPortfolio: 'الانتقال إلى البورتفوليو',
-    footer: 'أنس اسكندر &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦'
+    footer: 'أنس المقطري &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; ٢٠٢٦'
   },
   en: {
     dir: 'ltr',
-    name: 'ANAS ESKANDER',
+    name: 'ANAS AL-MAQTARI',
     tagline: 'Software Engineer &nbsp;·&nbsp; Mobile &amp; Backend Systems',
     badge: 'Welcome! Glad to have you here',
     githubSub: 'Open Source Projects',
@@ -240,11 +240,11 @@ const dict = {
     emailTitle: 'Email Me Directly',
     home: 'Portfolio',
     backToPortfolio: 'Go to Portfolio',
-    footer: 'ANAS ESKANDER &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
+    footer: 'ANAS AL-MAQTARI &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
   },
   tr: {
     dir: 'ltr',
-    name: 'ANAS ESKANDER',
+    name: 'ANAS AL-MAQTARI',
     tagline: 'Software Engineer &nbsp;·&nbsp; Mobile &amp; Backend Systems',
     badge: 'Hoş geldiniz! Ziyaretiniz için teşekkürler',
     githubSub: 'Açık Kaynak Projeler',
@@ -255,7 +255,7 @@ const dict = {
     emailTitle: 'Doğrudan E-posta Gönder',
     home: 'Portfolyo',
     backToPortfolio: 'Portfolyoya Git',
-    footer: 'ANAS ESKANDER &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
+    footer: 'ANAS AL-MAQTARI &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; 2026'
   }
 }
 

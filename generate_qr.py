@@ -6,18 +6,18 @@ from pyzbar.pyzbar import decode as zbar_decode
 
 def build_qr_image(data, center_text,
                     box_size=50,
-                    quiet_zone_modules=4,   # QR STANDARD: needs >=4 modules of clean quiet zone
-                    decor_gap_modules=1,    # extra plain gap before the decorative frame starts
-                    logo_scale=0.16):       # logo clearance as a fraction of the QR's side (safe under 30% ECC)
+                    quiet_zone_modules=4,   # QR STANDARD: >=4 modules
+                    decor_gap_modules=0.2,  # تقريب الإطار من الـ QR
+                    logo_scale=0.16):
 
-    # Exact requested colors
-    c_navy  = (14, 30, 72, 255)    # #0e1e48
-    c_slate = (73, 97, 172, 255)   # #4961ac
-    c_white = (255, 255, 255, 255)
+    # --- الألوان الأساسية ---
+    c_navy  = (4, 120, 87, 255)    # #047857 - الأساسي الداكن
+    c_slate = (16, 185, 129, 255)  # #10B981 - الثانوي الزمردي
+    c_white = (255, 255, 255, 255) # الأبيض
 
     qr = qrcode.QRCode(
         version=None,
-        error_correction=qrcode.constants.ERROR_CORRECT_H,  # 30% recovery
+        error_correction=qrcode.constants.ERROR_CORRECT_H,
         box_size=1,
         border=0,
     )
@@ -28,8 +28,8 @@ def build_qr_image(data, center_text,
     matrix_size = len(matrix)
 
     quiet_zone_px = quiet_zone_modules * box_size
-    decor_gap_px = decor_gap_modules * box_size
-    frame_thickness = 60  # decorative frame lives OUTSIDE the quiet zone, never inside it
+    decor_gap_px = int(decor_gap_modules * box_size)
+    frame_thickness = 25
 
     qr_dim = matrix_size * box_size
     margin = quiet_zone_px + decor_gap_px + frame_thickness
@@ -43,7 +43,7 @@ def build_qr_image(data, center_text,
             return True
         return False
 
-    # --- center logo badge: pick font size that actually FITS the safe badge area ---
+    # --- center logo badge ---
     max_badge_w = qr_dim * logo_scale * 1.8
     max_badge_h = qr_dim * logo_scale
 
@@ -102,24 +102,22 @@ def build_qr_image(data, center_text,
                     continue
 
                 if is_finder_pattern(r, c):
-                    # Must be ONE solid contiguous block - no inset/rounding/gaps -
-                    # scanners measure the 1:1:3:1:1 ratio across this exact shape.
-                    draw.rectangle([x1, y1, x2, y2], fill=c_slate)
+                    draw.rectangle([x1, y1, x2, y2], fill=c_navy)
                 else:
-                    draw.rounded_rectangle([x1 + 3, y1 + 3, x2 - 4, y2 - 4], radius=10, fill=c_slate)
+                    draw.rounded_rectangle([x1 + 3, y1 + 3, x2 - 4, y2 - 4], radius=10, fill=c_navy)
 
     cleared_pct = cleared_dark_modules / total_dark_modules * 100
 
-    # --- decorative frame: OUTSIDE the required quiet zone ---
-    frame_outer_pad = 20
+    # --- decorative frame ---
+    frame_outer_pad = 10
     border_outer = [frame_outer_pad, frame_outer_pad, img_size - frame_outer_pad, img_size - frame_outer_pad]
-    draw.rounded_rectangle(border_outer, radius=50, outline=c_slate, width=8)
+    draw.rounded_rectangle(border_outer, radius=25, outline=c_slate, width=6)
 
     frame_inner_edge = qr_origin - decor_gap_px
     border_inner = [frame_inner_edge, frame_inner_edge, img_size - frame_inner_edge, img_size - frame_inner_edge]
-    draw.rounded_rectangle(border_inner, radius=30, outline=c_navy, width=4)
+    draw.rounded_rectangle(border_inner, radius=15, outline=c_navy, width=3)
 
-    corner_radius = 14
+    corner_radius = 8
     corners = [(frame_outer_pad, frame_outer_pad), (img_size - frame_outer_pad, frame_outer_pad),
                (frame_outer_pad, img_size - frame_outer_pad), (img_size - frame_outer_pad, img_size - frame_outer_pad)]
     for cx, cy in corners:
@@ -148,7 +146,7 @@ def verify_scan(img):
 
 
 if __name__ == "__main__":
-    data = "https://an90ass.github.io/myportfolio/links/"
+    data = "https://an90ass.github.io/myportfolio/"
     center_text = "#anas.dev"
 
     img, cleared_pct = build_qr_image(data, center_text)
@@ -160,5 +158,6 @@ if __name__ == "__main__":
     if not ok:
         raise SystemExit("QR failed to decode.")
 
-    img.save("anasqr2.png")
-    print(f"Saved. Final size: {img.size[0]}x{img.size[1]} px")
+    output_filename = "anasqr2.png"
+    img.save(output_filename)
+    print(f"Saved successfully as '{output_filename}'. Final size: {img.size[0]}x{img.size[1]} px")

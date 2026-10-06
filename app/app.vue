@@ -3,6 +3,7 @@
     <NuxtPage />
     <ChatBot />
     <JobMatcherModal />
+    <CvDownloadModal />
   </div>
 </template>
 

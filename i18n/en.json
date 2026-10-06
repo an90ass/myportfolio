@@ -34,7 +34,7 @@
     "remote": "On-Site & Remote",
     "remoteValue": "On-Site & Remote",
     "experienceLabel": "Experience",
-    "experienceValue": "2+ Years",
+    "experienceValue": "2 Years",
     "years": "Years",
     "projectsLabel": "Projects",
     "delivered": "Delivered"
@@ -49,29 +49,32 @@
     "factCompanies": "Companies",
     "factTechs": "Technologies",
     "job1": {
-      "role": "Freelance Software Engineer",
-      "company": "TurVia Technology",
-      "period": "Jun 2025 – Sep 2026",
-      "location": "Remote",
-      "r1": "Designed and delivered TurVia, an end-to-end smart tourism and tour management platform, from architectural design to production deployment on Google Play and App Store."
+      "role": "Software Engineer",
+      "company": "Malahi",
+      "period": "Dec 2025 – Aug 2026",
+      "location": "Riyadh, Saudi Arabia — Remote",
+      "r1": "Actively contributed to the development of Flutter-based CM30 payment and field operations applications for 500+ smart vending machines, and implemented their backend integrations.",
+      "r2": "NearPay payment system: played an active role in its integration with the payment terminals on the vending machines; worked on NFC-based payment transactions and inter-device communication processes.",
+      "r3": "Contributed to the development of the admin panel using .NET 9.0; worked on inventory analytics, automated maintenance alerts, and dynamic reward mechanisms.",
+      "r4": "Developed a Hangfire-based scheduled dynamic discount mechanism, contributing to a 25% increase in sales during peak hours."
     },
     "job2": {
       "role": "Junior Software Engineer",
       "company": "Visight Technology",
-      "period": "Oct 2025 – Jun 2026",
+      "period": "Jun 2025 – Dec 2025",
       "location": "Kocaeli, Türkiye",
-      "r1": "Developed end-to-end backend services and the admin dashboard for a multi-tenant biometric identity verification platform; managed user administration, KYC tracking, and audit logging for 25+ partner companies.",
-      "r2": "Reduced dashboard load times from 5 seconds to under 1 second via query optimization, server-side pagination, database indexing, and Redis caching.",
-      "r3": "Resolved database lock contention issues during concurrent operations, significantly enhancing system stability and performance.",
-      "r4": "Engineered a silent JWT token refresh mechanism to maintain session continuity during lengthy document scanning processes."
+      "r1": "Developed the backend services and admin panel of a multi-tenant biometric authentication platform end to end; delivered user management, KYC tracking, and audit logging for 25+ partner companies.",
+      "r2": "Reduced admin panel load times from 5 seconds to under 1 second through query optimization, server-side pagination, database indexing, and Redis caching.",
+      "r3": "Improved system stability and performance by resolving database lock contention issues that occurred during concurrent transactions.",
+      "r4": "Developed a silent JWT token refresh mechanism to maintain session continuity during long-running document scanning operations."
     },
     "job3": {
       "role": "Software Engineer Intern",
       "company": "Visight Technology",
-      "period": "Jan 2025 – Oct 2025",
+      "period": "Jan 2025 – May 2025",
       "location": "Kocaeli, Türkiye",
-      "r1": "Developed mobile application and SDK components for the biometric identity verification platform.",
-      "r2": "Built mobile integrations and user flows for identity and document verification processes."
+      "r1": "Developed the mobile application and SDK components of the biometric authentication platform.",
+      "r2": "Developed the mobile-side integrations and user flows for identity and document verification processes."
     },
     "edu1": {
       "degree": "M.Sc. in Software Engineering",
@@ -207,11 +210,11 @@
     "title": "Technologies & Tools",
     "mobile": "Mobile Development",
     "backend": "Backend & API Development",
-    "ai": "Machine Learning & AI",
+    "ai": "Machine Learning, AI & GenAI",
     "web": "Web & Frontend Development",
     "database": "Databases & Data Management",
     "cloud": "Cloud, DevOps & Infrastructure",
-    "architecture": "Software Architecture & Practices",
+    "architecture": "Software Architecture & Engineering Practices",
     "security": "Security, IoT & Connectivity",
     "tools": "Tools & Collaboration"
   },
@@ -251,7 +254,7 @@
       "url": "https://www.kocaeli.edu.tr/",
       "location": "Kocaeli, Türkiye",
       "period": "Sep 2025 – Jan 2027",
-      "gpa": "GPA: 3.95 / 4.00",
+      "gpa": "GPA: 3.94 / 4.00",
       "badge": "Master's Degree",
       "thesisTitle": "Thesis",
       "note": "On the Limits of Generative AI Cryptanalysis: A Systematic Methodological Ablation Study under AES-CTR"
@@ -286,16 +289,16 @@
     "copyright": "Crafted with"
   },
   "chatbot": {
-    "name": "Anas Eskander (AI)",
+    "name": "Anas AL-Maqtari (AI)",
     "role": "Software Engineer · AI Assistant",
-    "welcome": "Hello! I'm Anas Eskander's AI Assistant. Ask me anything about Anas's skills, work experience, projects, or job availability.",
+    "welcome": "Hello! I'm Anas AL-Maqtari's AI Assistant. Ask me anything about Anas's skills, work experience, projects, or job availability.",
     "placeholder": "Ask anything about Anas..."
   },
   "jobMatcher": {
     "ctaButton": "Match Role",
     "badge": "Technical Match",
     "title": "Role & Requirements Matcher",
-    "subtitle": "Evaluate your job requirements and required tech stack against Anas Eskander's engineering background and shipped projects.",
+    "subtitle": "Evaluate your job requirements and required tech stack against Anas AL-Maqtari's engineering background and shipped projects.",
     "placeholder": "Paste job requirements, required technologies, or engineering scope here...",
     "presetsLabel": "Or select a sample role for a quick test:",
     "preset1": "Flutter Mobile Developer",

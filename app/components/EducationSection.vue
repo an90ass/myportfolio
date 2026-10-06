@@ -28,7 +28,7 @@
                 <h3 class="text-lg sm:text-xl font-bold text-text-primary group-hover:text-accent-amber transition-colors">
                   {{ edu.degree }}
                 </h3>
-                <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-md bg-accent-amber/10 text-accent-amber">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-bg-secondary text-text-muted border border-bg-border/60">
                   {{ edu.badge }}
                 </span>
               </div>
@@ -36,7 +36,7 @@
               <div class="flex items-center gap-2 text-xs font-mono text-text-muted">
                 <span>{{ edu.period }}</span>
                 <span>•</span>
-                <span class="text-accent-amber font-semibold">{{ edu.gpa }}</span>
+                <span class="font-medium text-text-secondary">{{ edu.gpa }}</span>
               </div>
             </div>
 
@@ -60,9 +60,9 @@
                   v-for="cert in edu.certificates"
                   :key="cert.url"
                   @click="selectedCertificate = cert"
-                  class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-accent-amber/10 hover:bg-accent-amber/20 text-accent-amber text-xs font-semibold transition-all cursor-pointer border border-accent-amber/20 hover:border-accent-amber/40"
+                  class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-bg-secondary hover:bg-bg-hover text-text-secondary hover:text-text-primary text-xs font-medium transition-all cursor-pointer border border-bg-border/60 shadow-sm"
                 >
-                  <Award :size="13" class="flex-shrink-0" />
+                  <Award :size="13" class="flex-shrink-0 text-text-muted" />
                   <span>{{ cert.title }}</span>
                 </button>
               </div>
@@ -70,8 +70,8 @@
 
             <!-- Thesis / Note Highlight -->
             <div class="pt-1.5 flex flex-col sm:flex-row sm:items-start gap-2.5 max-w-4xl">
-              <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-accent-amber/10 border border-accent-amber/25 text-accent-amber text-xs font-mono font-semibold shrink-0">
-                <BookOpen :size="12" class="flex-shrink-0" />
+              <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[11px] font-mono bg-bg-secondary text-text-muted border border-bg-border/60 font-semibold shrink-0">
+                <BookOpen :size="12" class="flex-shrink-0 text-text-muted" />
                 {{ edu.thesisTitle }}:
               </span>
               <p class="text-xs sm:text-sm text-text-secondary leading-relaxed pt-0.5">

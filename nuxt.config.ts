@@ -31,14 +31,14 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: '',
-    preference: 'dark',
-    fallback: 'dark',
+    preference: 'light',
+    fallback: 'light',
   },
   app: {
     baseURL: '/myportfolio/',
     buildAssetsDir: 'assets',
     head: {
-      title: 'Anas Eskander — Software Engineer',
+      title: 'Anas AL-Maqtari — Software Engineer',
       meta: [
         { name: 'description', content: 'Software Engineer specializing in mobile & backend development — Flutter, Python, .NET, Databases, Cloud & DevOps.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
