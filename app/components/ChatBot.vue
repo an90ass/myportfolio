@@ -199,7 +199,7 @@ async function sendMessage() {
   scrollToBottom()
 
   try {
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbynKNKN38wzNpZ9TBtL5A-pPpuJtIwNUfx6ovLvVyUnY22l3WfCuhc1vXW4W1zZeQPIIA/exec'
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbyJB1WURJ3D0Y-krPa8uVkq76jccicaVNyfDQPvb_Fv6wxPgXnK9tu7_NujI0q-YGUvkg/exec'
     let replyText = ''
     
     try {
